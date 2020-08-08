@@ -1,0 +1,21 @@
+name: Summary CI
+on:
+  repository_dispatch:
+    types: [summary]
+jobs:
+  release:
+    name: Generate README
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Install dependencies
+        run: npm ci
+      - name: Run script
+        run: npm run readme
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}

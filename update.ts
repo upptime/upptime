@@ -44,7 +44,9 @@ export const update = async () => {
         owner: config.owner,
         repo: config.repo,
         path: `history/${slug}.yml`,
-        message: `✅ ${url} is up (${result.httpCode} in ${responseTime}ms)`,
+        message: `${status === "up" ? "✅" : "❌"} ${url} is ${status} (${
+          result.httpCode
+        } in ${responseTime}ms) [skip ci]`,
         content: `- url: ${url}
 - status: ${status}
 - code: ${result.httpCode}
