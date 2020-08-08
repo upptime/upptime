@@ -2,6 +2,7 @@ owner: koj-co
 repo: status
 sites:
   - https://koj.co
+  - https://example.koj.co
   - https://kojcdn.com
   - https://go.koj.co
   - https://status.koj.co
