@@ -62,21 +62,13 @@ export const generateSummary = async () => {
 
   for await (const url of config.sites) {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
-    let status = "down";
-    try {
-      status = (await readFile(join(".", "history", `${slug}.yml`)), "utf8")
-        .split("status:")[1]
-        .split("\n")[0]
-        .trim();
-    } catch (error) {
-      console.log("ERR", error);
-    }
     const history = await octokit.repos.listCommits({
       owner,
       repo,
       path: `history/${slug}.yml`,
       per_page: 100,
     });
+    if (!history.data.length) continue;
     const averageTime =
       history.data
         .filter(
@@ -91,8 +83,10 @@ export const generateSummary = async () => {
     pageStatuses.push({
       url,
       slug,
-      status,
-      time: averageTime,
+      status: history.data[0].commit.message.split(" ")[0].includes("✅")
+        ? "up"
+        : "down",
+      time: Math.floor(averageTime),
     });
   }
 
