@@ -115,7 +115,7 @@ export const update = async () => {
           await octokit.issues.createComment({
             owner,
             repo,
-            issue_number: issues.data[0].id,
+            issue_number: issues.data[0].number,
             body: `${url} is back up in ${fileUpdateResult.data.commit.sha.substr(
               0,
               7
@@ -125,7 +125,7 @@ export const update = async () => {
           await octokit.issues.update({
             owner,
             repo,
-            issue_number: issues.data[0].id,
+            issue_number: issues.data[0].number,
             state: "closed",
           });
           console.log("Closed issue");
