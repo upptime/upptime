@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/koj-co/status/issues"
   },
-  "homepage": "https://github.com/koj-co/status#readme"
+  "homepage": "https://github.com/koj-co/status#readme",
+  "devDependencies": {
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
 }
