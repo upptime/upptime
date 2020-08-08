@@ -62,11 +62,30 @@ export const generateSummary = async () => {
 
   for await (const url of config.sites) {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
-    const history = octokit.repos.listCommits({
+    let status = "down";
+    try {
+      status = (await readFile(join(".", "history", `${slug}.yml`)), "utf8")
+        .split("status:")[1]
+        .split("\n")[0]
+        .trim();
+    } catch (error) {}
+    const history = await octokit.repos.listCommits({
       owner,
       repo,
       path: `history/${slug}.yml`,
       per_page: 100,
+    });
+    const averageTime =
+      history.data
+        .map((commit) =>
+          Number(commit.commit.message.split(" in ")[1].split("ms")[0])
+        )
+        .reduce((p, c) => p + c, 0) / history.data.length;
+    pageStatuses.push({
+      url,
+      slug,
+      status,
+      time: averageTime,
     });
   }
 
@@ -74,7 +93,16 @@ export const generateSummary = async () => {
 
 | URL | Status | History | Response Time |
 | --- | ------ | ------- | ------------- |
-| https://koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) Up | [koj-co.yml](./history/koj-co.yml) | 231ms |
+${pageStatuses
+  .map(
+    (page) =>
+      `| ${page.url} | ![](https://via.placeholder.com/10/${
+        page.status === "up" ? "2ecc71" : "e74c3c"
+      }/000000?text=+) ${page.status.toLocaleUpperCase()} | [${
+        page.slug
+      }.yml](./history/${page.slug}.yml) | ${page.time}ms |`
+  )
+  .join("\n")}
 
 <!--end: status pages-->${endText}`;
 
