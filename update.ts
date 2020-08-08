@@ -42,7 +42,20 @@ export const update = async () => {
       const responseTime = (result.totalTime * 1000).toFixed(0);
       const status =
         result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up";
+      const content = `- url: ${url}
+      - status: ${status}
+      - code: ${result.httpCode}
+      - responseTime: ${responseTime}
+      - lastUpdated: ${new Date().toISOString()}
+      `;
 
+      const sha = (
+        await octokit.repos.getContent({
+          owner,
+          repo,
+          path: `history/${slug}.yml`,
+        })
+      ).data.sha;
       const fileUpdateResult = await octokit.repos.createOrUpdateFileContents({
         owner,
         repo,
@@ -50,12 +63,8 @@ export const update = async () => {
         message: `${status === "up" ? "✅" : "❌"} ${url} is ${status} (${
           result.httpCode
         } in ${responseTime}ms) [skip ci]`,
-        content: `- url: ${url}
-- status: ${status}
-- code: ${result.httpCode}
-- responseTime: ${responseTime}
-- lastUpdated: ${new Date().toISOString()}
-`,
+        content,
+        sha,
       });
 
       if (currentStatus !== status) {
