@@ -68,7 +68,9 @@ export const generateSummary = async () => {
         .split("status:")[1]
         .split("\n")[0]
         .trim();
-    } catch (error) {}
+    } catch (error) {
+      console.log("ERR", error);
+    }
     const history = await octokit.repos.listCommits({
       owner,
       repo,
