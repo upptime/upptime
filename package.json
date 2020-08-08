@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@octokit/rest": "^18.0.3",
+    "@sindresorhus/slugify": "^1.1.0",
     "fs-extra": "^9.0.1",
     "js-yaml": "^3.14.0",
     "node-libcurl": "^2.2.0"
