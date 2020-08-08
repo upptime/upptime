@@ -101,7 +101,9 @@ ${pageStatuses
         page.status === "up" ? "2ecc71" : "e74c3c"
       }/000000?text=+) ${page.status.toLocaleUpperCase()} | [${
         page.slug
-      }.yml](./history/${page.slug}.yml) | ${page.time}ms |`
+      }.yml](https://github.com/${owner}/${repo}/commits/master/history/${
+        page.slug
+      }.yml) | ${page.time}ms |`
   )
   .join("\n")}
 
