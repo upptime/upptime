@@ -15,7 +15,10 @@ export const update = async () => {
     repo: string;
     userAgent?: string;
     PAT?: string;
+    assignees?: string[];
   };
+  const owner = config.owner;
+  const repo = config.repo;
 
   const octokit = new Octokit({
     auth: config.PAT || process.env.GH_PAT || process.env.GITHUB_TOKEN,
@@ -40,9 +43,9 @@ export const update = async () => {
       const status =
         result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up";
 
-      octokit.repos.createOrUpdateFileContents({
-        owner: config.owner,
-        repo: config.repo,
+      const fileUpdateResult = await octokit.repos.createOrUpdateFileContents({
+        owner,
+        repo,
         path: `history/${slug}.yml`,
         message: `${status === "up" ? "✅" : "❌"} ${url} is ${status} (${
           result.httpCode
@@ -57,6 +60,53 @@ export const update = async () => {
 
       if (currentStatus !== status) {
         hasDelta = true;
+
+        // If the site was just recorded as down, open an issue
+        if (status === "down") {
+          await octokit.issues.create({
+            owner,
+            repo,
+            title: `⚠️ ${url} is down`,
+            body: `In ${fileUpdateResult.data.commit.sha.substr(
+              0,
+              7
+            )}, ${url} was **down**:
+
+- HTTP code: ${result.httpCode}
+- Response time: ${responseTime} ms
+`,
+            assignees: config.assignees,
+            labels: ["status", slug],
+          });
+        } else {
+          // If the site just came back up
+          const issues = await octokit.issues.list({
+            owner,
+            repo,
+            labels: `status,${slug}`,
+            state: "open",
+            sort: "created",
+            direction: "desc",
+            per_page: 1,
+          });
+          if (issues.data.length) {
+            await octokit.issues.createComment({
+              owner,
+              repo,
+              issue_number: issues.data[0].id,
+              body: `${url} is back up in ${fileUpdateResult.data.commit.sha.substr(
+                0,
+                7
+              )}.`,
+            });
+            await octokit.issues.update({
+              owner,
+              repo,
+              issue_number: issues.data[0].id,
+              state: "closed",
+            });
+          }
+        }
       }
     } catch (error) {
       console.log("ERROR", error);
