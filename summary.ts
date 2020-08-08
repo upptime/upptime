@@ -23,32 +23,7 @@ export const generateSummary = async () => {
     userAgent: config.userAgent || process.env.USER_AGENT || "KojBot",
   });
 
-  // Check if all sites are up
-  const issues = await octokit.issues.list({
-    owner,
-    repo,
-    labels: "status",
-    state: "open",
-    sort: "created",
-    direction: "desc",
-    per_page: 1,
-  });
-  const allUp = issues.data.length === 0;
-
   let readmeContent = await readFile(join(".", "README.md"), "utf8");
-
-  // Add live status line
-  readmeContent = readmeContent
-    .split("\n")
-    .map((line) => {
-      if (line.includes("<!--live status-->")) {
-        line = `Live status: <!--live status--> ![](https://via.placeholder.com/10/${
-          allUp ? "2ecc71" : "e74c3c"
-        }/000000?text=+) **${allUp ? "All systems operational" : "Outage"}**`;
-      }
-      return line;
-    })
-    .join("\n");
 
   const startText = readmeContent.split("<!--start: status pages-->")[0];
   const endText = readmeContent.split("<!--end: status pages-->")[1];
@@ -60,6 +35,7 @@ export const generateSummary = async () => {
     time: number;
   }> = [];
 
+  let allUp = true;
   for await (const url of config.sites) {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
     const history = await octokit.repos.listCommits({
@@ -80,14 +56,16 @@ export const generateSummary = async () => {
           Number(item.commit.message.split(" in ")[1].split("ms")[0])
         )
         .reduce((p, c) => p + c, 0) / history.data.length;
+    const status = history.data[0].commit.message.split(" ")[0].includes("✅")
+      ? "up"
+      : "down";
     pageStatuses.push({
       url,
       slug,
-      status: history.data[0].commit.message.split(" ")[0].includes("✅")
-        ? "up"
-        : "down",
+      status,
       time: Math.floor(averageTime),
     });
+    if (status === "down") allUp = false;
   }
 
   readmeContent = `${startText}<!--start: status pages-->
@@ -108,6 +86,19 @@ ${pageStatuses
   .join("\n")}
 
 <!--end: status pages-->${endText}`;
+
+  // Add live status line
+  readmeContent = readmeContent
+    .split("\n")
+    .map((line) => {
+      if (line.includes("<!--live status-->")) {
+        line = `Live status: <!--live status--> ![](https://via.placeholder.com/10/${
+          allUp ? "2ecc71" : "e74c3c"
+        }/000000?text=+) **${allUp ? "All systems operational" : "Outage"}**`;
+      }
+      return line;
+    })
+    .join("\n");
 
   const sha = (
     await octokit.repos.getContent({
