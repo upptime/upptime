@@ -1,0 +1,25 @@
+{
+  "name": "koj-status",
+  "version": "0.0.0",
+  "description": "This repository uses GitHub Actions as an uptime monitor to track the status of Koj websites.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koj-co/status.git"
+  },
+  "keywords": [
+    "status",
+    "statuskit",
+    "uptime",
+    "uptime-monitor"
+  ],
+  "author": "Anand Chowdhary <mail@anandchowdhary.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koj-co/status/issues"
+  },
+  "homepage": "https://github.com/koj-co/status#readme"
+}
