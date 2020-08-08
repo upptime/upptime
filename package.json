@@ -4,6 +4,7 @@
   "description": "This repository uses GitHub Actions as an uptime monitor to track the status of Koj websites.",
   "main": "dist/index.js",
   "scripts": {
+    "update": "ts-node update.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
