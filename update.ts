@@ -4,6 +4,7 @@ import { readFile } from "fs-extra";
 import { safeLoad } from "js-yaml";
 import { Curl, CurlFeature } from "node-libcurl";
 import { join } from "path";
+import { generateSummary } from "./summary";
 
 export const update = async () => {
   const config = safeLoad(
@@ -21,29 +22,46 @@ export const update = async () => {
     userAgent: config.userAgent || process.env.USER_AGENT || "KojBot",
   });
 
+  let hasDelta = false;
   for await (const url of config.sites) {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
     console.log("Checking", url);
+    const currentStatus = (
+      await readFile(join(".", "history", `${slug}.yml`), "utf8")
+    )
+      .split("\n")
+      .find((line) => line.toLocaleLowerCase().includes("status"))
+      ?.split(":")[1]
+      .trim();
     try {
       const result = await curl(url);
       console.log("Result", result);
       const responseTime = (result.totalTime * 1000).toFixed(0);
+      const status =
+        result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up";
+
       octokit.repos.createOrUpdateFileContents({
         owner: config.owner,
         repo: config.repo,
         path: `history/${slug}.yml`,
         message: `✅ ${url} is up (${result.httpCode} in ${responseTime}ms)`,
         content: `- url: ${url}
-- status: ${result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up"}
+- status: ${status}
 - code: ${result.httpCode}
 - responseTime: ${responseTime}
 - lastUpdated: ${new Date().toISOString()}
 `,
       });
+
+      if (currentStatus !== status) {
+        hasDelta = true;
+      }
     } catch (error) {
       console.log("ERROR", error);
     }
   }
+
+  if (hasDelta) generateSummary();
 };
 
 const curl = (url: string): Promise<{ httpCode: number; totalTime: number }> =>
