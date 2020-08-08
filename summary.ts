@@ -118,7 +118,7 @@ ${pageStatuses
     owner,
     repo,
     path: "README.md",
-    message: ":pencil: Update summary in README",
+    message: ":pencil: Update summary in README [skip ci]",
     content: Buffer.from(readmeContent).toString("base64"),
     sha,
   });
