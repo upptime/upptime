@@ -1,7 +1,7 @@
 name: Uptime CI
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/2 * * * *"
 jobs:
   release:
     name: Check status
