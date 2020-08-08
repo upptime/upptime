@@ -1,5 +1,5 @@
 - url: https://example.koj.co
-- status: down
-- code: 404
-- responseTime: 280
-- lastUpdated: 2020-08-08T21:44:36.331Z
+- status: up
+- code: 200
+- responseTime: 105
+- lastUpdated: 2020-08-08T21:50:09.165Z
