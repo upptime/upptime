@@ -1,10 +1,10 @@
-name: Uptime CI
+name: Summary CI
 on:
-  schedule:
-    - cron: "*/5 * * * *"
+  repository_dispatch:
+    types: [summary]
 jobs:
   release:
-    name: Check status
+    name: Generate README
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
@@ -16,6 +16,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run script
-        run: npm run update
+        run: npm run readme
         env:
           GH_PAT: ${{ secrets.GH_PAT }}

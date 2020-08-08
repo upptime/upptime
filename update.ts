@@ -4,6 +4,7 @@ import { readFile } from "fs-extra";
 import { safeLoad } from "js-yaml";
 import { Curl, CurlFeature } from "node-libcurl";
 import { join } from "path";
+import { generateSummary } from "./summary";
 
 export const update = async () => {
   const config = safeLoad(
@@ -14,36 +15,105 @@ export const update = async () => {
     repo: string;
     userAgent?: string;
     PAT?: string;
+    assignees?: string[];
   };
+  const owner = config.owner;
+  const repo = config.repo;
 
   const octokit = new Octokit({
     auth: config.PAT || process.env.GH_PAT || process.env.GITHUB_TOKEN,
     userAgent: config.userAgent || process.env.USER_AGENT || "KojBot",
   });
 
+  let hasDelta = false;
   for await (const url of config.sites) {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
     console.log("Checking", url);
+    const currentStatus = (
+      await readFile(join(".", "history", `${slug}.yml`), "utf8")
+    )
+      .split("\n")
+      .find((line) => line.toLocaleLowerCase().includes("status"))
+      ?.split(":")[1]
+      .trim();
     try {
       const result = await curl(url);
       console.log("Result", result);
       const responseTime = (result.totalTime * 1000).toFixed(0);
-      octokit.repos.createOrUpdateFileContents({
-        owner: config.owner,
-        repo: config.repo,
+      const status =
+        result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up";
+
+      const fileUpdateResult = await octokit.repos.createOrUpdateFileContents({
+        owner,
+        repo,
         path: `history/${slug}.yml`,
-        message: `✅ ${url} is up (${result.httpCode} in ${responseTime}ms)`,
+        message: `${status === "up" ? "✅" : "❌"} ${url} is ${status} (${
+          result.httpCode
+        } in ${responseTime}ms) [skip ci]`,
         content: `- url: ${url}
-- status: ${result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up"}
+- status: ${status}
 - code: ${result.httpCode}
 - responseTime: ${responseTime}
 - lastUpdated: ${new Date().toISOString()}
 `,
       });
+
+      if (currentStatus !== status) {
+        hasDelta = true;
+
+        // If the site was just recorded as down, open an issue
+        if (status === "down") {
+          await octokit.issues.create({
+            owner,
+            repo,
+            title: `⚠️ ${url} is down`,
+            body: `In ${fileUpdateResult.data.commit.sha.substr(
+              0,
+              7
+            )}, ${url} was **down**:
+
+- HTTP code: ${result.httpCode}
+- Response time: ${responseTime} ms
+`,
+            assignees: config.assignees,
+            labels: ["status", slug],
+          });
+        } else {
+          // If the site just came back up
+          const issues = await octokit.issues.list({
+            owner,
+            repo,
+            labels: `status,${slug}`,
+            state: "open",
+            sort: "created",
+            direction: "desc",
+            per_page: 1,
+          });
+          if (issues.data.length) {
+            await octokit.issues.createComment({
+              owner,
+              repo,
+              issue_number: issues.data[0].id,
+              body: `${url} is back up in ${fileUpdateResult.data.commit.sha.substr(
+                0,
+                7
+              )}.`,
+            });
+            await octokit.issues.update({
+              owner,
+              repo,
+              issue_number: issues.data[0].id,
+              state: "closed",
+            });
+          }
+        }
+      }
     } catch (error) {
       console.log("ERROR", error);
     }
   }
+
+  if (hasDelta) generateSummary();
 };
 
 const curl = (url: string): Promise<{ httpCode: number; totalTime: number }> =>
