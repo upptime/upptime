@@ -43,11 +43,11 @@ export const update = async () => {
       const status =
         result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up";
       const content = `- url: ${url}
-      - status: ${status}
-      - code: ${result.httpCode}
-      - responseTime: ${responseTime}
-      - lastUpdated: ${new Date().toISOString()}
-      `;
+- status: ${status}
+- code: ${result.httpCode}
+- responseTime: ${responseTime}
+- lastUpdated: ${new Date().toISOString()}
+`;
 
       const sha = (
         await octokit.repos.getContent({
