@@ -63,7 +63,7 @@ export const update = async () => {
         message: `${status === "up" ? "✅" : "❌"} ${url} is ${status} (${
           result.httpCode
         } in ${responseTime}ms) [skip ci]`,
-        content,
+        content: Buffer.from(content).toString("base64"),
         sha,
       });
 
