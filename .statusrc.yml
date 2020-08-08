@@ -2,5 +2,6 @@ owner: koj-co
 repo: status
 sites:
   - https://koj.co
+  - https://example.koj.co
 assignees:
   - AnandChowdhary
