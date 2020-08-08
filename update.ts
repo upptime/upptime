@@ -131,7 +131,7 @@ export const update = async () => {
 };
 
 const curl = (url: string): Promise<{ httpCode: number; totalTime: number }> =>
-  new Promise((resolve, reject) => {
+  new Promise((resolve) => {
     const curl = new Curl();
     curl.enable(CurlFeature.Raw);
     curl.setOpt("URL", url);
@@ -145,7 +145,7 @@ const curl = (url: string): Promise<{ httpCode: number; totalTime: number }> =>
     curl.setOpt("CUSTOMREQUEST", "GET");
     curl.on("error", () => {
       curl.close();
-      return reject();
+      return resolve({ httpCode: 0, totalTime: 0 });
     });
     curl.on("end", () => {
       let httpCode = 0;
@@ -155,7 +155,7 @@ const curl = (url: string): Promise<{ httpCode: number; totalTime: number }> =>
         totalTime = Number(curl.getInfo("TOTAL_TIME"));
       } catch (error) {
         curl.close();
-        return reject(error);
+        return resolve({ httpCode, totalTime });
       }
       return resolve({ httpCode, totalTime });
     });
