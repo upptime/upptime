@@ -17,3 +17,5 @@ jobs:
         run: npm ci
       - name: Run script
         run: npm run update
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
