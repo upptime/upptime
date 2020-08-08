@@ -1,5 +1,6 @@
+import { Octokit } from "@octokit/rest";
 import slugify from "@sindresorhus/slugify";
-import { readFile, writeFile } from "fs-extra";
+import { readFile } from "fs-extra";
 import { safeLoad } from "js-yaml";
 import { Curl, CurlFeature } from "node-libcurl";
 import { join } from "path";
@@ -7,29 +8,45 @@ import { join } from "path";
 export const update = async () => {
   const config = safeLoad(
     await readFile(join(".", ".statusrc.yml"), "utf8")
-  ) as { sites: string[] };
+  ) as {
+    sites: string[];
+    owner: string;
+    repo: string;
+    userAgent?: string;
+    PAT?: string;
+  };
+
+  const octokit = new Octokit({
+    auth: config.PAT || process.env.GH_PAT || process.env.GITHUB_TOKEN,
+    userAgent: config.userAgent || process.env.USER_AGENT || "KojBot",
+  });
+
   for await (const url of config.sites) {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
     console.log("Checking", url);
     try {
-      const result = await curlIt(url);
+      const result = await curl(url);
       console.log("Result", result);
-      await writeFile(
-        join(".", "history", `${slug}.yml`),
-        `- url: ${url}
+      const responseTime = (result.totalTime * 1000).toFixed(0);
+      octokit.repos.createOrUpdateFileContents({
+        owner: config.owner,
+        repo: config.repo,
+        path: `history/${slug}.yml`,
+        message: `✅ ${url} is up (${result.httpCode} in ${responseTime}ms)`,
+        content: `- url: ${url}
 - status: ${result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up"}
 - code: ${result.httpCode}
-- responseTime: ${(result.totalTime * 1000).toFixed(0)}
+- responseTime: ${responseTime}
 - lastUpdated: ${new Date().toISOString()}
-  `
-      );
-    } catch (error) {}
+`,
+      });
+    } catch (error) {
+      console.log("ERROR", error);
+    }
   }
 };
 
-const curlIt = (
-  url: string
-): Promise<{ httpCode: number; totalTime: number }> =>
+const curl = (url: string): Promise<{ httpCode: number; totalTime: number }> =>
   new Promise((resolve, reject) => {
     const curl = new Curl();
     curl.enable(CurlFeature.Raw);
