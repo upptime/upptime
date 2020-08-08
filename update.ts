@@ -29,13 +29,15 @@ export const update = async () => {
   for await (const url of config.sites) {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
     console.log("Checking", url);
-    const currentStatus = (
-      await readFile(join(".", "history", `${slug}.yml`), "utf8")
-    )
-      .split("\n")
-      .find((line) => line.toLocaleLowerCase().includes("status"))
-      ?.split(":")[1]
-      .trim();
+    let currentStatus = "unknown";
+    try {
+      currentStatus =
+        (await readFile(join(".", "history", `${slug}.yml`), "utf8"))
+          .split("\n")
+          .find((line) => line.toLocaleLowerCase().includes("status"))
+          ?.split(":")[1]
+          .trim() || "unknown";
+    } catch (error) {}
     try {
       const result = await curl(url);
       console.log("Result", result);
