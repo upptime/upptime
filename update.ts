@@ -73,6 +73,7 @@ export const update = async () => {
       });
 
       if (currentStatus !== status) {
+        console.log("Status is different", currentStatus, "to", status);
         hasDelta = true;
 
         const issues = await octokit.issues.list({
@@ -84,10 +85,11 @@ export const update = async () => {
           direction: "desc",
           per_page: 1,
         });
+        console.log(`Found ${issues.data.length} issues`);
 
         // If the site was just recorded as down, open an issue
         if (status === "down") {
-          if (!issues.data.length)
+          if (!issues.data.length) {
             await octokit.issues.create({
               owner,
               repo,
@@ -103,6 +105,10 @@ export const update = async () => {
               assignees: config.assignees,
               labels: ["status", slug],
             });
+            console.log("Opened a new issue");
+          } else {
+            console.log("An issue is already open for this");
+          }
         } else if (issues.data.length) {
           // If the site just came back up
           await octokit.issues.createComment({
@@ -114,13 +120,19 @@ export const update = async () => {
               7
             )}.`,
           });
+          console.log("Created comment in issue");
           await octokit.issues.update({
             owner,
             repo,
             issue_number: issues.data[0].id,
             state: "closed",
           });
+          console.log("Closed issue");
+        } else {
+          console.log("Could not find a relevant issue", issues.data);
         }
+      } else {
+        console.log("Status is the same", currentStatus, status);
       }
     } catch (error) {
       console.log("ERROR", error);
