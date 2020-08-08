@@ -51,13 +51,16 @@ export const update = async () => {
 - lastUpdated: ${new Date().toISOString()}
 `;
 
-      const sha = (
-        await octokit.repos.getContent({
-          owner,
-          repo,
-          path: `history/${slug}.yml`,
-        })
-      ).data.sha;
+      let sha: string | undefined = "";
+      try {
+        sha = (
+          await octokit.repos.getContent({
+            owner,
+            repo,
+            path: `history/${slug}.yml`,
+          })
+        ).data.sha;
+      } catch (error) {}
       const fileUpdateResult = await octokit.repos.createOrUpdateFileContents({
         owner,
         repo,
