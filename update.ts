@@ -79,7 +79,8 @@ export const update = async () => {
         const issues = await octokit.issues.list({
           owner,
           repo,
-          labels: `status,${slug}`,
+          labels: slug,
+          filter: "all",
           state: "open",
           sort: "created",
           direction: "desc",
