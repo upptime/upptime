@@ -77,8 +77,9 @@ export const generateSummary = async () => {
     });
     const averageTime =
       history.data
-        .map((commit) =>
-          Number(commit.commit.message.split(" in ")[1].split("ms")[0])
+        .filter((item) => Number(item.commit.message.includes(" in ")))
+        .map((item) =>
+          Number(item.commit.message.split(" in ")[1].split("ms")[0])
         )
         .reduce((p, c) => p + c, 0) / history.data.length;
     pageStatuses.push({
