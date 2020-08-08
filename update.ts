@@ -1,4 +1,5 @@
-import { readFile } from "fs-extra";
+import slugify from "@sindresorhus/slugify";
+import { readFile, writeFile } from "fs-extra";
 import { safeLoad } from "js-yaml";
 import { Curl, CurlFeature } from "node-libcurl";
 import { join } from "path";
@@ -8,9 +9,21 @@ export const update = async () => {
     await readFile(join(".", ".statusrc.yml"), "utf8")
   ) as { sites: string[] };
   for await (const url of config.sites) {
+    const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
     console.log("Checking", url);
-    const result = await curlIt(url);
-    console.log("Result", result);
+    try {
+      const result = await curlIt(url);
+      console.log("Result", result);
+      await writeFile(
+        join(".", "history", `${slug}.yml`),
+        `- url: ${url}
+- status: ${result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up"}
+- code: ${result.httpCode}
+- responseTime: ${(result.totalTime * 1000).toFixed(0)}
+- lastUpdated: ${new Date().toISOString()}
+  `
+      );
+    } catch (error) {}
   }
 };
 
