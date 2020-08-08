@@ -20,7 +20,7 @@ If you want your own GitHub Actions-powered uptime monitor, [use this template](
 
 | URL | Status | History | Response Time |
 | --- | ------ | ------- | ------------- |
-| https://koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) Up | [koj-co.yml](./history/koj-co.yml) | 231ms |
+| https://koj.co | ![](https://via.placeholder.com/10/e74c3c/000000?text=+) DOWN | [koj-co.yml](./history/koj-co.yml) | 192ms |
 
 <!--end: status pages-->
 
