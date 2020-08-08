@@ -72,51 +72,51 @@ export const update = async () => {
       if (currentStatus !== status) {
         hasDelta = true;
 
+        const issues = await octokit.issues.list({
+          owner,
+          repo,
+          labels: `status,${slug}`,
+          state: "open",
+          sort: "created",
+          direction: "desc",
+          per_page: 1,
+        });
+
         // If the site was just recorded as down, open an issue
         if (status === "down") {
-          await octokit.issues.create({
-            owner,
-            repo,
-            title: `⚠️ ${url} is down`,
-            body: `In ${fileUpdateResult.data.commit.sha.substr(
-              0,
-              7
-            )}, ${url} was **down**:
+          if (!issues.data.length)
+            await octokit.issues.create({
+              owner,
+              repo,
+              title: `⚠️ ${url} is down`,
+              body: `In ${fileUpdateResult.data.commit.sha.substr(
+                0,
+                7
+              )}, ${url} was **down**:
 
 - HTTP code: ${result.httpCode}
 - Response time: ${responseTime} ms
 `,
-            assignees: config.assignees,
-            labels: ["status", slug],
-          });
-        } else {
+              assignees: config.assignees,
+              labels: ["status", slug],
+            });
+        } else if (issues.data.length) {
           // If the site just came back up
-          const issues = await octokit.issues.list({
+          await octokit.issues.createComment({
             owner,
             repo,
-            labels: `status,${slug}`,
-            state: "open",
-            sort: "created",
-            direction: "desc",
-            per_page: 1,
+            issue_number: issues.data[0].id,
+            body: `${url} is back up in ${fileUpdateResult.data.commit.sha.substr(
+              0,
+              7
+            )}.`,
           });
-          if (issues.data.length) {
-            await octokit.issues.createComment({
-              owner,
-              repo,
-              issue_number: issues.data[0].id,
-              body: `${url} is back up in ${fileUpdateResult.data.commit.sha.substr(
-                0,
-                7
-              )}.`,
-            });
-            await octokit.issues.update({
-              owner,
-              repo,
-              issue_number: issues.data[0].id,
-              state: "closed",
-            });
-          }
+          await octokit.issues.update({
+            owner,
+            repo,
+            issue_number: issues.data[0].id,
+            state: "closed",
+          });
         }
       }
     } catch (error) {
