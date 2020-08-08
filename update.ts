@@ -1,5 +1,6 @@
 import { readFile } from "fs-extra";
 import { safeLoad } from "js-yaml";
+import { Curl, CurlFeature } from "node-libcurl";
 import { join } from "path";
 
 export const update = async () => {
