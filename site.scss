@@ -8,6 +8,12 @@ section {
   margin-top: 2.5rem;
 }
 
+section > div a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 article {
   border: 1px solid #ddd;
   background-color: #fff;

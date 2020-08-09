@@ -28,7 +28,7 @@ const pastIncidents = () => {
       if (container) {
         container.innerHTML = incidents.data
           .map(
-            (issue) => `<article class="down">
+            (issue) => `<a href="${issue.html_url}"><article class="down">
       <h3>${issue.title}</h3>
       <div><time>${new Date(
         issue.created_at
@@ -36,7 +36,7 @@ const pastIncidents = () => {
               new Date(issue.closed_at).getTime() -
                 new Date(issue.created_at).getTime()
             )}</div>
-    </article>`
+    </article></a>`
           )
           .join("");
         if (!incidents.data.length)
@@ -62,10 +62,10 @@ const currentIncidents = () => {
       if (container) {
         container.innerHTML = incidents.data
           .map(
-            (issue) => `<article>
+            (issue) => `<a href="${issue.html_url}"><article>
       <h3>${issue.title}</h3>
       <div><time>${new Date(issue.created_at).toLocaleDateString()}</time></div>
-    </article>`
+    </article></a>`
           )
           .join("");
       }
@@ -74,5 +74,46 @@ const currentIncidents = () => {
     })
     .catch(console.log);
 };
+
+const liveStatus = () => {
+  octokit.repos
+    .getContent({
+      owner,
+      repo,
+      path: "README.md",
+    })
+    .then((content) => {
+      const text = atob(content.data.content)
+        .split("<!--start: status pages-->")[1]
+        .split("<!--end: status pages-->")[0];
+      const container = document.querySelector("#live-status > div");
+      if (container) {
+        container.innerHTML = text
+          .split("\n")
+          .filter((line) => line.startsWith("| http"))
+          .map(
+            (
+              line
+            ) => `<a href="https://github.com/koj-co/status/commits/master/history/${
+              line.split("| ")[3].trim().split("[")[1].split("]")[0]
+            }"><article class="${line
+              .split("| ")[2]
+              .trim()
+              .split(" ")[1]
+              .toLocaleLowerCase()}">
+        <h3>${line.split("| ")[1].trim()}</h3>
+        <div>Average response time: ${
+          line.split("| ")[4].trim().split("ms")[0]
+        }ms</div>
+      </article></a>`
+          )
+          .join("");
+      }
+      if (!content.data.content)
+        container.parentElement.setAttribute("hidden", "hidden");
+    });
+};
+
 pastIncidents();
 currentIncidents();
+liveStatus();
