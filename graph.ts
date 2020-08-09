@@ -5,7 +5,7 @@ import { safeLoad } from "js-yaml";
 import { join } from "path";
 import { CanvasRenderService } from "chartjs-node-canvas";
 
-const canvasRenderService = new CanvasRenderService(400, 400);
+const canvasRenderService = new CanvasRenderService(600, 400);
 
 export const generateGraphs = async () => {
   const config = safeLoad(
@@ -32,7 +32,7 @@ export const generateGraphs = async () => {
       owner,
       repo,
       path: `history/${slug}.yml`,
-      per_page: 100,
+      per_page: 48,
     });
     if (!history.data.length) continue;
     const data: [number, string][] = history.data

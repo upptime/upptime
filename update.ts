@@ -32,6 +32,7 @@ export const update = async () => {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
     console.log("Checking", url);
     let currentStatus = "unknown";
+    let startTime = new Date().toUTCString();
     try {
       currentStatus =
         (await readFile(join(".", "history", `${slug}.yml`), "utf8"))
@@ -39,6 +40,12 @@ export const update = async () => {
           .find((line) => line.toLocaleLowerCase().includes("- status"))
           ?.split(":")[1]
           .trim() || "unknown";
+      startTime =
+        (await readFile(join(".", "history", `${slug}.yml`), "utf8"))
+          .split("\n")
+          .find((line) => line.toLocaleLowerCase().includes("- startTime"))
+          ?.split(":")[1]
+          .trim() || new Date().toUTCString();
     } catch (error) {}
     try {
       const result = await curl(url);
@@ -53,6 +60,7 @@ export const update = async () => {
 - code: ${result.httpCode}
 - responseTime: ${responseTime}
 - lastUpdated: ${new Date().toISOString()}
+- startTime: ${startTime}
 `;
 
         let sha: string | undefined = "";
