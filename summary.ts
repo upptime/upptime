@@ -33,12 +33,21 @@ export const generateSummary = async () => {
     status: string;
     slug: string;
     time: number;
-    uptime: number;
+    uptime: string;
   }> = [];
 
   let allUp = true;
   for await (const url of config.sites) {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
+    let startTime = new Date().toUTCString();
+    try {
+      startTime =
+        (await readFile(join(".", "history", `${slug}.yml`), "utf8"))
+          .split("\n")
+          .find((line) => line.toLocaleLowerCase().includes("- startTime"))
+          ?.split(":")[1]
+          .trim() || new Date().toUTCString();
+    } catch (error) {}
     let secondsDown = 0;
     const history = await octokit.repos.listCommits({
       owner,
@@ -61,7 +70,10 @@ export const generateSummary = async () => {
           1000
       );
     });
-    const uptime = secondsDown;
+    const uptime = (
+      (100 * secondsDown) /
+      ((new Date().getTime() - new Date(startTime).getTime()) / 1000)
+    ).toFixed(2);
     if (!history.data.length) continue;
     const averageTime =
       history.data
