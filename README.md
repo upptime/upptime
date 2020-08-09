@@ -2,7 +2,7 @@
 
 This repository uses GitHub Actions as an uptime monitor to track the status of Koj websites.
 
-Live status: <!--live status--> **🟥 Outage**
+Live status: <!--live status--> **🟩 All systems operational**
 
 ## ⭐ How it works
 
@@ -21,7 +21,6 @@ If you want your own GitHub Actions-powered uptime monitor, [use this template](
 | URL | Status | History | Response Time | Uptime |
 | --- | ------ | ------- | ------------- | ------ |
 | https://koj.co | 🟩 Up | [koj-co.yml](https://github.com/koj-co/status/commits/master/history/koj-co.yml) | <img alt="Response time graph" src="./history/koj-co.png" height="20"> 320ms | 100.00%
-| https://example.koj.co | 🟥 Down | [example-koj-co.yml](https://github.com/koj-co/status/commits/master/history/example-koj-co.yml) | <img alt="Response time graph" src="./history/example-koj-co.png" height="20"> 134ms | 99.95%
 | https://kojcdn.com | 🟩 Up | [kojcdn-com.yml](https://github.com/koj-co/status/commits/master/history/kojcdn-com.yml) | <img alt="Response time graph" src="./history/kojcdn-com.png" height="20"> 506ms | 100.00%
 | https://go.koj.co | 🟩 Up | [go-koj-co.yml](https://github.com/koj-co/status/commits/master/history/go-koj-co.yml) | <img alt="Response time graph" src="./history/go-koj-co.png" height="20"> 232ms | 100.00%
 | https://status.koj.co | 🟩 Up | [status-koj-co.yml](https://github.com/koj-co/status/commits/master/history/status-koj-co.yml) | <img alt="Response time graph" src="./history/status-koj-co.png" height="20"> 221ms | 100.00%
