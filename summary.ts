@@ -71,8 +71,9 @@ export const generateSummary = async () => {
       );
     });
     const uptime = (
-      (100 * secondsDown) /
-      ((new Date().getTime() - new Date(startTime).getTime()) / 1000)
+      100 -
+      secondsDown /
+        ((new Date().getTime() - new Date(startTime).getTime()) / 1000)
     ).toFixed(2);
     if (!history.data.length) continue;
     const averageTime =
@@ -114,7 +115,7 @@ ${pageStatuses
         page.slug
       }.yml) | <img alt="Response time graph" src="./history/${
         page.slug
-      }.png" height="20"> ${page.time}ms | ${page.uptime}`
+      }.png" height="20"> ${page.time}ms | ${page.uptime}%`
   )
   .join("\n")}
 
