@@ -3,6 +3,7 @@ body {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.5;
+  padding-bottom: 2.5rem;
   color: #333;
   background-color: #f0f7f7;
 }
@@ -76,4 +77,8 @@ article.up {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+section + h2 {
+  margin-top: 2rem;
 }
