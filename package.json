@@ -8,6 +8,8 @@
     "update": "ts-node update.ts",
     "update-with-commit": "ts-node update.ts commit",
     "build": "tsc",
+    "dev": "parcel site.html",
+    "export": "parcel build site.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
