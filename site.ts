@@ -114,6 +114,12 @@ const liveStatus = () => {
     });
 };
 
-pastIncidents();
-currentIncidents();
-liveStatus();
+const start = () => {
+  pastIncidents();
+  currentIncidents();
+  liveStatus();
+};
+
+start();
+
+setInterval(start, 60000);
