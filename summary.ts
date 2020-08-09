@@ -87,7 +87,7 @@ export const generateSummary = async () => {
           Number(item.commit.message.split(" in ")[1].split("ms")[0])
         )
         .reduce((p, c) => p + c, 0) / history.data.length;
-    const status = history.data[0].commit.message.split(" ")[0].includes("✅")
+    const status = history.data[0].commit.message.split(" ")[0].includes("🟩")
       ? "up"
       : "down";
     pageStatuses.push({
@@ -126,9 +126,9 @@ ${pageStatuses
     .split("\n")
     .map((line) => {
       if (line.includes("<!--live status-->")) {
-        line = `Live status: <!--live status--> ![](https://via.placeholder.com/10/${
-          allUp ? "2ecc71" : "e74c3c"
-        }/000000?text=+) **${allUp ? "All systems operational" : "Outage"}**`;
+        line = `Live status: <!--live status--> **${
+          allUp ? "🟩 All systems operational" : "🟥 Outage"
+        }**`;
       }
       return line;
     })

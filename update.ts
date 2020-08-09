@@ -78,7 +78,7 @@ export const update = async () => {
             owner,
             repo,
             path: `history/${slug}.yml`,
-            message: `${status === "up" ? "✅" : "❌"} ${url} is ${status} (${
+            message: `${status === "up" ? "🟩" : "🟥"} ${url} is ${status} (${
               result.httpCode
             } in ${responseTime}ms) [skip ci]`,
             content: Buffer.from(content).toString("base64"),
