@@ -97,23 +97,23 @@ const liveStatus = () => {
               (line.includes(" Up ") || line.includes(" Down "))
           )
           .map(
-            (
-              line
-            ) => `<a href="https://github.com/koj-co/status/commits/master/history/${
-              line.split("| ")[3].trim().split("[")[1].split("]")[0]
-            }"><article class="${line
+            (line) => `<article class="${line
               .split("| ")[2]
               .trim()
               .split(" ")[1]
               .toLocaleLowerCase()}">
-      <h3>${line.split("| ")[1].trim()}</h3>
-      <div>Average response time: ${
-        line.split("| ")[4].trim().split(">")[1].split("ms")[0]
-      }ms</div>
       <img class="graph" alt="Response time graph" src="https://raw.githubusercontent.com/koj-co/status/master/history/${
         line.split("| ")[3].trim().split("[")[1].split("]")[0].split(".")[0]
       }.png">
-    </article></a>`
+      <h3>${snarkdown(line.split("| ")[1].trim())}</h3>
+      <div>Uptime: ${line.split("| ")[5].trim()}</div>
+      <div>Response time: ${
+        line.split("| ")[4].trim().split(">")[1].split("ms")[0]
+      }ms</div>
+      <div><a href="https://github.com/koj-co/status/commits/master/history/${
+        line.split("| ")[3].trim().split("[")[1].split("]")[0]
+      }">History</a></div>
+    </article>`
           )
           .join("");
       }

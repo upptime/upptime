@@ -10,19 +10,13 @@ section {
   position: relative;
 }
 
-section > div a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  margin-top: 1rem;
-}
-
 article {
   border: 1px solid #ddd;
   background-color: #fff;
   border-radius: 0.2rem;
   position: relative;
   padding: 1rem;
+  margin-top: 1.5rem;
 }
 h3 {
   font-size: 110%;
@@ -49,13 +43,16 @@ h3 {
 #live-status article {
   width: 355px;
 }
+#live-status article div:last-child {
+  margin-top: 0.5rem;
+}
 #live-status article img.graph {
   position: absolute;
-  right: 1rem;
+  right: 1.5rem;
   top: 50%;
   transform: translateY(-50%);
   bottom: 0;
-  height: 3rem;
+  height: 4rem;
 }
 
 @media (max-width: 800px) {
