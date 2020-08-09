@@ -1,15 +1,16 @@
-<style>
-
-</style>
+<script>
+  import Loading from "../components/Loading.svelte";
+  let loading = true;
+</script>
 
 <svelte:head>
   <title>Koj Status</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<h2>Past Incidents</h2>
 
-<p>
-  <strong>
-    Try editing this file (src/routes/index.svelte) to test live reloading.
-  </strong>
-</p>
+{#if loading}
+  <Loading />
+{/if}
+
+<section class="list">ok</section>
