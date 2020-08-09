@@ -34,6 +34,7 @@ export const generateSummary = async () => {
     slug: string;
     time: number;
     uptime: string;
+    name: string;
   }> = [];
 
   let allUp = true;
@@ -92,6 +93,7 @@ export const generateSummary = async () => {
       ? "up"
       : "down";
     pageStatuses.push({
+      name: site.name,
       url: site.url,
       slug,
       status,
@@ -108,7 +110,9 @@ export const generateSummary = async () => {
 ${pageStatuses
   .map(
     (page) =>
-      `| ${page.url} | ${page.status === "up" ? "🟩 Up" : "🟥 Down"} | [${
+      `| [${page.name}](${page.url}) | ${
+        page.status === "up" ? "🟩 Up" : "🟥 Down"
+      } | [${
         page.slug
       }.yml](https://github.com/${owner}/${repo}/commits/master/history/${
         page.slug
