@@ -49,7 +49,7 @@ code {
 article {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 1rem 1.25rem;
   border-radius: 0.2rem;
 }
 article + article {
@@ -69,4 +69,11 @@ article.down {
 }
 article.up {
   border-left: 0.2rem solid #2ecc71;
+}
+
+.f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }

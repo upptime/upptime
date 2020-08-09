@@ -23,6 +23,13 @@
         labels: "status",
       })
     ).data;
+    incidents = incidents.map((incident, index) => {
+      incident.showHeading =
+        index === 0 ||
+        new Date(incidents[index - 1].created_at).toLocaleDateString() !==
+          new Date(incident.created_at).toLocaleDateString();
+      return incident;
+    });
     loading = false;
   });
 </script>
@@ -34,12 +41,21 @@
     <Loading />
   {:else}
     {#each incidents as incident}
-      <h3>{new Date(incident.created_at).toLocaleDateString()}</h3>
+      {#if incident.showHeading}
+        <h3>{new Date(incident.created_at).toLocaleDateString()}</h3>
+      {/if}
       <article class="down">
-        <h4>{incident.title.replace('🛑', '').replace('⚠️', '').trim()}</h4>
-        <div>
-          Resolved in {((new Date(incident.closed_at).getTime() - new Date(incident.created_at).getTime()) / 60000).toFixed(0)}
-          minutes with {incident.comments} posts
+        <div class="f">
+          <div>
+            <h4>{incident.title.replace('🛑', '').replace('⚠️', '').trim()}</h4>
+            <div>
+              Resolved in {((new Date(incident.closed_at).getTime() - new Date(incident.created_at).getTime()) / 60000).toFixed(0)}
+              minutes with {incident.comments} posts
+            </div>
+          </div>
+          <div class="f r">
+            <a href={`/${incident.number}`}>Incident report &rarr;</a>
+          </div>
         </div>
       </article>
     {/each}
