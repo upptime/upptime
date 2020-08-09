@@ -21,3 +21,10 @@ jobs:
         run: npm run graphs
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+      - name: Commit new data
+        uses: stefanzweifel/git-auto-commit-action@v4.1.1
+        with:
+          commit_message: ":bento: Update graphs [skip ci]"
+          commit_user_name: Koj Bot
+          commit_user_email: bot@koj.co
+          commit_author: Koj Bot <bot@koj.co>
