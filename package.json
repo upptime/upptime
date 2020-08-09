@@ -32,6 +32,7 @@
     "@semantic-release/git": "^9.0.0",
     "@types/fs-extra": "^9.0.1",
     "@types/js-yaml": "^3.12.5",
+    "canvas": "^2.6.1",
     "node-sass": "^4.14.1",
     "parcel": "^1.12.4",
     "semantic-release": "^17.1.1",

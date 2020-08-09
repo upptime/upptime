@@ -3,6 +3,33 @@ import slugify from "@sindresorhus/slugify";
 import { readFile } from "fs-extra";
 import { safeLoad } from "js-yaml";
 import { join } from "path";
+import { CanvasRenderService } from "chartjs-node-canvas";
+
+const width = 400;
+const height = 400;
+const canvasRenderService = new CanvasRenderService(
+  width,
+  height,
+  (ChartJS) => {}
+);
+const generateImage = async () => {
+  const image = await canvasRenderService.renderToBuffer({
+    type: "line",
+    data: {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+        {
+          label: "My First dataset",
+          backgroundColor: "rgb(255, 99, 132)",
+          borderColor: "rgb(255, 99, 132)",
+          data: [0, 10, 5, 2, 20, 30, 45],
+        },
+      ],
+    },
+  });
+  console.log(image);
+};
+generateImage();
 
 export const generateSummary = async () => {
   const config = safeLoad(
