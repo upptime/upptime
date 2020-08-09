@@ -6,6 +6,7 @@
   "scripts": {
     "readme": "ts-node readme.ts",
     "update": "ts-node update.ts",
+    "update-with-commit": "ts-node update.ts commit",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
