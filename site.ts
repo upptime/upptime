@@ -1,4 +1,5 @@
 import { Octokit } from "@octokit/rest";
+import snarkdown from "snarkdown";
 const octokit = new Octokit({
   userAgent: "KojBot",
 });
@@ -90,7 +91,11 @@ const liveStatus = () => {
       if (container) {
         container.innerHTML = text
           .split("\n")
-          .filter((line) => line.startsWith("| http"))
+          .filter(
+            (line) =>
+              line.startsWith("| ") &&
+              (line.includes(" Up ") || line.includes(" Down "))
+          )
           .map(
             (
               line
@@ -101,14 +106,14 @@ const liveStatus = () => {
               .trim()
               .split(" ")[1]
               .toLocaleLowerCase()}">
-        <h3>${line.split("| ")[1].trim()}</h3>
-        <div>Average response time: ${
-          line.split("| ")[4].trim().split(">")[1].split("ms")[0]
-        }ms</div>
-        <img class="graph" alt="Response time graph" src="https://raw.githubusercontent.com/koj-co/status/master/history/${
-          line.split("| ")[3].trim().split("[")[1].split("]")[0].split(".")[0]
-        }.png">
-      </article></a>`
+      <h3>${line.split("| ")[1].trim()}</h3>
+      <div>Average response time: ${
+        line.split("| ")[4].trim().split(">")[1].split("ms")[0]
+      }ms</div>
+      <img class="graph" alt="Response time graph" src="https://raw.githubusercontent.com/koj-co/status/master/history/${
+        line.split("| ")[3].trim().split("[")[1].split("]")[0].split(".")[0]
+      }.png">
+    </article></a>`
           )
           .join("");
       }

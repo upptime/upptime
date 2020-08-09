@@ -49,6 +49,7 @@
     "chartjs-node-canvas": "^3.0.6",
     "fs-extra": "^9.0.1",
     "js-yaml": "^3.14.0",
-    "node-libcurl": "^2.2.0"
+    "node-libcurl": "^2.2.0",
+    "snarkdown": "^1.2.2"
   }
 }
