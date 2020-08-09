@@ -11,7 +11,7 @@ export const generateGraphs = async () => {
   const config = safeLoad(
     await readFile(join(".", ".statusrc.yml"), "utf8")
   ) as {
-    sites: string[];
+    sites: { name: string; url: string }[];
     owner: string;
     repo: string;
     userAgent?: string;
@@ -26,8 +26,8 @@ export const generateGraphs = async () => {
     userAgent: config.userAgent || process.env.USER_AGENT || "KojBot",
   });
 
-  for await (const url of config.sites) {
-    const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
+  for await (const site of config.sites) {
+    const slug = slugify(site.name);
     const history = await octokit.repos.listCommits({
       owner,
       repo,

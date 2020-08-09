@@ -8,7 +8,7 @@ export const generateSummary = async () => {
   const config = safeLoad(
     await readFile(join(".", ".statusrc.yml"), "utf8")
   ) as {
-    sites: string[];
+    sites: { name: string; url: string }[];
     owner: string;
     repo: string;
     userAgent?: string;
@@ -37,8 +37,8 @@ export const generateSummary = async () => {
   }> = [];
 
   let allUp = true;
-  for await (const url of config.sites) {
-    const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
+  for await (const site of config.sites) {
+    const slug = slugify(site.name);
     let startTime = new Date().toISOString();
     try {
       startTime =
@@ -92,7 +92,7 @@ export const generateSummary = async () => {
       ? "up"
       : "down";
     pageStatuses.push({
-      url,
+      url: site.url,
       slug,
       status,
       uptime,

@@ -12,7 +12,7 @@ export const update = async () => {
   const config = safeLoad(
     await readFile(join(".", ".statusrc.yml"), "utf8")
   ) as {
-    sites: string[];
+    sites: { name: string; url: string }[];
     owner: string;
     repo: string;
     userAgent?: string;
@@ -28,9 +28,9 @@ export const update = async () => {
   });
 
   let hasDelta = false;
-  for await (const url of config.sites) {
-    const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
-    console.log("Checking", url);
+  for await (const site of config.sites) {
+    const slug = slugify(site.name);
+    console.log("Checking", site.url);
     let currentStatus = "unknown";
     let startTime = new Date().toISOString();
     try {
@@ -48,14 +48,14 @@ export const update = async () => {
           .trim() || new Date().toISOString();
     } catch (error) {}
     try {
-      const result = await curl(url);
+      const result = await curl(site.url);
       console.log("Result", result);
       const responseTime = (result.totalTime * 1000).toFixed(0);
       const status =
         result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up";
 
       if (shouldCommit || currentStatus !== status) {
-        const content = `- url: ${url}
+        const content = `- url: ${site.url}
 - status: ${status}
 - code: ${result.httpCode}
 - responseTime: ${responseTime}
@@ -78,9 +78,9 @@ export const update = async () => {
             owner,
             repo,
             path: `history/${slug}.yml`,
-            message: `${status === "up" ? "🟩" : "🟥"} ${url} is ${status} (${
-              result.httpCode
-            } in ${responseTime}ms) [skip ci]`,
+            message: `${status === "up" ? "🟩" : "🟥"} ${
+              site.name
+            } is ${status} (${result.httpCode} in ${responseTime}ms) [skip ci]`,
             content: Buffer.from(content).toString("base64"),
             sha,
           }
@@ -108,11 +108,10 @@ export const update = async () => {
               await octokit.issues.create({
                 owner,
                 repo,
-                title: `⚠️ ${url} is down`,
-                body: `In ${fileUpdateResult.data.commit.sha.substr(
-                  0,
-                  7
-                )}, ${url} was **down**:
+                title: `⚠️ ${site.name} is down`,
+                body: `In ${fileUpdateResult.data.commit.sha.substr(0, 7)}, ${
+                  site.name
+                } (${site.url}) was **down**:
 
 - HTTP code: ${result.httpCode}
 - Response time: ${responseTime} ms
@@ -130,7 +129,9 @@ export const update = async () => {
               owner,
               repo,
               issue_number: issues.data[0].number,
-              body: `${url} is back up in ${fileUpdateResult.data.commit.sha.substr(
+              body: `${
+                site.name
+              } is back up in ${fileUpdateResult.data.commit.sha.substr(
                 0,
                 7
               )}.`,
