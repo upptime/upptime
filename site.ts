@@ -28,13 +28,14 @@ const pastIncidents = () => {
       if (container) {
         container.innerHTML = incidents.data
           .map(
-            (issue) => `<article>
+            (issue) => `<article class="down">
       <h3>${issue.title}</h3>
-      <div><time>${new Date(issue.created_at).toLocaleDateString()}</time></div>
-      <div>Resolved in ${millisToMinutesAndSeconds(
-        new Date(issue.closed_at).getTime() -
-          new Date(issue.created_at).getTime()
-      )}</div>
+      <div><time>${new Date(
+        issue.created_at
+      ).toLocaleDateString()}</time>, resolved in ${millisToMinutesAndSeconds(
+              new Date(issue.closed_at).getTime() -
+                new Date(issue.created_at).getTime()
+            )}</div>
     </article>`
           )
           .join("");
