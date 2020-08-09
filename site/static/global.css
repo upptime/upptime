@@ -45,3 +45,28 @@ code {
   max-width: 800px;
   margin: 0 auto;
 }
+
+article {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+article + article {
+  margin-top: 0.5rem;
+}
+article + h3 {
+  margin-top: 1rem;
+}
+h3 {
+  opacity: 0.75;
+}
+h4 {
+  font-weight: bold;
+}
+article.down {
+  border-left: 0.2rem solid #e74c3c;
+}
+article.up {
+  border-left: 0.2rem solid #2ecc71;
+}

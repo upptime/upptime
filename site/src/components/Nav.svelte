@@ -42,6 +42,7 @@
     height: 3.33rem;
     margin-top: 0.75rem;
     margin-right: 2rem;
+    border-radius: 0.2rem;
   }
 </style>
 
