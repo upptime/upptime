@@ -1,0 +1,23 @@
+name: Graphs CI
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  repository_dispatch:
+    types: [graphs]
+jobs:
+  release:
+    name: Generate graphs
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Install dependencies
+        run: npm ci
+      - name: Run script
+        run: npm run graphs
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
