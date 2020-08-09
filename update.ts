@@ -36,7 +36,7 @@ export const update = async () => {
       currentStatus =
         (await readFile(join(".", "history", `${slug}.yml`), "utf8"))
           .split("\n")
-          .find((line) => line.toLocaleLowerCase().includes("status"))
+          .find((line) => line.toLocaleLowerCase().includes("- status"))
           ?.split(":")[1]
           .trim() || "unknown";
     } catch (error) {}
