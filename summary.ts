@@ -33,17 +33,35 @@ export const generateSummary = async () => {
     status: string;
     slug: string;
     time: number;
+    uptime: number;
   }> = [];
 
   let allUp = true;
   for await (const url of config.sites) {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
+    let secondsDown = 0;
     const history = await octokit.repos.listCommits({
       owner,
       repo,
       path: `history/${slug}.yml`,
       per_page: 100,
     });
+    const issues = await octokit.issues.listForRepo({
+      owner,
+      repo,
+      labels: slug,
+      filter: "all",
+      state: "closed",
+      per_page: 100,
+    });
+    issues.data.forEach((issue) => {
+      secondsDown += Math.floor(
+        (new Date(issue.closed_at).getTime() -
+          new Date(issue.created_at).getTime()) /
+          1000
+      );
+    });
+    const uptime = secondsDown;
     if (!history.data.length) continue;
     const averageTime =
       history.data
@@ -63,6 +81,7 @@ export const generateSummary = async () => {
       url,
       slug,
       status,
+      uptime,
       time: Math.floor(averageTime),
     });
     if (status === "down") allUp = false;
@@ -70,8 +89,8 @@ export const generateSummary = async () => {
 
   readmeContent = `${startText}<!--start: status pages-->
 
-| URL | Status | History | Response Time |
-| --- | ------ | ------- | ------------- |
+| URL | Status | History | Response Time | Uptime |
+| --- | ------ | ------- | ------------- | ------ |
 ${pageStatuses
   .map(
     (page) =>
@@ -83,7 +102,7 @@ ${pageStatuses
         page.slug
       }.yml) | <img alt="Response time graph" src="./history/${
         page.slug
-      }.png" height="20"> ${page.time}ms |`
+      }.png" height="20"> ${page.time}ms | ${page.uptime}`
   )
   .join("\n")}
 
