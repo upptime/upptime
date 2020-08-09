@@ -69,7 +69,7 @@ export const generateSummary = async () => {
       time: Math.floor(averageTime),
     });
     if (status === "down") allUp = false;
-    const data = history.data
+    const data: [number, string][] = history.data
       .filter(
         (item) =>
           item.commit.message.includes(" in ") &&
@@ -77,7 +77,7 @@ export const generateSummary = async () => {
       )
       .map((item) => [
         Number(item.commit.message.split(" in ")[1].split("ms")[0]),
-        new Date(item.commit.author.date),
+        String(item.commit.author.date),
       ]);
     const image = await canvasRenderService.renderToBuffer({
       type: "line",
@@ -93,7 +93,6 @@ export const generateSummary = async () => {
       },
       options: {
         legend: { display: false },
-        scaleLabel: { display: false },
         scales: {
           xAxes: [
             {
