@@ -28,7 +28,7 @@
   }
 
   [aria-current] {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #3498db;
   }
 
   a {
