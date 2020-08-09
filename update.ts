@@ -141,6 +141,8 @@ export const update = async () => {
         } else {
           console.log("Status is the same", currentStatus, status);
         }
+      } else {
+        console.log("Skipping commit, ", "status is", status);
       }
     } catch (error) {
       console.log("ERROR", error);
