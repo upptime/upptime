@@ -1,4 +1,4 @@
-name: Node CI
+name: Static Site CI
 on:
   push:
     branches:
@@ -24,3 +24,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
+      - name: Build site
+        run: npm run export
+        env:
+          NODE_ENV: "production"
+      - uses: maxheld83/ghpages@v0.2.1
+        name: GitHub Pages Deploy
+        env:
+          BUILD_DIR: "dist/"
+          GH_PAT: ${{ secrets.GH_PAT }}

@@ -1,0 +1,39 @@
+body {
+  max-width: 800px;
+  margin: 2.5rem auto;
+  background-color: #f0f7f7;
+}
+
+section {
+  margin-top: 2.5rem;
+}
+
+section > div a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+article {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+h3 {
+  font-size: 110%;
+}
+
+.down {
+  border-left: 0.2rem solid #e74c3c;
+}
+.up {
+  border-left: 0.2rem solid #2ecc71;
+}
+
+#current-incidents article {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
