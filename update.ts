@@ -32,7 +32,7 @@ export const update = async () => {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
     console.log("Checking", url);
     let currentStatus = "unknown";
-    let startTime = new Date().toUTCString();
+    let startTime = new Date().toISOString();
     try {
       currentStatus =
         (await readFile(join(".", "history", `${slug}.yml`), "utf8"))
@@ -45,7 +45,7 @@ export const update = async () => {
           .split("\n")
           .find((line) => line.toLocaleLowerCase().includes("- starttime"))
           ?.split(":")[1]
-          .trim() || new Date().toUTCString();
+          .trim() || new Date().toISOString();
     } catch (error) {}
     try {
       const result = await curl(url);

@@ -39,14 +39,14 @@ export const generateSummary = async () => {
   let allUp = true;
   for await (const url of config.sites) {
     const slug = slugify(url.replace(/(^\w+:|^)\/\//, ""));
-    let startTime = new Date().toUTCString();
+    let startTime = new Date().toISOString();
     try {
       startTime =
         (await readFile(join(".", "history", `${slug}.yml`), "utf8"))
           .split("\n")
           .find((line) => line.toLocaleLowerCase().includes("- starttime"))
           ?.split(":")[1]
-          .trim() || new Date().toUTCString();
+          .trim() || new Date().toISOString();
     } catch (error) {}
     let secondsDown = 0;
     const history = await octokit.repos.listCommits({
