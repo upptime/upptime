@@ -20,13 +20,13 @@ If you want your own GitHub Actions-powered uptime monitor, [use this template](
 
 | URL | Status | History | Response Time |
 | --- | ------ | ------- | ------------- |
-| https://koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [koj-co.yml](https://github.com/koj-co/status/commits/master/history/koj-co.yml) | 287ms |
+| https://koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [koj-co.yml](https://github.com/koj-co/status/commits/master/history/koj-co.yml) | 284ms |
 | https://example.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [example-koj-co.yml](https://github.com/koj-co/status/commits/master/history/example-koj-co.yml) | 122ms |
-| https://kojcdn.com | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [kojcdn-com.yml](https://github.com/koj-co/status/commits/master/history/kojcdn-com.yml) | 534ms |
-| https://go.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [go-koj-co.yml](https://github.com/koj-co/status/commits/master/history/go-koj-co.yml) | 146ms |
-| https://status.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [status-koj-co.yml](https://github.com/koj-co/status/commits/master/history/status-koj-co.yml) | 257ms |
-| https://analytics.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [analytics-koj-co.yml](https://github.com/koj-co/status/commits/master/history/analytics-koj-co.yml) | 269ms |
-| https://api.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [api-koj-co.yml](https://github.com/koj-co/status/commits/master/history/api-koj-co.yml) | 280ms |
+| https://kojcdn.com | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [kojcdn-com.yml](https://github.com/koj-co/status/commits/master/history/kojcdn-com.yml) | 531ms |
+| https://go.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [go-koj-co.yml](https://github.com/koj-co/status/commits/master/history/go-koj-co.yml) | 154ms |
+| https://status.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [status-koj-co.yml](https://github.com/koj-co/status/commits/master/history/status-koj-co.yml) | 258ms |
+| https://analytics.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [analytics-koj-co.yml](https://github.com/koj-co/status/commits/master/history/analytics-koj-co.yml) | 272ms |
+| https://api.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [api-koj-co.yml](https://github.com/koj-co/status/commits/master/history/api-koj-co.yml) | 283ms |
 
 <!--end: status pages-->
 
