@@ -6,6 +6,8 @@ import { Curl, CurlFeature } from "node-libcurl";
 import { join } from "path";
 import { generateSummary } from "./summary";
 
+const shouldCommit = process.argv[2] === "commit";
+
 export const update = async () => {
   const config = safeLoad(
     await readFile(join(".", ".statusrc.yml"), "utf8")
@@ -44,96 +46,103 @@ export const update = async () => {
       const responseTime = (result.totalTime * 1000).toFixed(0);
       const status =
         result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up";
-      const content = `- url: ${url}
+
+      if (shouldCommit || currentStatus !== status) {
+        const content = `- url: ${url}
 - status: ${status}
 - code: ${result.httpCode}
 - responseTime: ${responseTime}
 - lastUpdated: ${new Date().toISOString()}
 `;
 
-      let sha: string | undefined = "";
-      try {
-        sha = (
-          await octokit.repos.getContent({
+        let sha: string | undefined = "";
+        try {
+          sha = (
+            await octokit.repos.getContent({
+              owner,
+              repo,
+              path: `history/${slug}.yml`,
+            })
+          ).data.sha;
+        } catch (error) {}
+        const fileUpdateResult = await octokit.repos.createOrUpdateFileContents(
+          {
             owner,
             repo,
             path: `history/${slug}.yml`,
-          })
-        ).data.sha;
-      } catch (error) {}
-      const fileUpdateResult = await octokit.repos.createOrUpdateFileContents({
-        owner,
-        repo,
-        path: `history/${slug}.yml`,
-        message: `${status === "up" ? "✅" : "❌"} ${url} is ${status} (${
-          result.httpCode
-        } in ${responseTime}ms) [skip ci]`,
-        content: Buffer.from(content).toString("base64"),
-        sha,
-      });
+            message: `${status === "up" ? "✅" : "❌"} ${url} is ${status} (${
+              result.httpCode
+            } in ${responseTime}ms) [skip ci]`,
+            content: Buffer.from(content).toString("base64"),
+            sha,
+          }
+        );
 
-      if (currentStatus !== status) {
-        console.log("Status is different", currentStatus, "to", status);
-        hasDelta = true;
+        if (currentStatus !== status) {
+          console.log("Status is different", currentStatus, "to", status);
+          hasDelta = true;
 
-        const issues = await octokit.issues.list({
-          owner,
-          repo,
-          labels: slug,
-          filter: "all",
-          state: "open",
-          sort: "created",
-          direction: "desc",
-          per_page: 1,
-        });
-        console.log(`Found ${issues.data.length} issues`);
+          const issues = await octokit.issues.list({
+            owner,
+            repo,
+            labels: slug,
+            filter: "all",
+            state: "open",
+            sort: "created",
+            direction: "desc",
+            per_page: 1,
+          });
+          console.log(`Found ${issues.data.length} issues`);
 
-        // If the site was just recorded as down, open an issue
-        if (status === "down") {
-          if (!issues.data.length) {
-            await octokit.issues.create({
-              owner,
-              repo,
-              title: `⚠️ ${url} is down`,
-              body: `In ${fileUpdateResult.data.commit.sha.substr(
-                0,
-                7
-              )}, ${url} was **down**:
+          // If the site was just recorded as down, open an issue
+          if (status === "down") {
+            if (!issues.data.length) {
+              await octokit.issues.create({
+                owner,
+                repo,
+                title: `⚠️ ${url} is down`,
+                body: `In ${fileUpdateResult.data.commit.sha.substr(
+                  0,
+                  7
+                )}, ${url} was **down**:
 
 - HTTP code: ${result.httpCode}
 - Response time: ${responseTime} ms
 `,
-              assignees: config.assignees,
-              labels: ["status", slug],
+                assignees: config.assignees,
+                labels: ["status", slug],
+              });
+              console.log("Opened a new issue");
+            } else {
+              console.log("An issue is already open for this");
+            }
+          } else if (issues.data.length) {
+            // If the site just came back up
+            await octokit.issues.createComment({
+              owner,
+              repo,
+              issue_number: issues.data[0].number,
+              body: `${url} is back up in ${fileUpdateResult.data.commit.sha.substr(
+                0,
+                7
+              )}.`,
             });
-            console.log("Opened a new issue");
+            console.log("Created comment in issue");
+            await octokit.issues.update({
+              owner,
+              repo,
+              issue_number: issues.data[0].number,
+              state: "closed",
+            });
+            console.log("Closed issue");
           } else {
-            console.log("An issue is already open for this");
+            console.log("Could not find a relevant issue", issues.data);
           }
-        } else if (issues.data.length) {
-          // If the site just came back up
-          await octokit.issues.createComment({
-            owner,
-            repo,
-            issue_number: issues.data[0].number,
-            body: `${url} is back up in ${fileUpdateResult.data.commit.sha.substr(
-              0,
-              7
-            )}.`,
-          });
-          console.log("Created comment in issue");
-          await octokit.issues.update({
-            owner,
-            repo,
-            issue_number: issues.data[0].number,
-            state: "closed",
-          });
-          console.log("Closed issue");
         } else {
-          console.log("Could not find a relevant issue", issues.data);
+          console.log("Status is the same", currentStatus, status);
         }
       } else {
-        console.log("Status is the same", currentStatus, status);
+        console.log("Skipping commit, ", "status is", status);
       }
     } catch (error) {
       console.log("ERROR", error);
