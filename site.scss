@@ -6,6 +6,7 @@ body {
 
 section {
   margin-top: 2.5rem;
+  position: relative;
 }
 
 section > div a {
@@ -19,6 +20,7 @@ article {
   background-color: #fff;
   margin-top: 1rem;
   border-radius: 0.2rem;
+  position: relative;
   padding: 1rem;
 }
 h3 {
@@ -36,4 +38,13 @@ h3 {
   color: #721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
+}
+
+#live-status article img.graph {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 0;
+  height: 3rem;
 }
