@@ -44,7 +44,7 @@ export const update = async () => {
         (await readFile(join(".", "history", `${slug}.yml`), "utf8"))
           .split("\n")
           .find((line) => line.toLocaleLowerCase().includes("- starttime"))
-          ?.split(":")[1]
+          ?.split("startTime:")[1]
           .trim() || new Date().toISOString();
     } catch (error) {}
     try {
