@@ -1,11 +1,17 @@
 owner: koj-co
 repo: status
 sites:
-  - https://koj.co
-  - https://kojcdn.com
-  - https://go.koj.co
-  - https://status.koj.co
-  - https://analytics.koj.co
-  - https://api.koj.co
+  - name: Koj.co
+    url: https://koj.co
+  - name: Koj CDN
+    url: https://kojcdn.com
+  - name: URL Shortener
+    url: https://go.koj.co
+  - name: Koj Status
+    url: https://status.koj.co
+  - name: Koj Analytics
+    url: https://analytics.koj.co
+  - name: Koj API
+    url: https://api.koj.co
 assignees:
   - AnandChowdhary
