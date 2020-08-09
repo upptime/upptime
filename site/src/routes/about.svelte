@@ -4,4 +4,10 @@
 
 <h1>About this site</h1>
 
-<p>This is the 'about' page. There's not much here.</p>
+<p>
+  This site is built with
+  <a href="/">Svelte</a>
+  using
+  <a href="/">Sapper</a>
+  , and uses the official GitHub API to fetch data from the status repository.
+</p>
