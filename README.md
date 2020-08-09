@@ -20,12 +20,12 @@ If you want your own GitHub Actions-powered uptime monitor, [use this template](
 
 | URL | Status | History | Response Time | Uptime |
 | --- | ------ | ------- | ------------- | ------ |
-| [Koj.co](https://koj.co) | 🟩 Up | [koj-co.yml](https://github.com/koj-co/status/commits/master/history/koj-co.yml) | <img alt="Response time graph" src="./history/koj-co.png" height="20"> 325ms | 100.00%
-| [Koj CDN](https://kojcdn.com) | 🟩 Up | [koj-cdn.yml](https://github.com/koj-co/status/commits/master/history/koj-cdn.yml) | <img alt="Response time graph" src="./history/koj-cdn.png" height="20"> 527ms | 100.00%
-| [URL Shortener](https://go.koj.co) | 🟩 Up | [url-shortener.yml](https://github.com/koj-co/status/commits/master/history/url-shortener.yml) | <img alt="Response time graph" src="./history/url-shortener.png" height="20"> 130ms | 100.00%
-| [Koj Status](https://status.koj.co) | 🟩 Up | [koj-status.yml](https://github.com/koj-co/status/commits/master/history/koj-status.yml) | <img alt="Response time graph" src="./history/koj-status.png" height="20"> 121ms | 100.00%
-| [Koj Analytics](https://analytics.koj.co) | 🟩 Up | [koj-analytics.yml](https://github.com/koj-co/status/commits/master/history/koj-analytics.yml) | <img alt="Response time graph" src="./history/koj-analytics.png" height="20"> 282ms | 100.00%
-| [Koj API](https://api.koj.co) | 🟩 Up | [koj-api.yml](https://github.com/koj-co/status/commits/master/history/koj-api.yml) | <img alt="Response time graph" src="./history/koj-api.png" height="20"> 275ms | 100.00%
+| [Koj.co](https://koj.co) | 🟩 Up | [koj-co.yml](https://github.com/koj-co/status/commits/master/history/koj-co.yml) | <img alt="Response time graph" src="./history/koj-co.png" height="20"> 328ms | 100.00%
+| [Koj CDN](https://kojcdn.com) | 🟩 Up | [koj-cdn.yml](https://github.com/koj-co/status/commits/master/history/koj-cdn.yml) | <img alt="Response time graph" src="./history/koj-cdn.png" height="20"> 533ms | 100.00%
+| [URL Shortener](https://go.koj.co) | 🟩 Up | [url-shortener.yml](https://github.com/koj-co/status/commits/master/history/url-shortener.yml) | <img alt="Response time graph" src="./history/url-shortener.png" height="20"> 131ms | 100.00%
+| [Koj Status](https://status.koj.co) | 🟩 Up | [koj-status.yml](https://github.com/koj-co/status/commits/master/history/koj-status.yml) | <img alt="Response time graph" src="./history/koj-status.png" height="20"> 126ms | 100.00%
+| [Koj Analytics](https://analytics.koj.co) | 🟩 Up | [koj-analytics.yml](https://github.com/koj-co/status/commits/master/history/koj-analytics.yml) | <img alt="Response time graph" src="./history/koj-analytics.png" height="20"> 283ms | 100.00%
+| [Koj API](https://api.koj.co) | 🟩 Up | [koj-api.yml](https://github.com/koj-co/status/commits/master/history/koj-api.yml) | <img alt="Response time graph" src="./history/koj-api.png" height="20"> 276ms | 100.00%
 
 <!--end: status pages-->
 
