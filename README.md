@@ -20,13 +20,13 @@ If you want your own GitHub Actions-powered uptime monitor, [use this template](
 
 | URL | Status | History | Response Time |
 | --- | ------ | ------- | ------------- |
-| https://koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [koj-co.yml](https://github.com/koj-co/status/commits/master/history/koj-co.yml) | <img alt="Response time graph" src="./history/koj-co.png" height="20"> 304ms |
-| https://example.koj.co | ![](https://via.placeholder.com/10/e74c3c/000000?text=+) DOWN | [example-koj-co.yml](https://github.com/koj-co/status/commits/master/history/example-koj-co.yml) | <img alt="Response time graph" src="./history/example-koj-co.png" height="20"> 128ms |
-| https://kojcdn.com | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [kojcdn-com.yml](https://github.com/koj-co/status/commits/master/history/kojcdn-com.yml) | <img alt="Response time graph" src="./history/kojcdn-com.png" height="20"> 528ms |
-| https://go.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [go-koj-co.yml](https://github.com/koj-co/status/commits/master/history/go-koj-co.yml) | <img alt="Response time graph" src="./history/go-koj-co.png" height="20"> 255ms |
-| https://status.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [status-koj-co.yml](https://github.com/koj-co/status/commits/master/history/status-koj-co.yml) | <img alt="Response time graph" src="./history/status-koj-co.png" height="20"> 244ms |
-| https://analytics.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [analytics-koj-co.yml](https://github.com/koj-co/status/commits/master/history/analytics-koj-co.yml) | <img alt="Response time graph" src="./history/analytics-koj-co.png" height="20"> 272ms |
-| https://api.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [api-koj-co.yml](https://github.com/koj-co/status/commits/master/history/api-koj-co.yml) | <img alt="Response time graph" src="./history/api-koj-co.png" height="20"> 274ms |
+| https://koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [koj-co.yml](https://github.com/koj-co/status/commits/master/history/koj-co.yml) | <img alt="Response time graph" src="./history/koj-co.png" height="20"> 334ms |
+| https://example.koj.co | ![](https://via.placeholder.com/10/e74c3c/000000?text=+) DOWN | [example-koj-co.yml](https://github.com/koj-co/status/commits/master/history/example-koj-co.yml) | <img alt="Response time graph" src="./history/example-koj-co.png" height="20"> 129ms |
+| https://kojcdn.com | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [kojcdn-com.yml](https://github.com/koj-co/status/commits/master/history/kojcdn-com.yml) | <img alt="Response time graph" src="./history/kojcdn-com.png" height="20"> 527ms |
+| https://go.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [go-koj-co.yml](https://github.com/koj-co/status/commits/master/history/go-koj-co.yml) | <img alt="Response time graph" src="./history/go-koj-co.png" height="20"> 254ms |
+| https://status.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [status-koj-co.yml](https://github.com/koj-co/status/commits/master/history/status-koj-co.yml) | <img alt="Response time graph" src="./history/status-koj-co.png" height="20"> 242ms |
+| https://analytics.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [analytics-koj-co.yml](https://github.com/koj-co/status/commits/master/history/analytics-koj-co.yml) | <img alt="Response time graph" src="./history/analytics-koj-co.png" height="20"> 273ms |
+| https://api.koj.co | ![](https://via.placeholder.com/10/2ecc71/000000?text=+) UP | [api-koj-co.yml](https://github.com/koj-co/status/commits/master/history/api-koj-co.yml) | <img alt="Response time graph" src="./history/api-koj-co.png" height="20"> 278ms |
 
 <!--end: status pages-->
 
