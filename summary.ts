@@ -81,7 +81,8 @@ export const generateSummary = async () => {
         .filter(
           (item) =>
             item.commit.message.includes(" in ") &&
-            Number(item.commit.message.split(" in ")[1].split("ms")[0]) !== 0
+            Number(item.commit.message.split(" in ")[1].split("ms")[0]) !== 0 &&
+            !isNaN(Number(item.commit.message.split(" in ")[1].split("ms")[0]))
         )
         .map((item) =>
           Number(item.commit.message.split(" in ")[1].split("ms")[0])
@@ -107,9 +108,7 @@ export const generateSummary = async () => {
 ${pageStatuses
   .map(
     (page) =>
-      `| ${page.url} | ![](https://via.placeholder.com/10/${
-        page.status === "up" ? "2ecc71" : "e74c3c"
-      }/000000?text=+) ${page.status.toLocaleUpperCase()} | [${
+      `| ${page.url} | ${page.status === "up" ? "🟩 Up" : "🟥 Down"} | [${
         page.slug
       }.yml](https://github.com/${owner}/${repo}/commits/master/history/${
         page.slug
