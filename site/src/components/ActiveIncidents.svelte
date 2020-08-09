@@ -38,14 +38,22 @@
   article {
     background-color: #ffdce3;
   }
+  article.good {
+    background-color: #dcffeb;
+    color: #003300;
+  }
 </style>
+
+{#if !incidents.length && !loading}
+  <article class="good">✅ &nbsp; All systems are operational</article>
+{/if}
 
 <section>
   {#if loading}
     <Loading />
   {:else if incidents.length}
-    <h2>Active Incidents</h2>
     {#each incidents as incident}
+      <h2>Active Incidents</h2>
       <article class="down">
         <div class="f">
           <div>
