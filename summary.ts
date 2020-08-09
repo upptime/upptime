@@ -130,7 +130,9 @@ ${pageStatuses
         page.slug
       }.yml](https://github.com/${owner}/${repo}/commits/master/history/${
         page.slug
-      }.yml) | ${page.time}ms |`
+      }.yml) | <img alt="Response time graph" src="./history/${
+        page.slug
+      }.png" height="20"> ${page.time}ms |`
   )
   .join("\n")}
 
