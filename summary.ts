@@ -1,35 +1,11 @@
 import { Octokit } from "@octokit/rest";
 import slugify from "@sindresorhus/slugify";
-import { readFile } from "fs-extra";
+import { readFile, writeFile } from "fs-extra";
 import { safeLoad } from "js-yaml";
 import { join } from "path";
 import { CanvasRenderService } from "chartjs-node-canvas";
 
-const width = 400;
-const height = 400;
-const canvasRenderService = new CanvasRenderService(
-  width,
-  height,
-  (ChartJS) => {}
-);
-const generateImage = async () => {
-  const image = await canvasRenderService.renderToBuffer({
-    type: "line",
-    data: {
-      labels: ["January", "February", "March", "April", "May", "June", "July"],
-      datasets: [
-        {
-          label: "My First dataset",
-          backgroundColor: "rgb(255, 99, 132)",
-          borderColor: "rgb(255, 99, 132)",
-          data: [0, 10, 5, 2, 20, 30, 45],
-        },
-      ],
-    },
-  });
-  console.log(image);
-};
-generateImage();
+const canvasRenderService = new CanvasRenderService(400, 400);
 
 export const generateSummary = async () => {
   const config = safeLoad(
@@ -93,6 +69,52 @@ export const generateSummary = async () => {
       time: Math.floor(averageTime),
     });
     if (status === "down") allUp = false;
+    const data = history.data
+      .filter(
+        (item) =>
+          item.commit.message.includes(" in ") &&
+          Number(item.commit.message.split(" in ")[1].split("ms")[0]) !== 0
+      )
+      .map((item) => [
+        Number(item.commit.message.split(" in ")[1].split("ms")[0]),
+        new Date(item.commit.author.date),
+      ]);
+    const image = await canvasRenderService.renderToBuffer({
+      type: "line",
+      data: {
+        labels: data.map((item) => item[1]),
+        datasets: [
+          {
+            backgroundColor: "#89e0cf",
+            borderColor: "#1abc9c",
+            data: data.map((item) => item[0]),
+          },
+        ],
+      },
+      options: {
+        legend: { display: false },
+        scaleLabel: { display: false },
+        scales: {
+          xAxes: [
+            {
+              display: false,
+              gridLines: {
+                display: false,
+              },
+            },
+          ],
+          yAxes: [
+            {
+              display: false,
+              gridLines: {
+                display: false,
+              },
+            },
+          ],
+        },
+      },
+    });
+    await writeFile(join(".", "history", `${slug}.png`), image);
   }
 
   readmeContent = `${startText}<!--start: status pages-->
