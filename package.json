@@ -9,7 +9,7 @@
     "update-with-commit": "ts-node update.ts commit",
     "build": "tsc",
     "dev": "parcel site.html",
-    "export": "parcel build site.html",
+    "export": "parcel build site.html && mv dist/site.html dist/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
