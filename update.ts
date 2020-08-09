@@ -108,7 +108,7 @@ export const update = async () => {
               await octokit.issues.create({
                 owner,
                 repo,
-                title: `⚠️ ${site.name} is down`,
+                title: `🛑 ${site.name} is down`,
                 body: `In ${fileUpdateResult.data.commit.sha.substr(0, 7)}, ${
                   site.name
                 } (${site.url}) was **down**:
