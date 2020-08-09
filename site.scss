@@ -1,6 +1,7 @@
 body {
   max-width: 800px;
   margin: 2.5rem auto;
+  padding: 0 2rem;
   background-color: #f0f7f7;
 }
 
@@ -13,12 +14,12 @@ section > div a {
   display: block;
   text-decoration: none;
   color: inherit;
+  margin-top: 1rem;
 }
 
 article {
   border: 1px solid #ddd;
   background-color: #fff;
-  margin-top: 1rem;
   border-radius: 0.2rem;
   position: relative;
   padding: 1rem;
@@ -40,6 +41,14 @@ h3 {
   border-color: #f5c6cb;
 }
 
+#live-status > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#live-status article {
+  width: 355px;
+}
 #live-status article img.graph {
   position: absolute;
   right: 1rem;
@@ -47,4 +56,13 @@ h3 {
   transform: translateY(-50%);
   bottom: 0;
   height: 3rem;
+}
+
+@media (max-width: 800px) {
+  #live-status > div {
+    display: block;
+  }
+  #live-status article {
+    width: 100%;
+  }
 }
