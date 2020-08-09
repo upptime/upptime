@@ -30,6 +30,7 @@
   "homepage": "https://github.com/koj-co/status#readme",
   "devDependencies": {
     "@semantic-release/git": "^9.0.0",
+    "@types/chart.js": "^2.9.23",
     "@types/fs-extra": "^9.0.1",
     "@types/js-yaml": "^3.12.5",
     "canvas": "^2.6.1",
