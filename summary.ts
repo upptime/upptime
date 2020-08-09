@@ -1,11 +1,8 @@
 import { Octokit } from "@octokit/rest";
 import slugify from "@sindresorhus/slugify";
-import { readFile, writeFile } from "fs-extra";
+import { readFile } from "fs-extra";
 import { safeLoad } from "js-yaml";
 import { join } from "path";
-import { CanvasRenderService } from "chartjs-node-canvas";
-
-const canvasRenderService = new CanvasRenderService(400, 400);
 
 export const generateSummary = async () => {
   const config = safeLoad(

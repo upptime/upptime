@@ -7,6 +7,7 @@
     "readme": "ts-node readme.ts",
     "update": "ts-node update.ts",
     "update-with-commit": "ts-node update.ts commit",
+    "graphs": "ts-node graph.ts",
     "build": "tsc",
     "dev": "parcel site.html",
     "export": "parcel build site.html && mv dist/site.html dist/index.html && echo status.koj.co > dist/CNAME",
