@@ -1,17 +1,20 @@
-import fs from "fs";
+import { readFile, writeFile } from "fs-extra";
+import { safeLoad } from "js-yaml";
 import { join } from "path";
 
-export const postProcess = () => {
-  const configFile = fs.readFileSync(join(".", ".statusrc.yml")).toString();
-  const cnameLine = configFile
-    .split("\n")
-    .find((line) => line.includes("cname:"));
-  if (cnameLine) {
-    fs.writeFileSync(
-      join(".", "site", "__export__", "CNAME"),
-      cnameLine.split("cname:")[1].trim()
+export const preProcess = async () => {
+  const config = safeLoad(
+    await readFile(join("..", ".statusrc.yml"), "utf8")
+  ) as {
+    "status-website"?: {
+      cname?: string;
+    };
+  };
+  if (config["status-website"]?.cname)
+    await writeFile(
+      join(".", "__sapper__", "export", "CNAME"),
+      config["status-website"]?.cname
     );
-  }
 };
 
-postProcess();
+preProcess();
