@@ -16,7 +16,7 @@ assignees:
   - AnandChowdhary
 status-website:
   cname: upptime.js.org
-  logoUrl: https://avatars3.githubusercontent.com/u/65495851?s=88&v=4
-  name: Koj Status
+  logoUrl: https://raw.githubusercontent.com/koj-co/upptime/79d9d1c22ecf706acc51f17798d7c7dbc710ab40/assets/icon.svg
+  name: Upptime
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [Github repository](https://github.com/koj-co/upptime). Literally, no server required, it's just GitHub Actions, Issues, and Pages.
+  introMessage: This is a sample status page which uses **real-time** data from our [Github repository](https://github.com/koj-co/upptime). No server required — just GitHub Actions, Issues, and Pages.
