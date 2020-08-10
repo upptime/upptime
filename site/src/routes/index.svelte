@@ -4,6 +4,11 @@
   import Incidents from "../components/Incidents.svelte";
   import config from "../data/config.json";
   import snarkdown from "snarkdown";
+
+  let title = "Status";
+  try {
+    title = config["status-website"].name;
+  } catch (error) {}
 </script>
 
 <style>
@@ -16,7 +21,7 @@
 </style>
 
 <svelte:head>
-  <title>Koj Status</title>
+  <title>{title}</title>
 </svelte:head>
 
 <header>

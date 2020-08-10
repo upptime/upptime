@@ -105,8 +105,8 @@
       <dl>
         <dt>Opened at</dt>
         <dd>{new Date(incident.created_at).toLocaleString()}</dd>
-        <dt>Closed at</dt>
         {#if incident.closed_at}
+          <dt>Closed at</dt>
           <dd>{new Date(incident.closed_at).toLocaleString()}</dd>
         {/if}
       </dl>
