@@ -2,31 +2,154 @@
 
 Upptime is the open-source uptime monitor and status page, powered entirely by GitHub Actions and Issues.
 
+[![Static Site CI](https://github.com/koj-co/upptime/workflows/Static%20Site%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=workflow%3A%22Static+Site+CI%22)
+[![Graphs CI](https://github.com/koj-co/upptime/workflows/Graphs%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=workflow%3A%22Graphs+CI%22)
+[![Response Time CI](https://github.com/koj-co/upptime/workflows/Response%20Time%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=workflow%3A%22Response+Time+CI%22)
+[![Summary CI](https://github.com/koj-co/upptime/workflows/Summary%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=workflow%3A%22Summary+CI%22)
+[![Uptime CI](https://github.com/koj-co/upptime/workflows/Uptime%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=workflow%3A%22Uptime+CI%22)
+
 Live status: <!--live status--> **🟨 Partial outage**
 
 ## ⭐ How it works
 
-- Every 5 minutes, a GitHub Actions workflow tries to visit our websites
-- If your site is not online, an issue is opened and `CODEOWNERS` are tagged
-- You can add incident details as comments, and issues are auto-closed when your site is back up
-- Four times a day, the response time is recorded commited for git history
-- This README shows the status summary and average response time
-- A static site built with Svelte/Sapper uses the GitHub API to show real-time status
+- GitHub Actions is used as an uptime monitor
+  - Every 5 minutes, a workflow visits your website to make sure it's up
+  - Response time is recorded every 6 hours and committed to git
+  - Graphs of response time are generated every day
+- GitHub Issues are used for incident reports
+  - An issue is opened if an endpoint is down
+  - People from your team are assigned to the issue
+  - Incidents reports are posted as issue comments
+  - Issues are locked so non-members cannot comment on them
+  - Issues are closed automatically when your site comes back up
+- GitHub Pages are used for the status website
+  - A simple, beautiful, and accessible PWA is generated
+  - Built with Svelte and Sapper
+  - Fetches data from this repository using the GitHub API
 
 ## 📈 Status
 
+This section automatically updates every day and when the status of any website changes:
+
 <!--start: status pages-->
 
-| URL | Status | History | Response Time | Uptime |
-| --- | ------ | ------- | ------------- | ------ |
-| [Google](https://www.google.com) | 🟩 Up | [google.yml](https://github.com/koj-co/upptime/commits/master/history/google.yml) | <img alt="Response time graph" src="./graphs/google.png" height="20"> 70ms | 100.00%
-| [Wikipedia](https://en.wikipedia.org) | 🟩 Up | [wikipedia.yml](https://github.com/koj-co/upptime/commits/master/history/wikipedia.yml) | <img alt="Response time graph" src="./graphs/wikipedia.png" height="20"> 87ms | 100.00%
-| [Internet Archive](https://archive.org) | 🟩 Up | [internet-archive.yml](https://github.com/koj-co/upptime/commits/master/history/internet-archive.yml) | <img alt="Response time graph" src="./graphs/internet-archive.png" height="20"> 601ms | 100.00%
-| [Hacker News](https://news.ycombinator.com) | 🟩 Up | [hacker-news.yml](https://github.com/koj-co/upptime/commits/master/history/hacker-news.yml) | <img alt="Response time graph" src="./graphs/hacker-news.png" height="20"> 455ms | 100.00%
-| [Broken Site](https://thissitedoesnotexist.com) | 🟥 Down | [broken-site.yml](https://github.com/koj-co/upptime/commits/master/history/broken-site.yml) | <img alt="Response time graph" src="./graphs/broken-site.png" height="20"> 0ms | 99.00%
-| Secret Site | 🟩 Up | [secret-site.yml](https://github.com/koj-co/upptime/commits/master/history/secret-site.yml) | <img alt="Response time graph" src="./graphs/secret-site.png" height="20"> 38ms | 100.00%
-
 <!--end: status pages-->
+
+## 👩‍💻 Getting started
+
+1. Create a new repository [using this template](https://github.com/koj-co/upptime/generate)
+2. Update the [`.statusrc.yml`](./.statusrc.yml) file with your configuration
+3. Optionally, add a Personal Access Token for commits
+
+### Configuration
+
+The [`.statusrc.yml`](./.statusrc.yml) file is used as the central configuration for Upptime, with this syntax:
+
+```yaml
+owner: koj-co # GitHub username
+repo: upptime # GitHub repository name
+user-agent: koj-co
+sites: # List of endpoints to track
+  - name: Google
+    url: https://www.google.com
+assignees: # Users to assign downtime issues (optional)
+  - AnandChowdhary
+status-website: # Status website (optional)
+  cname: upptime.js.org # Custom domain CNAME
+  name: Upptime # Status website title
+```
+
+#### Repository
+
+A GitHub repository is used as the "source of truth" for your uptime logs, and the static site uses the GitHub API and fetches data from this repository.
+
+After you've created a new repository using this template (see [Creating a repository from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)), specify the username and repository name in the configuration:
+
+```yaml
+owner: koj-co
+repo: upptime
+```
+
+#### Endpoints
+
+You can track as many websites as you like. Add the names and URLs of your endpoints in the `sites` key:
+
+```yaml
+sites:
+  - name: Google
+    url: https://www.google.com
+  - name: DuckDuckGo
+    url: https://duckduckgo.com
+```
+
+To make `POST` requests (or any other HTTP verb), you can add the `method` key:
+
+```yaml
+sites:
+  - name: POST to Google
+    url: https://www.google.com
+    method: POST
+  - name: DELETE Example
+    url: https://example.com
+    method: DELETE
+```
+
+#### User agent
+
+Requests made to the GitHub API must include a valid `User-Agent` header (see [User Agent required](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#user-agent-required)). It is recommended to use your GitHub username here:
+
+```yaml
+user-agent: your-github-username
+```
+
+#### Assignees
+
+You can add members of your team to be assigned to every downtime issue:
+
+```yaml
+assignees:
+  - AnandChowdhary
+  - CarloBadini
+```
+
+If you want particular users to be assigned per-site, you can add `assignees` under each entry in `sites`:
+
+```yaml
+sites:
+  - name: Google
+    url: https://www.google.com
+    assignees:
+      - AnandChowdhary
+```
+
+#### Branding
+
+A static website with PWA is also generated, and you can customize the logo and name in the navbar:
+
+```yaml
+status-website:
+  name: Upptime
+  logoUrl: https://example.com/image.jpg
+```
+
+If you want to add a custom domain, you can add the `cname` key:
+
+```yaml
+status-website:
+  name: Upptime
+  logoUrl: https://example.com/image.jpg
+  cname: upptime.js.org # Custom CNAME
+```
+
+#### Intro text
+
+Optionally, you can add some introductory text to the website. You can use Markdown:
+
+```yaml
+status-website:
+  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
+  introMessage: This is a sample status page which uses **real-time** data from our [Github repository](https://github.com/koj-co/upptime). No server required — just GitHub Actions, Issues, and Pages.
+```
 
 ## 📄 License
 
