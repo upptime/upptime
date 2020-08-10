@@ -76,9 +76,9 @@ export const generateSummary = async () => {
         );
     });
     const uptime = (
-      100 -
-      secondsDown /
-        ((new Date().getTime() - new Date(startTime).getTime()) / 1000)
+      100 *
+      (secondsDown /
+        ((new Date().getTime() - new Date(startTime).getTime()) / 1000))
     ).toFixed(2);
     if (!history.data.length) continue;
     const averageTime =
