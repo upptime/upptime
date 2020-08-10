@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   release:
-    name: Build, test, and release
+    name: Build and deploy site
     runs-on: ubuntu-18.04
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: cd site && npm ci
       - name: Build site
-        run: npm run export
+        run: cd site && npm run export
         env:
           NODE_ENV: "production"
       - uses: maxheld83/ghpages@v0.2.1
