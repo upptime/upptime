@@ -105,7 +105,7 @@ export const update = async () => {
           // If the site was just recorded as down, open an issue
           if (status === "down") {
             if (!issues.data.length) {
-              await octokit.issues.create({
+              const newIssue = await octokit.issues.create({
                 owner,
                 repo,
                 title: `🛑 ${site.name} is down`,
@@ -122,7 +122,12 @@ export const update = async () => {
                 assignees: config.assignees,
                 labels: ["status", slug],
               });
-              console.log("Opened a new issue");
+              await octokit.issues.lock({
+                owner,
+                repo,
+                issue_number: newIssue.data.number,
+              });
+              console.log("Opened and locked a new issue");
             } else {
               console.log("An issue is already open for this");
             }
