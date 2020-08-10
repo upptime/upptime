@@ -36,6 +36,9 @@
 </script>
 
 <style>
+  section {
+    margin-bottom: 2rem;
+  }
   article {
     background-color: #ffdce3;
   }

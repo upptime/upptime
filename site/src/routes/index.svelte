@@ -1,5 +1,6 @@
 <script>
   import ActiveIncidents from "../components/ActiveIncidents.svelte";
+  import LiveStatus from "../components/LiveStatus.svelte";
   import Incidents from "../components/Incidents.svelte";
   import config from "../data/config.json";
   import snarkdown from "snarkdown";
@@ -30,4 +31,5 @@
 </header>
 
 <ActiveIncidents />
+<LiveStatus />
 <Incidents />
