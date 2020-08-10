@@ -212,9 +212,20 @@ status-website:
   introMessage: This is a sample status page which uses **real-time** data from our [Github repository](https://github.com/koj-co/upptime). No server required — just GitHub Actions, Issues, and Pages.
 ```
 
-### Bot commits
+#### Bot commits
 
 If you want to use a custom GitHub user for commits, you can add the repository secret `GH_PAT` with the Personal Access Token of the user. This is optional, and commits with be from [@actions-user](https://github.com/actions-user) if no custom PAT is provided.
+
+#### Internationalization
+
+Though our status page is in English, you can use any language with Upptime by supplying the required strings. The list of all required strings is available in [`site/i18n.yml`](./site/i18n.yml), and you can add them under the `i18n` key in the configuration file:
+
+```yaml
+i18n:
+  activeIncidents: Incidentes activos
+  allSystemsOperational: Todos los sistemas están operativos
+  # ...
+```
 
 ## 📄 License
 
