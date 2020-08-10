@@ -129,7 +129,10 @@ export const update = async () => {
 - HTTP code: ${result.httpCode}
 - Response time: ${responseTime} ms
 `,
-                assignees: [...(config.assignees || []), site.assignees],
+                assignees: [
+                  ...(config.assignees || []),
+                  ...(site.assignees || []),
+                ],
                 labels: ["status", slug],
               });
               await octokit.issues.lock({
