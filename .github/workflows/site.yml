@@ -19,6 +19,8 @@ jobs:
         run: cd site && npm ci
       - name: Build site
         run: cd site && npm run export
+      - name: Post process site
+        run: npx ts-node site/post-process.ts
         env:
           NODE_ENV: "production"
       - uses: maxheld83/ghpages@v0.2.1
