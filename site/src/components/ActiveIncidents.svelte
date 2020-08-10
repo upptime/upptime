@@ -2,13 +2,14 @@
   import Loading from "../components/Loading.svelte";
   import { Octokit } from "@octokit/rest";
   import { onMount } from "svelte";
+  import config from "../data/config.json";
 
   let loading = true;
   const octokit = new Octokit({
-    userAgent: "KojBot",
+    userAgent: config["user-agent"],
   });
-  const owner = "koj-co";
-  const repo = "status";
+  const owner = config.owner;
+  const repo = config.repo;
   let incidents = [];
 
   onMount(async () => {

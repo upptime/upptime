@@ -1,5 +1,6 @@
 owner: koj-co
 repo: up.js
+user-agent: KojBot
 sites:
   - name: Google
     url: https://www.google.com

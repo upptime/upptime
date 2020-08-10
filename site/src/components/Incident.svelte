@@ -3,6 +3,7 @@
   import { Octokit } from "@octokit/rest";
   import { onMount } from "svelte";
   import snarkdown from "snarkdown";
+  import config from "../data/config.json";
 
   export let number;
 
@@ -11,10 +12,10 @@
   let loadingIncident = true;
 
   const octokit = new Octokit({
-    userAgent: "KojBot",
+    userAgent: config["user-agent"],
   });
-  const owner = "koj-co";
-  const repo = "status";
+  const owner = config.owner;
+  const repo = config.repo;
   let comments = [];
   let incident = {};
 
@@ -111,12 +112,14 @@
       </dl>
       <div class="r">
         <p>
-          <a href={`https://github.com/koj-co/status/issues/${number}`}>
+          <a
+            href={`https://github.com/${config.owner}/${config.repo}/issues/${number}`}>
             Subscribe to Updates
           </a>
         </p>
         <p>
-          <a href={`https://github.com/koj-co/status/issues/${number}`}>
+          <a
+            href={`https://github.com/${config.owner}/${config.repo}/issues/${number}`}>
             View on GitHub
           </a>
         </p>
@@ -141,5 +144,5 @@
 </section>
 
 <footer>
-  <a href="/">&larr; Back to all comments</a>
+  <a href="/">&larr; Back to all incidents</a>
 </footer>

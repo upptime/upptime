@@ -1,4 +1,5 @@
 <script>
+  import config from "../data/config.json";
   export let segment;
 </script>
 
@@ -48,10 +49,12 @@
 
 <nav>
   <div class="container">
-    <img
-      class="logo"
-      alt="Koj"
-      src="https://avatars1.githubusercontent.com/u/65495851?s=200&v=4" />
+    {#if config['status-website'] && config['status-website'].logoUrl}
+      <img
+        class="logo"
+        alt={config['status-website'].name}
+        src={config['status-website'].logoUrl} />
+    {/if}
     <ul>
       <li>
         <a aria-current={segment === undefined ? 'page' : undefined} href=".">
@@ -64,7 +67,7 @@
         </a>
       </li>
       <li>
-        <a href="/">GitHub</a>
+        <a href={`https://github.com/${config.owner}/${config.repo}`}>GitHub</a>
       </li>
     </ul>
   </div>
