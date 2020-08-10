@@ -2,11 +2,32 @@
   import ActiveIncidents from "../components/ActiveIncidents.svelte";
   import Incidents from "../components/Incidents.svelte";
   import config from "../data/config.json";
+  import snarkdown from "snarkdown";
 </script>
+
+<style>
+  p.lead {
+    font-size: 110%;
+  }
+  header {
+    margin-bottom: 2rem;
+  }
+</style>
 
 <svelte:head>
   <title>Koj Status</title>
 </svelte:head>
-{JSON.stringify(config)}
+
+<header>
+  {#if config['status-website']}
+    <h1>
+      {@html snarkdown(config['status-website'].introTitle)}
+    </h1>
+    <p class="lead">
+      {@html snarkdown(config['status-website'].introMessage)}
+    </p>
+  {/if}
+</header>
+
 <ActiveIncidents />
 <Incidents />
