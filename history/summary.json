@@ -4,7 +4,7 @@
     "url": "https://www.google.com",
     "slug": "google",
     "status": "up",
-    "uptime": "0.00",
+    "uptime": "100.00",
     "time": 76
   },
   {
@@ -12,7 +12,7 @@
     "url": "https://en.wikipedia.org",
     "slug": "wikipedia",
     "status": "up",
-    "uptime": "0.00",
+    "uptime": "100.00",
     "time": 122
   },
   {
@@ -20,7 +20,7 @@
     "url": "https://archive.org",
     "slug": "internet-archive",
     "status": "up",
-    "uptime": "0.00",
+    "uptime": "100.00",
     "time": 544
   },
   {
@@ -28,7 +28,7 @@
     "url": "https://news.ycombinator.com",
     "slug": "hacker-news",
     "status": "up",
-    "uptime": "0.00",
+    "uptime": "100.00",
     "time": 442
   },
   {
@@ -36,7 +36,7 @@
     "url": "https://thissitedoesnotexist.com",
     "slug": "broken-site",
     "status": "down",
-    "uptime": "99.99",
+    "uptime": "0.01",
     "time": 0
   },
   {
@@ -44,7 +44,7 @@
     "url": "$SECRET_SITE",
     "slug": "secret-site",
     "status": "up",
-    "uptime": "0.00",
+    "uptime": "100.00",
     "time": 37
   }
 ]
