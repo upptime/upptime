@@ -1,7 +1,7 @@
 name: Summary CI
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 0 * * *"
   repository_dispatch:
     types: [summary]
 jobs:
