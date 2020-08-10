@@ -1,4 +1,4 @@
-name: Release CI
+name: Static Site CI
 on:
   push:
     branches:
@@ -16,11 +16,13 @@ jobs:
         with:
           node-version: 14
       - name: Install dependencies
-        run: npm ci
-      - name: Build TypeScript
-        run: npm run build
-      - name: Release
+        run: cd site && npm ci
+      - name: Build site
+        run: npm run export
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+          NODE_ENV: "production"
+      - uses: maxheld83/ghpages@v0.2.1
+        name: GitHub Pages Deploy
+        env:
+          BUILD_DIR: "site/__sapper__/export/"
+          GH_PAT: ${{ secrets.GH_PAT }}
