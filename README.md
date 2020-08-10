@@ -1,4 +1,4 @@
-# ⬆️ Upptime
+# ![Upptime](./assets/logo.svg)
 
 Upptime is the open-source uptime monitor and status page, powered entirely by GitHub Actions and Issues.
 
