@@ -177,7 +177,9 @@ ${pageStatuses
     repo,
     path: "history/summary.json",
     message: ":card_file_box: Update status summary [skip ci]",
-    content: Buffer.from(pageStatuses).toString("base64"),
+    content: Buffer.from(JSON.stringify(pageStatuses, null, 2)).toString(
+      "base64"
+    ),
     sha: summarySha,
   });
 };
