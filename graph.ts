@@ -50,12 +50,12 @@ export const generateGraphs = async () => {
     const image = await canvasRenderService.renderToBuffer({
       type: "line",
       data: {
-        labels: [0, ...data.map((item) => item[1])],
+        labels: [1, ...data.map((item) => item[1])],
         datasets: [
           {
             backgroundColor: "#89e0cf",
             borderColor: "#1abc9c",
-            data: [0, ...data.map((item) => item[0])],
+            data: [1, ...data.map((item) => item[0])],
           },
         ],
       },
