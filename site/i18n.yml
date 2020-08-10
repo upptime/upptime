@@ -1,1 +1,24 @@
 activeIncidents: Active Incidents
+allSystemsOperational: All systems are operational
+incidentReport: Incident report →
+activeIncidentSummary: Opened at $DATE with $POSTS posts
+incidentTitle: Incident $NUMBER Details
+incidentDetails: Incident Details
+incidentFixed: Fixed
+incidentOngoing: Ongoing
+incidentOpenedAt: Opened at
+incidentClosedAt: Closed at
+incidentSubscribe: Subscribe to Updates
+incidentViewOnGitHub: View on GitHub
+incidentCommentSummary: Posted at $DATE by $AUTHOR
+incidentBack: ← Back to all incidents
+pastIncidents: Past Incidents
+pastIncidentsResolved: Resolved in $MINUTES minuted with $POSTS posts
+liveStatus: Live Status
+overallUptime: Overall uptime $UPTIME%
+averageResponseTime: Average response time $TIMEms
+loading: Loading
+navStatus: Status
+navAbout: About
+navGitHub: GitHub
+footer: This page is [open source]($REPO), powered by [Upptime](https://upptime.js.org)

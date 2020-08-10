@@ -1,3 +1,7 @@
+<script>
+  import config from "../data/config.json";
+</script>
+
 <style>
   .loading {
     text-align: center;
@@ -9,7 +13,12 @@
 </style>
 
 <div class="loading">
-  <svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" stroke="#aaa">
+  <svg
+    width="38"
+    height="38"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="#aaa"
+    title={config.loading}>
     <g fill="none" fill-rule="evenodd">
       <g transform="translate(1 1)" stroke-width="2">
         <circle stroke-opacity=".5" cx="18" cy="18" r="18" />

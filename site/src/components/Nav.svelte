@@ -64,18 +64,20 @@
     <ul>
       <li>
         <a aria-current={segment === undefined ? 'page' : undefined} href="/">
-          Status
+          {config.i18n.navStatus}
         </a>
       </li>
       <li>
         <a
           aria-current={segment === 'about' ? 'page' : undefined}
           href="/about">
-          About
+          {config.i18n.navAbout}
         </a>
       </li>
       <li>
-        <a href={`https://github.com/${config.owner}/${config.repo}`}>GitHub</a>
+        <a href={`https://github.com/${config.owner}/${config.repo}`}>
+          {config.i18n.navGitHub}
+        </a>
       </li>
     </ul>
   </div>

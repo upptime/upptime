@@ -35,7 +35,7 @@
   });
 </script>
 
-<h2>Past Incidents</h2>
+<h2>{config.i18n.pastIncidents}</h2>
 
 <section>
   {#if loading}
@@ -50,12 +50,20 @@
           <div>
             <h4>{incident.title.replace('🛑', '').replace('⚠️', '').trim()}</h4>
             <div>
-              Resolved in {((new Date(incident.closed_at).getTime() - new Date(incident.created_at).getTime()) / 60000).toFixed(0)}
-              minutes with {incident.comments} posts
+              {@html config.i18n.pastIncidentsResolved
+                .replace(
+                  /\$MINUTES/g,
+                  (
+                    (new Date(incident.closed_at).getTime() -
+                      new Date(incident.created_at).getTime()) /
+                    60000
+                  ).toFixed(0)
+                )
+                .replace(/\$POSTS/g, incident.comments)}
             </div>
           </div>
           <div class="f r">
-            <a href={`/${incident.number}`}>Incident report &rarr;</a>
+            <a href={`/${incident.number}`}>{config.i18n.incidentReport}</a>
           </div>
         </div>
       </article>

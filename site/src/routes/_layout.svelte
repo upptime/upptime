@@ -1,6 +1,7 @@
 <script>
   import Nav from "../components/Nav.svelte";
   import config from "../data/config.json";
+  import snarkdown from "snarkdown";
   export let segment;
 </script>
 
@@ -20,11 +21,6 @@
 
 <footer>
   <p>
-    This page is
-    <a href={`https://github.com/${config.owner}/${config.repo}`}>
-      open source
-    </a>
-    and powered by
-    <a href="https://upptime.js.org">Upptime</a>
+    {@html snarkdown(config.i18n.footer.replace(/\$REPO/, `https://github.com/${config.owner}/${config.repo}`))}
   </p>
 </footer>

@@ -36,7 +36,7 @@
   }
 </style>
 
-<h2>Live Status</h2>
+<h2>{config.i18n.liveStatus}</h2>
 <section>
   {#if loading}
     <Loading />
@@ -46,8 +46,12 @@
         class={site.status}
         style={`background-image: url("https://raw.githubusercontent.com/koj-co/upptime/master/graphs/${site.slug}.png`}>
         <h4>{site.name}</h4>
-        <div>Overall uptime: {site.uptime}%</div>
-        <div>Average response time: {site.time}ms</div>
+        <div>
+          {@html config.i18n.overallUptime.replace(/\$UPTIME/g, site.uptime)}
+        </div>
+        <div>
+          {@html config.i18n.averageResponseTime.replace(/\$TIME/g, site.time)}
+        </div>
       </article>
     {/each}
   {/if}

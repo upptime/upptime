@@ -49,7 +49,7 @@
 </style>
 
 {#if !incidents.length && !loading}
-  <article class="good">✅ &nbsp; All systems are operational</article>
+  <article class="good">✅ &nbsp; {config.i18n.allSystemsOperational}</article>
 {/if}
 
 <section>
@@ -57,18 +57,22 @@
     <Loading />
   {:else if incidents.length}
     {#each incidents as incident}
-      <h2>Active Incidents</h2>
+      <h2>{config.i18n.activeIncidents}</h2>
       <article class="down">
         <div class="f">
           <div>
             <h4>{incident.title.replace('🛑', '').replace('⚠️', '').trim()}</h4>
             <div>
-              Opened at {new Date(incident.created_at).toLocaleString()} with {incident.comments}
-              posts
+              {config.i18n.activeIncidentSummary
+                .replace(
+                  /\$DATE/g,
+                  new Date(incident.created_at).toLocaleString()
+                )
+                .replace(/\$POSTS/g, incident.comments)}
             </div>
           </div>
           <div class="f r">
-            <a href={`/${incident.number}`}>Incident report &rarr;</a>
+            <a href={`/${incident.number}`}>{config.i18n.incidentReport}</a>
           </div>
         </div>
       </article>

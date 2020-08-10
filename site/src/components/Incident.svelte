@@ -83,16 +83,16 @@
 </style>
 
 <svelte:head>
-  <title>Incident #{number} Details</title>
+  <title>{config.i18n.incidentTitle.replace('$NUMBER', number)}</title>
 </svelte:head>
 
 <h2>
   {#if loadingIncident}
-    Incident Details
+    {config.i18n.incidentDetails}
   {:else}
     {incident.title}
     <span class={incident.state}>
-      {incident.state === 'closed' ? 'Fixed' : 'Ongoing'}
+      {incident.state === 'closed' ? config.i18n.incidentFixed : config.i18n.incidentOngoing}
     </span>
   {/if}
 </h2>
@@ -103,10 +103,10 @@
   {:else}
     <div class="f">
       <dl>
-        <dt>Opened at</dt>
+        <dt>{config.i18n.incidentOpenedAt}</dt>
         <dd>{new Date(incident.created_at).toLocaleString()}</dd>
         {#if incident.closed_at}
-          <dt>Closed at</dt>
+          <dt>{config.i18n.incidentClosedAt}</dt>
           <dd>{new Date(incident.closed_at).toLocaleString()}</dd>
         {/if}
       </dl>
@@ -114,13 +114,13 @@
         <p>
           <a
             href={`https://github.com/${config.owner}/${config.repo}/issues/${number}`}>
-            Subscribe to Updates
+            {config.i18n.incidentSubscribe}
           </a>
         </p>
         <p>
           <a
             href={`https://github.com/${config.owner}/${config.repo}/issues/${number}`}>
-            View on GitHub
+            {config.i18n.incidentViewOnGitHub}
           </a>
         </p>
       </div>
@@ -131,12 +131,17 @@
           {@html md(comment.body)}
         </p>
         <div>
-          Posted at
-          <a href={comment.html_url}>
-            {new Date(comment.created_at).toLocaleString()}
-          </a>
-          by
-          <a href={comment.user.html_url}>@{comment.user.login}</a>
+          {@html config.i18n.incidentCommentSummary
+            .replace(
+              /\$DATE/,
+              `<a href=${comment.html_url}>${new Date(
+                comment.created_at
+              ).toLocaleString()}</a>`
+            )
+            .replace(
+              /\$AUTHOR/,
+              `<a href=${comment.user.html_url}>@${comment.user.login}</a>`
+            )}
         </div>
       </article>
     {/each}
@@ -144,5 +149,5 @@
 </section>
 
 <footer>
-  <a href="/">&larr; Back to all incidents</a>
+  <a href="/">{config.i18n.incidentBack}</a>
 </footer>
