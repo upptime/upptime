@@ -12,7 +12,7 @@ export const update = async () => {
   const config = safeLoad(
     await readFile(join(".", ".statusrc.yml"), "utf8")
   ) as {
-    sites: { name: string; url: string }[];
+    sites: { name: string; url: string; method?: string }[];
     owner: string;
     repo: string;
     userAgent?: string;
@@ -51,7 +51,8 @@ export const update = async () => {
       const result = await curl(
         site.url.startsWith("$")
           ? process.env[site.url.substr(1, site.url.length)] || ""
-          : site.url
+          : site.url,
+        site.method
       );
       console.log("Result", result);
       const responseTime = (result.totalTime * 1000).toFixed(0);
@@ -175,7 +176,10 @@ export const update = async () => {
   if (hasDelta) generateSummary();
 };
 
-const curl = (url: string): Promise<{ httpCode: number; totalTime: number }> =>
+const curl = (
+  url: string,
+  method = "GET"
+): Promise<{ httpCode: number; totalTime: number }> =>
   new Promise((resolve) => {
     const curl = new Curl();
     curl.enable(CurlFeature.Raw);
@@ -187,7 +191,7 @@ const curl = (url: string): Promise<{ httpCode: number; totalTime: number }> =>
     curl.setOpt("TIMEOUT", 30);
     curl.setOpt("HEADER", 1);
     curl.setOpt("VERBOSE", false);
-    curl.setOpt("CUSTOMREQUEST", "GET");
+    curl.setOpt("CUSTOMREQUEST", method);
     curl.on("error", () => {
       curl.close();
       return resolve({ httpCode: 0, totalTime: 0 });
