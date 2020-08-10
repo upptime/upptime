@@ -41,7 +41,7 @@ This section automatically updates every day and when the status of any website 
 
 1. Create a new repository [using this template](https://github.com/koj-co/upptime/generate)
 2. Update the [`.statusrc.yml`](./.statusrc.yml) file with your configuration
-3. Optionally, add a Personal Access Token for commits
+3. Enable publishing the `gh-pages` branch for your status website
 
 ### Concepts
 
@@ -62,7 +62,7 @@ When the GitHub Actions workflow detects that one of your URLs is down, it autom
 
 #### Commits for response time
 
-Four times per day, another workflow runs and records the response time of your websites. This data is commited to GitHub, so it's available in the commit history of each file. Then, the GitHub API may be used to graph the response time history of each endpoint and track when a site goes down.
+Four times per day, another workflow runs and records the response time of your websites. This data is commited to GitHub, so it's available in the commit history of each file. Then, the GitHub API is used to graph the response time history of each endpoint and to track when a site went down.
 
 <table>
   <tr>
