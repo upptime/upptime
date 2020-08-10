@@ -25,11 +25,11 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
       - name: Build site
-        run: npm run export
+        run: cd site && npm run export
         env:
           NODE_ENV: "production"
       - uses: maxheld83/ghpages@v0.2.1
         name: GitHub Pages Deploy
         env:
-          BUILD_DIR: "dist/"
+          BUILD_DIR: "site/__sapper__/export/"
           GH_PAT: ${{ secrets.GH_PAT }}
