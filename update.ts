@@ -132,7 +132,7 @@ export const update = async () => {
               owner,
               repo,
               issue_number: issues.data[0].number,
-              body: `${
+              body: `**Resolved:** ${
                 site.name
               } is back up in [\`${fileUpdateResult.data.commit.sha.substr(
                 0,
