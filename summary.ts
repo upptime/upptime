@@ -116,7 +116,7 @@ ${pageStatuses
         page.slug
       }.yml](https://github.com/${owner}/${repo}/commits/master/history/${
         page.slug
-      }.yml) | <img alt="Response time graph" src="./history/${
+      }.yml) | <img alt="Response time graph" src="./graphs/${
         page.slug
       }.png" height="20"> ${page.time}ms | ${page.uptime}%`
   )

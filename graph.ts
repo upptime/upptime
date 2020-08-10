@@ -79,7 +79,7 @@ export const generateGraphs = async () => {
         },
       },
     });
-    await writeFile(join(".", "history", `${slug}.png`), image);
+    await writeFile(join(".", "graphs", `${slug}.png`), image);
   }
 };
 
