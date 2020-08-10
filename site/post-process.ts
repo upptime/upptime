@@ -16,7 +16,7 @@ export const preProcess = async () => {
       config["status-website"]?.cname
     );
   await copyFile(
-    join(".", "__sapper__", "export", "index.html"),
+    join(".", "__sapper__", "export", "service-worker-index.html"),
     join(".", "__sapper__", "export", "404.html")
   );
 };
