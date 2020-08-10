@@ -1,6 +1,6 @@
 import { Octokit } from "@octokit/rest";
 import slugify from "@sindresorhus/slugify";
-import { readFile, writeFile } from "fs-extra";
+import { readFile, writeFile, ensureDir } from "fs-extra";
 import { safeLoad } from "js-yaml";
 import { join } from "path";
 import { CanvasRenderService } from "chartjs-node-canvas";
@@ -25,6 +25,8 @@ export const generateGraphs = async () => {
     auth: config.PAT || process.env.GH_PAT || process.env.GITHUB_TOKEN,
     userAgent: config.userAgent || process.env.USER_AGENT || "KojBot",
   });
+
+  await ensureDir(join(".", "graphs"));
 
   for await (const site of config.sites) {
     const slug = slugify(site.name);
