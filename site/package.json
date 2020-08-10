@@ -2,6 +2,8 @@
   "name": "koj-status-app",
   "version": "0.0.0",
   "scripts": {
+    "pre-process": "ts-node pre-process.ts",
+    "post-process": "ts-node post-process.ts",
     "dev": "sapper dev",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
