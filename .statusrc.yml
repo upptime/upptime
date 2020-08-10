@@ -1,17 +1,15 @@
 owner: koj-co
-repo: status
+repo: up.js
 sites:
-  - name: Koj.co
-    url: https://koj.co
-  - name: Koj CDN
-    url: https://kojcdn.com
-  - name: URL Shortener
-    url: https://go.koj.co
-  - name: Koj Status
-    url: https://status.koj.co
-  - name: Koj Analytics
-    url: https://analytics.koj.co
-  - name: Koj API
-    url: https://api.koj.co
+  - name: Google
+    url: https://www.google.com
+  - name: Wikipedia
+    url: https://en.wikipedia.org
+  - name: Internet Archive
+    url: https://archive.org
+  - name: Hacker News
+    url: https://news.ycombinator.com
+  - name: Broken Site
+    url: https://thissitedoesnotexist.com
 assignees:
   - AnandChowdhary
