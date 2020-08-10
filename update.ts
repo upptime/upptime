@@ -109,9 +109,12 @@ export const update = async () => {
                 owner,
                 repo,
                 title: `🛑 ${site.name} is down`,
-                body: `In ${fileUpdateResult.data.commit.sha.substr(0, 7)}, ${
-                  site.name
-                } (${site.url}) was **down**:
+                body: `In [\`${fileUpdateResult.data.commit.sha.substr(
+                  0,
+                  7
+                )}\`](https://github.com/${owner}/${repo}/commit/${
+                  fileUpdateResult.data.commit.sha
+                }), ${site.name} (${site.url}) was **down**:
 
 - HTTP code: ${result.httpCode}
 - Response time: ${responseTime} ms
@@ -131,10 +134,12 @@ export const update = async () => {
               issue_number: issues.data[0].number,
               body: `${
                 site.name
-              } is back up in ${fileUpdateResult.data.commit.sha.substr(
+              } is back up in [\`${fileUpdateResult.data.commit.sha.substr(
                 0,
                 7
-              )}.`,
+              )}\`](https://github.com/${owner}/${repo}/commit/${
+                fileUpdateResult.data.commit.sha
+              }).`,
             });
             console.log("Created comment in issue");
             await octokit.issues.update({
