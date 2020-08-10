@@ -1,6 +1,6 @@
 {
   "name": "koj-status",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "This repository uses GitHub Actions as an uptime monitor to track the status of Koj websites.",
   "main": "dist/index.js",
   "scripts": {
