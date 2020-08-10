@@ -1,6 +1,6 @@
-# ⬆️ Up.js
+# ⬆️ Upptime
 
-Up.js is the open-source uptime monitor and status page, powered entirely by GitHub Actions and Issues.
+Upptime is the open-source uptime monitor and status page, powered entirely by GitHub Actions and Issues.
 
 Live status: <!--live status--> **🟥 Outage**
 

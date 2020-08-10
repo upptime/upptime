@@ -1,5 +1,5 @@
 owner: koj-co
-repo: up.js
+repo: upptime
 user-agent: KojBot
 sites:
   - name: Google
@@ -15,8 +15,8 @@ sites:
 assignees:
   - AnandChowdhary
 status-website:
-  cname: up.js.org
+  cname: upptime.js.org
   logoUrl: https://avatars3.githubusercontent.com/u/65495851?s=88&v=4
   name: Koj Status
-  introTitle: "**Up.js** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [Github repository](https://github.com/koj-co/up.js). Literally, no server required, it's just GitHub Actions, Issues, and Pages.
+  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
+  introMessage: This is a sample status page which uses **real-time** data from our [Github repository](https://github.com/koj-co/upptime). Literally, no server required, it's just GitHub Actions, Issues, and Pages.

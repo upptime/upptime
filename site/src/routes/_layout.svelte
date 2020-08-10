@@ -25,6 +25,6 @@
       open source
     </a>
     and powered by
-    <a href="https://up.js.org">Up.js</a>
+    <a href="https://upptime.js.org">Upptime</a>
   </p>
 </footer>
