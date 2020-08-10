@@ -61,15 +61,19 @@ export const generateSummary = async () => {
       repo,
       labels: slug,
       filter: "all",
-      state: "closed",
       per_page: 100,
     });
     issues.data.forEach((issue) => {
-      secondsDown += Math.floor(
-        (new Date(issue.closed_at).getTime() -
-          new Date(issue.created_at).getTime()) /
-          1000
-      );
+      if (issue.closed_at)
+        secondsDown += Math.floor(
+          (new Date(issue.closed_at).getTime() -
+            new Date(issue.created_at).getTime()) /
+            1000
+        );
+      else
+        secondsDown += Math.floor(
+          (new Date().getTime() - new Date(issue.created_at).getTime()) / 1000
+        );
     });
     const uptime = (
       100 -
