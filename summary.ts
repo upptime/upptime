@@ -158,4 +158,22 @@ ${pageStatuses
     content: Buffer.from(readmeContent).toString("base64"),
     sha,
   });
+  let summarySha: string | undefined = undefined;
+  try {
+    summarySha = (
+      await octokit.repos.getContent({
+        owner,
+        repo,
+        path: "history/summary.json",
+      })
+    ).data.sha;
+  } catch (error) {}
+  await octokit.repos.createOrUpdateFileContents({
+    owner,
+    repo,
+    path: "history/summary.json",
+    message: ":card_file_box: Update status summary [skip ci]",
+    content: Buffer.from(pageStatuses).toString("base64"),
+    sha: summarySha,
+  });
 };
