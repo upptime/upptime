@@ -37,7 +37,7 @@ export const generateSummary = async () => {
     name: string;
   }> = [];
 
-  let allUp = true;
+  let numberOfDown = 0;
   for await (const site of config.sites) {
     const slug = slugify(site.name);
     let startTime = new Date().toISOString();
@@ -100,7 +100,9 @@ export const generateSummary = async () => {
       uptime,
       time: Math.floor(averageTime),
     });
-    if (status === "down") allUp = false;
+    if (status === "down") {
+      numberOfDown++;
+    }
   }
 
   readmeContent = `${startText}<!--start: status pages-->
@@ -130,7 +132,11 @@ ${pageStatuses
     .map((line) => {
       if (line.includes("<!--live status-->")) {
         line = `Live status: <!--live status--> **${
-          allUp ? "🟩 All systems operational" : "🟥 Outage"
+          numberOfDown === 0
+            ? "🟩 All systems operational"
+            : numberOfDown === config.sites.length
+            ? "🟥 Complete outage"
+            : "🟨 Partial outage"
         }**`;
       }
       return line;
