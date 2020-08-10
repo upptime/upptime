@@ -56,8 +56,8 @@
   {#if loading}
     <Loading />
   {:else if incidents.length}
+    <h2>{config.i18n.activeIncidents}</h2>
     {#each incidents as incident}
-      <h2>{config.i18n.activeIncidents}</h2>
       <article class="down">
         <div class="f">
           <div>
