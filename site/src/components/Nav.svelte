@@ -15,17 +15,10 @@
   ul {
     margin: 0;
     padding: 0;
-  }
-
-  ul::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-
-  li {
-    display: block;
-    float: left;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
   }
 
   [aria-current] {
@@ -40,29 +33,44 @@
 
   .logo {
     float: left;
-    height: 3.33rem;
-    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-weight: bold;
     margin-right: 2rem;
+  }
+  .logo img {
+    margin-right: 1rem;
+    height: 3rem;
     border-radius: 0.2rem;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 </style>
 
 <nav>
   <div class="container">
     {#if config['status-website'] && config['status-website'].logoUrl}
-      <img
-        class="logo"
-        alt={config['status-website'].name}
-        src={config['status-website'].logoUrl} />
+      <div>
+        <a href="/" class="logo">
+          <img alt="" src={config['status-website'].logoUrl} />
+          <div>{config['status-website'].name}</div>
+        </a>
+      </div>
     {/if}
     <ul>
       <li>
-        <a aria-current={segment === undefined ? 'page' : undefined} href=".">
+        <a aria-current={segment === undefined ? 'page' : undefined} href="/">
           Status
         </a>
       </li>
       <li>
-        <a aria-current={segment === 'about' ? 'page' : undefined} href="about">
+        <a
+          aria-current={segment === 'about' ? 'page' : undefined}
+          href="/about">
           About
         </a>
       </li>
