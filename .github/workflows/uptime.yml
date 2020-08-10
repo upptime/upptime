@@ -19,3 +19,4 @@ jobs:
         run: npm run update
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+          SECRET_SITE: ${{ secrets.SECRET_SITE }}

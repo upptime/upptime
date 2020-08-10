@@ -21,3 +21,4 @@ jobs:
         run: npm run readme
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+          SECRET_SITE: ${{ secrets.SECRET_SITE }}
