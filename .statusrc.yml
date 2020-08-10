@@ -14,7 +14,6 @@ sites:
     url: https://thissitedoesnotexist.com
   - name: Secret Site
     url: $SECRET_SITE
-    method: POST
 assignees:
   - AnandChowdhary
 status-website:
