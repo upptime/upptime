@@ -4,47 +4,47 @@
     "url": "https://www.google.com",
     "slug": "google",
     "status": "up",
-    "uptime": "100.00",
-    "time": 73
+    "uptime": "0.00",
+    "time": 76
   },
   {
     "name": "Wikipedia",
     "url": "https://en.wikipedia.org",
     "slug": "wikipedia",
     "status": "up",
-    "uptime": "100.00",
-    "time": 121
+    "uptime": "0.00",
+    "time": 122
   },
   {
     "name": "Internet Archive",
     "url": "https://archive.org",
     "slug": "internet-archive",
     "status": "up",
-    "uptime": "100.00",
-    "time": 535
+    "uptime": "0.00",
+    "time": 544
   },
   {
     "name": "Hacker News",
     "url": "https://news.ycombinator.com",
     "slug": "hacker-news",
     "status": "up",
-    "uptime": "100.00",
-    "time": 448
+    "uptime": "0.00",
+    "time": 442
   },
   {
     "name": "Broken Site",
     "url": "https://thissitedoesnotexist.com",
     "slug": "broken-site",
     "status": "down",
-    "uptime": "99.00",
+    "uptime": "99.99",
     "time": 0
   },
   {
     "name": "Secret Site",
     "url": "$SECRET_SITE",
     "slug": "secret-site",
-    "status": "down",
-    "uptime": "100.00",
-    "time": 39
+    "status": "up",
+    "uptime": "0.00",
+    "time": 37
   }
 ]
