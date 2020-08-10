@@ -117,9 +117,9 @@ export const generateSummary = async () => {
 ${pageStatuses
   .map(
     (page) =>
-      `| [${page.name}](${page.url}) | ${
-        page.status === "up" ? "🟩 Up" : "🟥 Down"
-      } | [${
+      `| ${
+        page.url.startsWith("$") ? page.name : `[${page.name}](${page.url})`
+      } | ${page.status === "up" ? "🟩 Up" : "🟥 Down"} | [${
         page.slug
       }.yml](https://github.com/${owner}/${repo}/commits/master/history/${
         page.slug

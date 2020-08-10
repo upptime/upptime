@@ -48,7 +48,11 @@ export const update = async () => {
           .trim() || new Date().toISOString();
     } catch (error) {}
     try {
-      const result = await curl(site.url);
+      const result = await curl(
+        site.url.startsWith("$")
+          ? process.env[site.url.substr(1, site.url.length)] || ""
+          : site.url
+      );
       console.log("Result", result);
       const responseTime = (result.totalTime * 1000).toFixed(0);
       const status =
