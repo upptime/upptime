@@ -27,6 +27,8 @@ Live status: <!--live status--> **🟨 Partial outage**
   - Built with Svelte and Sapper
   - Fetches data from this repository using the GitHub API
 
+![Screenshot of status website](./assets/screenshot-status.png)
+
 ## 📈 Status
 
 This section automatically updates every day and when the status of any website changes:
@@ -40,6 +42,38 @@ This section automatically updates every day and when the status of any website 
 1. Create a new repository [using this template](https://github.com/koj-co/upptime/generate)
 2. Update the [`.statusrc.yml`](./.statusrc.yml) file with your configuration
 3. Optionally, add a Personal Access Token for commits
+
+### Concepts
+
+#### Issues as incidents
+
+When the GitHub Actions workflow detects that one of your URLs is down, it automatically opens a GitHub issue ([example issue #15](https://github.com/koj-co/upptime/issues/15)). You can add incident reports to this issue by adding comments. When your site comes back up, the issue will be closed automatically as well.
+
+<table>
+  <tr>
+    <td>
+      <img alt="Screenshot of GitHub issue" src="./assets/screenshot-issue.png">
+    </td>
+    <td>
+      <img alt="Screenshot of incident page" src="./assets/screenshot-incident.png">
+    </td>
+  </tr>
+</table>
+
+#### Commits for response time
+
+Four times per day, another workflow runs and records the response time of your websites. This data is commited to GitHub, so it's available in the commit history of each file. Then, the GitHub API may be used to graph the response time history of each endpoint and track when a site goes down.
+
+<table>
+  <tr>
+    <td>
+      <img alt="Screenshot of GitHub commits" src="./assets/screenshot-history.png">
+    </td>
+    <td>
+      <img alt="Screenshot of live status" src="./assets/screenshot-live-status.png">
+    </td>
+  </tr>
+</table>
 
 ### Configuration
 
