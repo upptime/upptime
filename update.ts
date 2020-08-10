@@ -12,7 +12,12 @@ export const update = async () => {
   const config = safeLoad(
     await readFile(join(".", ".statusrc.yml"), "utf8")
   ) as {
-    sites: { name: string; url: string; method?: string }[];
+    sites: {
+      name: string;
+      url: string;
+      method?: string;
+      assignees?: string[];
+    }[];
     owner: string;
     repo: string;
     userAgent?: string;
@@ -124,7 +129,7 @@ export const update = async () => {
 - HTTP code: ${result.httpCode}
 - Response time: ${responseTime} ms
 `,
-                assignees: config.assignees,
+                assignees: [...(config.assignees || []), site.assignees],
                 labels: ["status", slug],
               });
               await octokit.issues.lock({
