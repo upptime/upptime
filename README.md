@@ -71,7 +71,7 @@ When the GitHub Actions workflow detects that one of your URLs is down, it autom
 
 #### Commits for response time
 
-Four times per day, another workflow runs and records the response time of your websites. This data is commited to GitHub, so it's available in the commit history of each file. Then, the GitHub API is used to graph the response time history of each endpoint and to track when a site went down.
+Four times per day, another workflow runs and records the response time of your websites. This data is commited to GitHub, so it's available in the commit history of each file ([example commit history](https://github.com/koj-co/upptime/commits/master/history/wikipedia.yml)). Then, the GitHub API is used to graph the response time history of each endpoint and to track when a site went down.
 
 <table>
   <tr>
@@ -137,6 +137,24 @@ sites:
     method: DELETE
 ```
 
+If you don't want to show a URL publicly, you can use repository secrets (see [Creating and storing encrypted secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)). Instead of the plain text URL, add the name of the secret prefixed with a `$` character:
+
+```yaml
+  - name: Secret Site
+    url: $SECRET_SITE
+```
+
+In the above example, a secret named `SECRET_SITE` (without the `$`) is stored in the repository. Note that you'll also have to add this secret as an environment variable in each workflow file in [`.github/workflows`](./.github/workflows):
+
+```yaml
+  # Example: .github/workflows/graphs.yml
+  # ...
+      - name: Run script
+        run: npm run graphs
+        env:
+          SECRET_SITE: ${{ secrets.SECRET_SITE }} # Add your repository secret
+```
+
 #### User agent
 
 Requests made to the GitHub API must include a valid `User-Agent` header (see [User Agent required](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#user-agent-required)). It is recommended to use your GitHub username here:
@@ -193,6 +211,10 @@ status-website:
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
   introMessage: This is a sample status page which uses **real-time** data from our [Github repository](https://github.com/koj-co/upptime). No server required — just GitHub Actions, Issues, and Pages.
 ```
+
+### Bot commits
+
+If you want to use a custom GitHub user for commits, you can add the repository secret `GH_PAT` with the Personal Access Token of the user. This is optional, and commits with be from [@actions-user](https://github.com/actions-user) if no custom PAT is provided.
 
 ## 📄 License
 
