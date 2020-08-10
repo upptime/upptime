@@ -109,7 +109,8 @@ export const generateSummary = async () => {
     }
   }
 
-  readmeContent = `${startText}<!--start: status pages-->
+  if (readmeContent.includes("<!--start: status pages-->")) {
+    readmeContent = `${startText}<!--start: status pages-->
 
 | URL | Status | History | Response Time | Uptime |
 | --- | ------ | ------- | ------------- | ------ |
@@ -129,6 +130,7 @@ ${pageStatuses
   .join("\n")}
 
 <!--end: status pages-->${endText}`;
+  }
 
   // Add live status line
   readmeContent = readmeContent
