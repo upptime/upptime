@@ -1,0 +1,145 @@
+<script>
+  import Loading from "../components/Loading.svelte";
+  import { Octokit } from "@octokit/rest";
+  import { onMount } from "svelte";
+  import snarkdown from "snarkdown";
+
+  export let number;
+
+  let md = snarkdown;
+  let loading = true;
+  let loadingIncident = true;
+
+  const octokit = new Octokit({
+    userAgent: "KojBot",
+  });
+  const owner = "koj-co";
+  const repo = "status";
+  let comments = [];
+  let incident = {};
+
+  onMount(async () => {
+    incident = (
+      await octokit.issues.get({
+        owner,
+        repo,
+        issue_number: number,
+        sort: "created",
+        direction: "desc",
+      })
+    ).data;
+    loadingIncident = false;
+    comments = (
+      await octokit.issues.listComments({
+        owner,
+        repo,
+        issue_number: number,
+      })
+    ).data.reverse();
+    loading = false;
+  });
+</script>
+
+<style>
+  footer {
+    margin-top: 2rem;
+  }
+  dl {
+    margin-bottom: 1.5rem;
+  }
+  dl dt {
+    font-weight: bold;
+  }
+  dl dd {
+    margin: 0 0 1rem 0;
+  }
+  p {
+    margin-top: 0;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .closed {
+    background-color: #16a085;
+  }
+  .open {
+    background-color: #c0392b;
+  }
+  .closed,
+  .open {
+    display: inline-block;
+    color: #fff;
+    padding: 0.33rem 0.5rem;
+    border-radius: 0.2rem;
+    font-size: 70%;
+    vertical-align: middle;
+    margin-top: -0.2rem;
+    margin-left: 0.5rem;
+  }
+  .r {
+    text-align: right;
+  }
+</style>
+
+<svelte:head>
+  <title>Incident #{number} Details</title>
+</svelte:head>
+
+<h2>
+  {#if loadingIncident}
+    Incident Details
+  {:else}
+    {incident.title}
+    <span class={incident.state}>
+      {incident.state === 'closed' ? 'Fixed' : 'Ongoing'}
+    </span>
+  {/if}
+</h2>
+
+<section>
+  {#if loading}
+    <Loading />
+  {:else}
+    <div class="f">
+      <dl>
+        <dt>Opened at</dt>
+        <dd>{new Date(incident.created_at).toLocaleString()}</dd>
+        <dt>Closed at</dt>
+        {#if incident.closed_at}
+          <dd>{new Date(incident.closed_at).toLocaleString()}</dd>
+        {/if}
+      </dl>
+      <div class="r">
+        <p>
+          <a href={`https://github.com/koj-co/status/issues/${number}`}>
+            Subscribe to Updates
+          </a>
+        </p>
+        <p>
+          <a href={`https://github.com/koj-co/status/issues/${number}`}>
+            View on GitHub
+          </a>
+        </p>
+      </div>
+    </div>
+    {#each comments as comment}
+      <article>
+        <p>
+          {@html md(comment.body)}
+        </p>
+        <div>
+          Posted at
+          <a href={comment.html_url}>
+            {new Date(comment.created_at).toLocaleString()}
+          </a>
+          by
+          <a href={comment.user.html_url}>@{comment.user.login}</a>
+        </div>
+      </article>
+    {/each}
+  {/if}
+</section>
+
+<footer>
+  <a href="/">&larr; Back to all comments</a>
+</footer>
