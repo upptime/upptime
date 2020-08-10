@@ -6,32 +6,36 @@
   export let number;
 
   let loading = true;
+  let loadingIncident = true;
+
   const octokit = new Octokit({
     userAgent: "KojBot",
   });
   const owner = "koj-co";
   const repo = "status";
-  let incidents = [];
+  let comments = [];
+  let incident = {};
 
   onMount(async () => {
-    incidents = (
-      await octokit.issues.listForRepo({
+    incident = (
+      await octokit.issues.get({
         owner,
         repo,
-        state: "closed",
-        filter: "all",
+        issue_number: number,
         sort: "created",
         direction: "desc",
-        labels: "status",
       })
     ).data;
-    incidents = incidents.map((incident, index) => {
-      incident.showHeading =
-        index === 0 ||
-        new Date(incidents[index - 1].created_at).toLocaleDateString() !==
-          new Date(incident.created_at).toLocaleDateString();
-      return incident;
-    });
+    loadingIncident = false;
+    comments = (
+      await octokit.issues.listComments({
+        owner,
+        repo,
+        issue_number: number,
+        sort: "created",
+        direction: "desc",
+      })
+    ).data;
     loading = false;
   });
 </script>
@@ -40,35 +44,39 @@
   footer {
     margin-top: 2rem;
   }
+  header {
+    margin-bottom: 1.5rem;
+  }
 </style>
 
 <svelte:head>
-  <title>Incident Details</title>
+  <title>Incident #{number} Details</title>
 </svelte:head>
 
-<h2>Past Incidents</h2>
+<h2>
+  {#if loadingIncident}Incident Details{:else}{incident.title}{/if}
+</h2>
 
 <section>
   {#if loading}
     <Loading />
   {:else}
-    {number}
-    {#each incidents as incident}
-      {#if incident.showHeading}
-        <h3>{new Date(incident.created_at).toLocaleDateString()}</h3>
+    <header>
+      <div>Opened at {new Date(incident.created_at).toLocaleString()}</div>
+      {#if incident.closed_at}
+        <div>Closed at {new Date(incident.closed_at).toLocaleString()}</div>
       {/if}
-      <article class="down">
-        <div class="f">
-          <div>
-            <h4>{incident.title.replace('🛑', '').replace('⚠️', '').trim()}</h4>
-            <div>
-              Resolved in {((new Date(incident.closed_at).getTime() - new Date(incident.created_at).getTime()) / 60000).toFixed(0)}
-              minutes with {incident.comments} posts
-            </div>
-          </div>
-          <div class="f r">
-            <a href={`/${incident.number}`}>Incident report &rarr;</a>
-          </div>
+    </header>
+    {#each comments as comment}
+      <article>
+        {comment.body}
+        <div>
+          Posted at
+          <a href={comment.html_url}>
+            {new Date(comment.created_at).toLocaleString()}
+          </a>
+          by
+          <a href={comment.user.html_url}>@{comment.user.login}</a>
         </div>
       </article>
     {/each}
@@ -76,5 +84,5 @@
 </section>
 
 <footer>
-  <a href="/">&larr; Back to all incidents</a>
+  <a href="/">&larr; Back to all comments</a>
 </footer>
