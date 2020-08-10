@@ -4,9 +4,9 @@
   "scripts": {
     "pre-process": "ts-node pre-process.ts",
     "post-process": "ts-node post-process.ts",
-    "dev": "sapper dev",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
+    "dev": "npm run pre-process && sapper dev",
+    "build": "npm run pre-process && sapper build --legacy",
+    "export": "npm run pre-process && sapper export --legacy && npm run post-process",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
