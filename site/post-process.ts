@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "fs-extra";
+import { readFile, writeFile, copyFile } from "fs-extra";
 import { safeLoad } from "js-yaml";
 import { join } from "path";
 
@@ -15,6 +15,10 @@ export const preProcess = async () => {
       join(".", "__sapper__", "export", "CNAME"),
       config["status-website"]?.cname
     );
+  await copyFile(
+    join(".", "__sapper__", "export", "index.html"),
+    join(".", "__sapper__", "export", "404.html")
+  );
 };
 
 preProcess();
