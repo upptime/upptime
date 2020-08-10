@@ -11,8 +11,8 @@ export const preProcess = async () => {
     introTitle?: string;
     introMessage?: string;
   };
-  await ensureDir(join(".", "data"));
-  await writeJson(join(".", "data", "config.json"), config);
+  await ensureDir(join(".", "src", "data"));
+  await writeJson(join(".", "src", "data", "config.json"), config);
 };
 
 preProcess();
