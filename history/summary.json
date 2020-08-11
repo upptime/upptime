@@ -13,7 +13,7 @@
     "slug": "wikipedia",
     "status": "up",
     "uptime": "100.00",
-    "time": 122
+    "time": 124
   },
   {
     "name": "Internet Archive",
@@ -21,7 +21,7 @@
     "slug": "internet-archive",
     "status": "up",
     "uptime": "100.00",
-    "time": 544
+    "time": 555
   },
   {
     "name": "Hacker News",
@@ -29,14 +29,14 @@
     "slug": "hacker-news",
     "status": "up",
     "uptime": "100.00",
-    "time": 442
+    "time": 462
   },
   {
     "name": "Broken Site",
     "url": "https://thissitedoesnotexist.com",
     "slug": "broken-site",
     "status": "down",
-    "uptime": "0.01",
+    "uptime": "0.00",
     "time": 0
   },
   {
