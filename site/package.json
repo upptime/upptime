@@ -1,5 +1,5 @@
 {
-  "name": "koj-status-app",
+  "name": "upptime",
   "version": "0.0.0",
   "scripts": {
     "pre-process": "ts-node pre-process.ts",

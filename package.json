@@ -1,5 +1,5 @@
 {
-  "name": "koj-status",
+  "name": "upptime-example",
   "version": "1.13.1",
   "description": "This repository uses GitHub Actions as an uptime monitor to track the status of Koj websites.",
   "main": "dist/index.js",
@@ -45,6 +45,7 @@
     "chartjs-node-canvas": "^3.0.6",
     "fs-extra": "^9.0.1",
     "js-yaml": "^3.14.0",
-    "node-libcurl": "^2.2.0"
+    "node-libcurl": "^2.2.0",
+    "upptime": "0.0.0"
   }
 }
