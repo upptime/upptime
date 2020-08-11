@@ -1,6 +1,6 @@
 - url: https://www.google.com
-- status: down
-- code: 429
-- responseTime: 406
-- lastUpdated: 2020-08-11T19:17:29.923Z
+- status: up
+- code: 200
+- responseTime: 86
+- lastUpdated: 2020-08-11T19:22:59.041Z
 - startTime: 2020-08-10T07:54:39.484Z
