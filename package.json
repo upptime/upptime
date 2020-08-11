@@ -1,6 +1,6 @@
 {
   "name": "upptime-example",
-  "version": "1.13.1",
+  "version": "1.13.2",
   "description": "This repository uses GitHub Actions as an uptime monitor to track the status of Koj websites.",
   "main": "dist/index.js",
   "scripts": {
