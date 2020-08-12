@@ -8,6 +8,7 @@
     "update": "ts-node update.ts",
     "update-with-commit": "ts-node update.ts commit",
     "graphs": "ts-node graph.ts",
+    "update-template": "update-template https://github.com/koj-co/upptime",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
