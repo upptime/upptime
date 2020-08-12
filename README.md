@@ -10,29 +10,6 @@ Upptime is the open-source uptime monitor and status page, powered entirely by G
 
 Live status: <!--live status--> **🟨 Partial outage**
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
-
-- [⭐ How it works](#-how-it-works)
-- [📈 Status](#-status)
-- [👩‍💻 Getting started](#%E2%80%8D-getting-started)
-  - [Concepts](#concepts)
-    - [Issues as incidents](#issues-as-incidents)
-    - [Commits for response time](#commits-for-response-time)
-  - [Configuration](#configuration)
-    - [Repository](#repository)
-    - [Endpoints](#endpoints)
-    - [User agent](#user-agent)
-    - [Assignees](#assignees)
-    - [Branding](#branding)
-    - [Intro text](#intro-text)
-    - [Site deployment](#site-deployment)
-    - [Internationalization](#internationalization)
-- [📄 License](#-license)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ## ⭐ How it works
 
 - GitHub Actions is used as an uptime monitor
@@ -108,6 +85,15 @@ Four times per day, another workflow runs and records the response time of your 
 </table>
 
 ### Configuration
+
+- [Repository](#repository)
+- [Endpoints](#endpoints)
+- [User agent](#user-agent)
+- [Assignees](#assignees)
+- [Branding](#branding)
+- [Intro text](#intro-text)
+- [Site deployment](#site-deployment)
+- [Internationalization](#internationalization)
 
 The [`.statusrc.yml`](./.statusrc.yml) file is used as the central configuration for Upptime, with this syntax:
 
