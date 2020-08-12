@@ -44,7 +44,7 @@
     {#each sites as site}
       <article
         class={site.status}
-        style={`background-image: url("https://raw.githubusercontent.com/koj-co/upptime/master/graphs/${site.slug}.png`}>
+        style={`background-image: url("https://raw.githubusercontent.com/${owner}/${repo}/master/graphs/${site.slug}.png`}>
         <h4>{site.name}</h4>
         <div>
           {@html config.i18n.overallUptime.replace(/\$UPTIME/g, site.uptime)}
