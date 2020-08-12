@@ -34,7 +34,7 @@ export const generateGraphs = async () => {
       owner,
       repo,
       path: `history/${slug}.yml`,
-      per_page: 48,
+      per_page: 10,
     });
     if (!history.data.length) continue;
     const data: [number, string][] = history.data
