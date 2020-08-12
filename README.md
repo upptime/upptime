@@ -50,7 +50,7 @@ _This section is updated automatically when the status of any site changes._
 
 1. Create a new repository [using this template](https://github.com/koj-co/upptime/generate)
 2. Update the [`.statusrc.yml`](./.statusrc.yml) file with your configuration
-3. Enable publishing the `gh-pages` branch for your status website
+3. Enable publishing the `gh-pages` branch for your status website and add a `GH_PAT`
 
 ### Concepts
 
@@ -212,9 +212,9 @@ status-website:
   introMessage: This is a sample status page which uses **real-time** data from our [Github repository](https://github.com/koj-co/upptime). No server required — just GitHub Actions, Issues, and Pages.
 ```
 
-#### Bot commits
+#### Site deployment
 
-If you want to use a custom GitHub user for commits, you can add the repository secret `GH_PAT` with the Personal Access Token of the user. This is optional, and commits with be from [@actions-user](https://github.com/actions-user) if no custom PAT is provided.
+Because GitHub Pages does not support the default `GITHUB_TOKEN` available to workflows, you'll have to set a secret `GH_PAT` with a Personal Access Token. For more info, see: https://github.com/maxheld83/ghpages#secrets.
 
 #### Internationalization
 
