@@ -1,6 +1,6 @@
-# ![Upptime](./assets/logo.svg)
+# [![Upptime](./assets/logo.svg)](https://upptime.js.org)
 
-Upptime is the open-source uptime monitor and status page, powered entirely by GitHub Actions and Issues.
+Upptime (https://upptime.js.org) is the open-source uptime monitor and status page, powered entirely by GitHub Actions and Issues.
 
 [![Static Site CI](https://github.com/koj-co/upptime/workflows/Static%20Site%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=workflow%3A%22Static+Site+CI%22)
 [![Graphs CI](https://github.com/koj-co/upptime/workflows/Graphs%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=workflow%3A%22Graphs+CI%22)
@@ -27,9 +27,9 @@ Live status: <!--live status--> **🟨 Partial outage**
   - Built with Svelte and Sapper
   - Fetches data from this repository using the GitHub API
 
-![Screenshot of status website](./assets/screenshot-status.png)
+[![Screenshot of status website](./assets/screenshot-status.png)](https://upptime.js.org)
 
-## 📈 Status
+## [📈 Status](https://upptime.js.org)
 
 _This section is updated automatically when the status of any site changes._
 
