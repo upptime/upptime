@@ -46,6 +46,7 @@
     "fs-extra": "^9.0.1",
     "js-yaml": "^3.14.0",
     "node-libcurl": "^2.2.0",
+    "update-template": "^1.0.1",
     "upptime": "0.0.0"
   }
 }
