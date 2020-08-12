@@ -10,7 +10,7 @@ const shouldCommit = process.argv[2] === "commit";
 
 export const update = async () => {
   const config = safeLoad(
-    await readFile(join(".", ".statusrc.yml"), "utf8")
+    await readFile(join(".", ".upptimerc.yml"), "utf8")
   ) as {
     sites: {
       name: string;

@@ -6,7 +6,7 @@ import { join } from "path";
 
 export const generateSummary = async () => {
   const config = safeLoad(
-    await readFile(join(".", ".statusrc.yml"), "utf8")
+    await readFile(join(".", ".upptimerc.yml"), "utf8")
   ) as {
     sites: { name: string; url: string }[];
     owner: string;

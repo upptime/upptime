@@ -8,7 +8,7 @@ export const preProcess = async () => {
   };
 
   const config = safeLoad(
-    await readFile(join("..", ".statusrc.yml"), "utf8")
+    await readFile(join("..", ".upptimerc.yml"), "utf8")
   ) as {
     logoUrl?: string;
     name?: string;

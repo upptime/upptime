@@ -49,7 +49,7 @@ _This section is updated automatically when the status of any site changes._
 ## 👩‍💻 Getting started
 
 1. Create a new repository [using this template](https://github.com/koj-co/upptime/generate)
-2. Update the [`.statusrc.yml`](./.statusrc.yml) file with your configuration
+2. Update the [`.upptimerc.yml`](./.upptimerc.yml) file with your configuration
 3. Enable publishing the `gh-pages` branch for your status website and add a `GH_PAT`
 
 ### Concepts
@@ -95,7 +95,7 @@ Four times per day, another workflow runs and records the response time of your 
 - [Site deployment](#site-deployment)
 - [Internationalization](#internationalization)
 
-The [`.statusrc.yml`](./.statusrc.yml) file is used as the central configuration for Upptime, with this syntax:
+The [`.upptimerc.yml`](./.upptimerc.yml) file is used as the central configuration for Upptime, with this syntax:
 
 ```yaml
 owner: koj-co # GitHub username
