@@ -26,12 +26,16 @@
 
 <header>
   {#if config['status-website']}
-    <h1>
-      {@html snarkdown(config['status-website'].introTitle)}
-    </h1>
-    <p class="lead">
-      {@html snarkdown(config['status-website'].introMessage)}
-    </p>
+    {#if config['status-website'].introTitle}
+      <h1>
+        {@html snarkdown(config['status-website'].introTitle)}
+      </h1>
+    {/if}
+    {#if config['status-website'].introMessage}
+      <p class="lead">
+        {@html snarkdown(config['status-website'].introMessage)}
+      </p>
+    {/if}
   {/if}
 </header>
 
