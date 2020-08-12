@@ -68,13 +68,6 @@
         </a>
       </li>
       <li>
-        <a
-          aria-current={segment === 'about' ? 'page' : undefined}
-          href="/about">
-          {config.i18n.navAbout}
-        </a>
-      </li>
-      <li>
         <a href={`https://github.com/${config.owner}/${config.repo}`}>
           {config.i18n.navGitHub}
         </a>

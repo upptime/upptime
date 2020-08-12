@@ -19,6 +19,5 @@ overallUptime: Overall uptime $UPTIME%
 averageResponseTime: Average response time $TIMEms
 loading: Loading
 navStatus: Status
-navAbout: About
 navGitHub: GitHub
 footer: This page is [open source]($REPO), powered by [Upptime](https://upptime.js.org)
