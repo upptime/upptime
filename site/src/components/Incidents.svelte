@@ -35,12 +35,17 @@
   });
 </script>
 
-<h2>{config.i18n.pastIncidents}</h2>
+<style>
+  h2 {
+    margin-top: 2rem;
+  }
+</style>
 
 <section>
   {#if loading}
     <Loading />
-  {:else}
+  {:else if incidents.length}
+    <h2>{config.i18n.pastIncidents}</h2>
     {#each incidents as incident}
       {#if incident.showHeading}
         <h3>{new Date(incident.created_at).toLocaleDateString()}</h3>
