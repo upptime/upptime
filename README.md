@@ -10,6 +10,9 @@ Upptime is the open-source uptime monitor and status page, powered entirely by G
 
 Live status: <!--live status--> **🟨 Partial outage**
 
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 ## ⭐ How it works
 
 - GitHub Actions is used as an uptime monitor
