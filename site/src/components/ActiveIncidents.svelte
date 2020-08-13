@@ -72,7 +72,7 @@
             </div>
           </div>
           <div class="f r">
-            <a href={`/${incident.number}`}>
+            <a href={`/incident/${incident.number}`}>
               {config.i18n.incidentReport.replace(/\$NUMBER/g, incident.number)}
             </a>
           </div>
