@@ -50,7 +50,7 @@
       {#if incident.showHeading}
         <h3>{new Date(incident.created_at).toLocaleDateString()}</h3>
       {/if}
-      <article class="down">
+      <article class="down link">
         <div class="f">
           <div>
             <h4>{incident.title.replace('🛑', '').replace('⚠️', '').trim()}</h4>
@@ -68,7 +68,9 @@
             </div>
           </div>
           <div class="f r">
-            <a href={`/${incident.number}`}>{config.i18n.incidentReport}</a>
+            <a href={`/${incident.number}`}>
+              {config.i18n.incidentReport.replace(/\$NUMBER/g, incident.number)}
+            </a>
           </div>
         </div>
       </article>

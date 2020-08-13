@@ -1,6 +1,6 @@
 activeIncidents: Active Incidents
 allSystemsOperational: All systems are operational
-incidentReport: Incident report →
+incidentReport: "Incident #$NUMBER report →"
 activeIncidentSummary: Opened at $DATE with $POSTS posts
 incidentTitle: Incident $NUMBER Details
 incidentDetails: Incident Details

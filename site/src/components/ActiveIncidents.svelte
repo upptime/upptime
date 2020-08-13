@@ -58,7 +58,7 @@
   {:else if incidents.length}
     <h2>{config.i18n.activeIncidents}</h2>
     {#each incidents as incident}
-      <article class="down">
+      <article class="down link">
         <div class="f">
           <div>
             <h4>{incident.title.replace('🛑', '').replace('⚠️', '').trim()}</h4>
@@ -72,7 +72,9 @@
             </div>
           </div>
           <div class="f r">
-            <a href={`/${incident.number}`}>{config.i18n.incidentReport}</a>
+            <a href={`/${incident.number}`}>
+              {config.i18n.incidentReport.replace(/\$NUMBER/g, incident.number)}
+            </a>
           </div>
         </div>
       </article>
