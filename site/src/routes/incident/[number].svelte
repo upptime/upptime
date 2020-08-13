@@ -6,7 +6,7 @@
 </script>
 
 <script>
-  import Incident from "../components/Incident.svelte";
+  import Incident from "../../components/Incident.svelte";
   export let number;
 </script>
 
