@@ -91,3 +91,32 @@ article.up {
 section + h2 {
   margin-top: 2rem;
 }
+
+.tag.closed,
+.tag.up {
+  background-color: #16a085;
+}
+.tag.open,
+.tag.down {
+  background-color: #c0392b;
+}
+.tag {
+  display: inline-block;
+  color: #fff;
+  padding: 0.33rem 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 70%;
+  vertical-align: middle;
+  margin-top: -0.2rem;
+  margin-left: 0.5rem;
+}
+
+dl {
+  margin-bottom: 1.5rem;
+}
+dl dt {
+  font-weight: bold;
+}
+dl dd {
+  margin: 0 0 1rem 0;
+}

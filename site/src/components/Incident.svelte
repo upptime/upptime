@@ -45,37 +45,11 @@
   footer {
     margin-top: 2rem;
   }
-  dl {
-    margin-bottom: 1.5rem;
-  }
-  dl dt {
-    font-weight: bold;
-  }
-  dl dd {
-    margin: 0 0 1rem 0;
-  }
   p {
     margin-top: 0;
   }
   h2 {
     line-height: 1;
-  }
-  .closed {
-    background-color: #16a085;
-  }
-  .open {
-    background-color: #c0392b;
-  }
-  .closed,
-  .open {
-    display: inline-block;
-    color: #fff;
-    padding: 0.33rem 0.5rem;
-    border-radius: 0.2rem;
-    font-size: 70%;
-    vertical-align: middle;
-    margin-top: -0.2rem;
-    margin-left: 0.5rem;
   }
   .r {
     text-align: right;
@@ -91,7 +65,7 @@
     {config.i18n.incidentDetails}
   {:else}
     {incident.title}
-    <span class={incident.state}>
+    <span class={`tag ${incident.state}`}>
       {incident.state === 'closed' ? config.i18n.incidentFixed : config.i18n.incidentOngoing}
     </span>
   {/if}
