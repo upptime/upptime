@@ -43,9 +43,11 @@
   {:else if sites.length}
     {#each sites as site}
       <article
-        class={site.status}
+        class={`${site.status} link`}
         style={`background-image: url("https://raw.githubusercontent.com/${owner}/${repo}/master/graphs/${site.slug}.png`}>
-        <h4>{site.name}</h4>
+        <h4>
+          <a href={`/history/${site.slug}`}>{site.name}</a>
+        </h4>
         <div>
           {@html config.i18n.overallUptime.replace(/\$UPTIME/g, site.uptime)}
         </div>
