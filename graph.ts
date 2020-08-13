@@ -51,15 +51,15 @@ export const generateGraphs = async () => {
       label: "uptime",
       message: `${uptime}%`,
       color:
-        uptime < 95
+        uptime > 95
           ? "brightgreen"
-          : uptime < 90
+          : uptime > 90
           ? "green"
-          : uptime < 85
+          : uptime > 85
           ? "yellowgreen"
-          : uptime < 80
+          : uptime > 80
           ? "yellow"
-          : uptime < 75
+          : uptime > 75
           ? "orange"
           : "red",
     });
