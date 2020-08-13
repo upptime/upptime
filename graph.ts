@@ -32,28 +32,51 @@ export const generateGraphs = async () => {
     const slug = slugify(site.name);
 
     let uptime = 0;
+    let responseTime = 0;
     try {
-      const api: { slug: string; uptime: string }[] = await readJson(
-        join(".", "history", "summary.json")
-      );
+      const api: {
+        slug: string;
+        uptime: string;
+        time: number;
+      }[] = await readJson(join(".", "history", "summary.json"));
       const item = api.find((site) => site.slug === slug);
-      if (item) uptime = parseFloat(item.uptime);
+      if (item) {
+        uptime = parseFloat(item.uptime);
+        responseTime = item.time;
+      }
     } catch (error) {}
-    await ensureDir(join(".", "api"));
-    await writeJson(join(".", "api", `${slug}.json`), {
+    await ensureDir(join(".", "api", slug));
+    await writeJson(join(".", "api", slug, "uptime.json"), {
       schemaVersion: 1,
       label: "uptime",
       message: `${uptime}%`,
       color:
-        uptime > 95
+        uptime < 95
           ? "brightgreen"
-          : uptime > 90
+          : uptime < 90
           ? "green"
-          : uptime > 85
+          : uptime < 85
           ? "yellowgreen"
-          : uptime > 80
+          : uptime < 80
           ? "yellow"
-          : uptime > 75
+          : uptime < 75
+          ? "orange"
+          : "red",
+    });
+    await writeJson(join(".", "api", slug, "response-time.json"), {
+      schemaVersion: 1,
+      label: "response time",
+      message: `${responseTime} ms`,
+      color:
+        responseTime < 200
+          ? "brightgreen"
+          : responseTime < 400
+          ? "green"
+          : responseTime < 600
+          ? "yellowgreen"
+          : responseTime < 800
+          ? "yellow"
+          : responseTime < 1000
           ? "orange"
           : "red",
     });
