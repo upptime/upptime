@@ -3,7 +3,6 @@
   import { Octokit } from "@octokit/rest";
   import { onMount } from "svelte";
   import config from "../data/config.json";
-import Number from "../routes/history/[number].svelte";
 
   export let slug;
   let loading = true;

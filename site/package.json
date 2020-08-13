@@ -19,7 +19,8 @@
     "js-yaml": "^3.14.0",
     "polka": "next",
     "sirv": "^1.0.5",
-    "snarkdown": "^1.2.2"
+    "snarkdown": "^1.2.2",
+    "svelte-chartjs": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
