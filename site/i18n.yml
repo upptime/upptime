@@ -17,6 +17,8 @@ pastIncidentsResolved: Resolved in $MINUTES minuted with $POSTS posts
 liveStatus: Live Status
 overallUptime: Overall uptime $UPTIME%
 averageResponseTime: Average response time $TIMEms
+sevelDayResponseTime: 7-day response time
+responseTimeMs: Response time (ms)
 loading: Loading
 navStatus: Status
 navGitHub: GitHub
