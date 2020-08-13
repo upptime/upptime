@@ -130,7 +130,7 @@ ${pageStatuses
         page.uptime
       }%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2F${owner}%2F${repo}%2Fmaster%2Fapi%2F${
         page.slug
-      }.json)`
+      }%2Fresponse-time.json)`
   )
   .join("\n")}
 
