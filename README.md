@@ -35,14 +35,14 @@ _This section is updated automatically when the status of any site changes._
 
 <!--start: status pages-->
 
-| URL | Status | History | Response Time | Uptime |
-| --- | ------ | ------- | ------------- | ------ |
-| [Google](https://www.google.com) | 🟩 Up | [google.yml](https://github.com/koj-co/upptime/commits/master/history/google.yml) | <img alt="Response time graph" src="./graphs/google.png" height="20"> 108ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle.json)
-| [Wikipedia](https://en.wikipedia.org) | 🟩 Up | [wikipedia.yml](https://github.com/koj-co/upptime/commits/master/history/wikipedia.yml) | <img alt="Response time graph" src="./graphs/wikipedia.png" height="20"> 124ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fwikipedia.json)
-| [Internet Archive](https://archive.org) | 🟩 Up | [internet-archive.yml](https://github.com/koj-co/upptime/commits/master/history/internet-archive.yml) | <img alt="Response time graph" src="./graphs/internet-archive.png" height="20"> 560ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Finternet-archive.json)
-| [Hacker News](https://news.ycombinator.com) | 🟩 Up | [hacker-news.yml](https://github.com/koj-co/upptime/commits/master/history/hacker-news.yml) | <img alt="Response time graph" src="./graphs/hacker-news.png" height="20"> 402ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fhacker-news.json)
-| [Broken Site](https://thissitedoesnotexist.com) | 🟥 Down | [broken-site.yml](https://github.com/koj-co/upptime/commits/master/history/broken-site.yml) | <img alt="Response time graph" src="./graphs/broken-site.png" height="20"> 0ms | ![Uptime 0.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fbroken-site.json)
-| Secret Site | 🟩 Up | [secret-site.yml](https://github.com/koj-co/upptime/commits/master/history/secret-site.yml) | <img alt="Response time graph" src="./graphs/secret-site.png" height="20"> 41ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fsecret-site.json)
+| URL                                             | Status  | History                                                                                               | Response Time                                                                         | Uptime                                                                                                                                                   |
+| ----------------------------------------------- | ------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Google](https://www.google.com)                | 🟩 Up   | [google.yml](https://github.com/koj-co/upptime/commits/master/history/google.yml)                     | <img alt="Response time graph" src="./graphs/google.png" height="20"> 108ms           | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle.json)           |
+| [Wikipedia](https://en.wikipedia.org)           | 🟩 Up   | [wikipedia.yml](https://github.com/koj-co/upptime/commits/master/history/wikipedia.yml)               | <img alt="Response time graph" src="./graphs/wikipedia.png" height="20"> 124ms        | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fwikipedia.json)        |
+| [Internet Archive](https://archive.org)         | 🟩 Up   | [internet-archive.yml](https://github.com/koj-co/upptime/commits/master/history/internet-archive.yml) | <img alt="Response time graph" src="./graphs/internet-archive.png" height="20"> 560ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Finternet-archive.json) |
+| [Hacker News](https://news.ycombinator.com)     | 🟩 Up   | [hacker-news.yml](https://github.com/koj-co/upptime/commits/master/history/hacker-news.yml)           | <img alt="Response time graph" src="./graphs/hacker-news.png" height="20"> 402ms      | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fhacker-news.json)      |
+| [Broken Site](https://thissitedoesnotexist.com) | 🟥 Down | [broken-site.yml](https://github.com/koj-co/upptime/commits/master/history/broken-site.yml)           | <img alt="Response time graph" src="./graphs/broken-site.png" height="20"> 0ms        | ![Uptime 0.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fbroken-site.json)        |
+| Secret Site                                     | 🟩 Up   | [secret-site.yml](https://github.com/koj-co/upptime/commits/master/history/secret-site.yml)           | <img alt="Response time graph" src="./graphs/secret-site.png" height="20"> 41ms       | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fsecret-site.json)      |
 
 <!--end: status pages-->
 
@@ -246,7 +246,7 @@ npm run update-template
 
 ### Badges
 
-You can use the [Shields.io](https://shields.io) service with the API endpoint generated by your repository's `api` directory. For example, the URL https://raw.githubusercontent.com/koj-co/upptime/master/api/google.json has the following JSON schema:
+You can use the [Shields.io](https://shields.io) service with the API endpoint generated by your repository's `api` directory. For example, the URL https://raw.githubusercontent.com/koj-co/upptime/master/api/google/uptime.json has the following JSON schema:
 
 ```json
 {
@@ -257,10 +257,16 @@ You can use the [Shields.io](https://shields.io) service with the API endpoint g
 }
 ```
 
-This translates to this badge: ![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle.json)
+This translates to this badge: ![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle%2Fuptime.json)
 
 ```md
-![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle.json)
+![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle%2Fuptime.json)
+```
+
+Similarly, response time badges are available: ![Response time](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle%2Fresponse-time.json)
+
+```md
+![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle%2Fresponse-time.json)
 ```
 
 ## 📄 License
