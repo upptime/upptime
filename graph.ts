@@ -1,6 +1,6 @@
 import { Octokit } from "@octokit/rest";
 import slugify from "@sindresorhus/slugify";
-import { readFile, writeFile, ensureDir } from "fs-extra";
+import { readFile, writeFile, ensureDir, writeJson, readJson } from "fs-extra";
 import { safeLoad } from "js-yaml";
 import { join } from "path";
 import { CanvasRenderService } from "chartjs-node-canvas";
@@ -30,6 +30,34 @@ export const generateGraphs = async () => {
 
   for await (const site of config.sites) {
     const slug = slugify(site.name);
+
+    let uptime = 0;
+    try {
+      const api: { slug: string; uptime: string }[] = await readJson(
+        join(".", "history", "summary.json")
+      );
+      const item = api.find((site) => site.slug === slug);
+      if (item) uptime = parseFloat(item.uptime);
+    } catch (error) {}
+    await ensureDir(join(".", "api"));
+    await writeJson(join(".", "api", `${slug}.json`), {
+      schemaVersion: 1,
+      label: "uptime",
+      message: `${uptime}%`,
+      color:
+        uptime > 95
+          ? "brightgreen"
+          : uptime > 90
+          ? "green"
+          : uptime > 85
+          ? "yellowgreen"
+          : uptime > 80
+          ? "yellow"
+          : uptime > 75
+          ? "orange"
+          : "red",
+    });
+
     const history = await octokit.repos.listCommits({
       owner,
       repo,
