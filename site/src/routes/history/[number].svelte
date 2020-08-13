@@ -1,13 +1,15 @@
 <script context="module">
   export async function preload(page) {
     const { number } = page.params;
-    return { number };
+    return { slug: number };
   }
 </script>
 
 <script>
   import History from "../../components/History.svelte";
-  export let number;
+  import Graph from "../../components/Graph.svelte";
+  export let slug;
 </script>
 
-<History {number} />
+<Graph {slug} />
+<History {slug} />

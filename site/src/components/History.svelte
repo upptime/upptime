@@ -4,7 +4,7 @@
   import { onMount } from "svelte";
   import config from "../data/config.json";
 
-  export let number;
+  export let slug;
   let loading = true;
   const octokit = new Octokit({
     userAgent: config["user-agent"],
@@ -22,7 +22,7 @@
         filter: "all",
         sort: "created",
         direction: "desc",
-        labels: `status,${number}`,
+        labels: `status,${slug}`,
       })
     ).data;
     incidents = incidents.map((incident, index) => {
