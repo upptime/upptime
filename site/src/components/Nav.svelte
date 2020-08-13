@@ -10,6 +10,8 @@
     padding: 0 1em;
     background-color: #fff;
     margin-bottom: 2rem;
+    white-space: nowrap;
+    overflow-x: auto;
   }
 
   ul {
