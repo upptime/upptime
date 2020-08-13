@@ -55,8 +55,8 @@
     <h2>{config.i18n.sevelDayResponseTime}</h2>
     <Line
       data={{ labels, datasets: [{ label: config.i18n.responseTimeMs, backgroundColor: '#89e0cf', borderColor: '#1abc9c', data }] }}
-      width={200}
-      height={100}
+      width={800}
+      height={400}
       options={{ responsive: true, maintainAspectRatio: true, scales: { xAxes: [{ display: false, gridLines: { display: false } }] } }} />
   {/if}
 </section>
