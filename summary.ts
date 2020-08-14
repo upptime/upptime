@@ -142,13 +142,13 @@ ${pageStatuses
     .split("\n")
     .map((line) => {
       if (line.includes("<!--live status-->")) {
-        line = `Live status: <!--live status--> **${
+        line = `${line.split("<!--live status-->")[0]}<!--live status--> **${
           numberOfDown === 0
             ? "🟩 All systems operational"
             : numberOfDown === config.sites.length
             ? "🟥 Complete outage"
             : "🟨 Partial outage"
-        }**`;
+        }** ${line.split("<!--live status-->")[1] || ""}`;
       }
       return line;
     })
