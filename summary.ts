@@ -148,7 +148,7 @@ ${pageStatuses
             : numberOfDown === config.sites.length
             ? "🟥 Complete outage"
             : "🟨 Partial outage"
-        }** ${line.split("<!--live status-->")[1] || ""}`;
+        }**`;
       }
       return line;
     })
