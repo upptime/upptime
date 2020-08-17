@@ -38,6 +38,7 @@ export const update = async () => {
     console.log("Checking", site.url);
     let currentStatus = "unknown";
     let startTime = new Date().toISOString();
+
     try {
       currentStatus =
         (await readFile(join(".", "history", `${slug}.yml`), "utf8"))
@@ -52,7 +53,8 @@ export const update = async () => {
           ?.split("startTime:")[1]
           .trim() || new Date().toISOString();
     } catch (error) {}
-    try {
+
+    const performTestOnce = async () => {
       const result = await curl(
         site.url.startsWith("$")
           ? process.env[site.url.substr(1, site.url.length)] || ""
@@ -61,9 +63,35 @@ export const update = async () => {
       );
       console.log("Result", result);
       const responseTime = (result.totalTime * 1000).toFixed(0);
-      const status =
+      const status: "up" | "down" =
         result.httpCode >= 400 || result.httpCode < 200 ? "down" : "up";
+      return { result, responseTime, status };
+    };
 
+    let { result, responseTime, status } = await performTestOnce();
+    /**
+     * If the site is down, we perform the test 2 more times to make
+     * sure that it's not a false alarm
+     */
+    if (status === "down") {
+      wait(1000);
+      const secondTry = await performTestOnce();
+      if (secondTry.status === "up") {
+        result = secondTry.result;
+        responseTime = secondTry.responseTime;
+        status = secondTry.status;
+      } else {
+        wait(10000);
+        const thirdTry = await performTestOnce();
+        if (thirdTry.status === "up") {
+          result = thirdTry.result;
+          responseTime = thirdTry.responseTime;
+          status = thirdTry.status;
+        }
+      }
+    }
+
+    try {
       if (shouldCommit || currentStatus !== status) {
         const content = `- url: ${site.url}
 - status: ${status}
@@ -218,5 +246,7 @@ const curl = (
     });
     curl.perform();
   });
+
+const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 update();
