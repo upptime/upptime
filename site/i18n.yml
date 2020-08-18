@@ -13,7 +13,7 @@ incidentViewOnGitHub: View on GitHub
 incidentCommentSummary: Posted at $DATE by $AUTHOR
 incidentBack: ← Back to all incidents
 pastIncidents: Past Incidents
-pastIncidentsResolved: Resolved in $MINUTES minuted with $POSTS posts
+pastIncidentsResolved: Resolved in $MINUTES minutes with $POSTS posts
 liveStatus: Live Status
 overallUptime: Overall uptime $UPTIME%
 overallUptimeTitle: Overall uptime
