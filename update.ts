@@ -12,12 +12,16 @@ export const update = async () => {
   const config = safeLoad(
     await readFile(join(".", ".upptimerc.yml"), "utf8")
   ) as {
-    sites: {
+    sites: Array<{
       name: string;
       url: string;
       method?: string;
       assignees?: string[];
-    }[];
+    }>;
+    notifications?: Array<{
+      type: string;
+      [index: string]: string;
+    }>;
     owner: string;
     repo: string;
     userAgent?: string;
@@ -169,6 +173,13 @@ export const update = async () => {
                 issue_number: newIssue.data.number,
               });
               console.log("Opened and locked a new issue");
+              for await (const notification of config.notifications || []) {
+                if (notification.type === "slack") {
+                  const token = process.env.SLACK_APP_ACCESS_TOKEN;
+                  // if (token)
+                }
+              }
+              console.log("Sent notifications");
             } else {
               console.log("An issue is already open for this");
             }

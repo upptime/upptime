@@ -14,6 +14,9 @@ sites:
     url: https://thissitedoesnotexist.com
   - name: Secret Site
     url: $SECRET_SITE
+notifications:
+  - type: slack
+    channel: C016QTU9S9Y
 assignees:
   - AnandChowdhary
 status-website:
