@@ -185,10 +185,10 @@ Use `slack` as the `type` and provide a Slack channel ID as `channel` in the con
 ```yaml
 notifications:
   - type: slack
-    channel: C016QTU9S9Y
+    channel: C01XQ3U9M9P
 ```
 
-A Slack App has to be registered and installed prior to usage, with the scope `chat:write` (see [chat.postMessage](https://api.slack.com/methods/chat.postMessage) docs), and the environment variable `SLACK_APP_ACCESS_TOKEN` should be set with the access token of the Slack app.
+A Slack App has to be registered and installed prior to usage, with the scope `chat:write` (see [chat.postMessage](https://api.slack.com/methods/chat.postMessage) docs), and the environment variable `SLACK_APP_ACCESS_TOKEN` should be set with the Slack Bot User OAuth Access Token. You can use GitHub Secrets to add it.
 
 #### Assignees
 
