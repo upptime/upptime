@@ -22,6 +22,7 @@ Live status: <!--live status--> **🟨 Partial outage**
   - Incidents reports are posted as issue comments
   - Issues are locked so non-members cannot comment on them
   - Issues are closed automatically when your site comes back up
+  - Slack notifications are sent on updates
 - GitHub Pages are used for the status website
   - A simple, beautiful, and accessible PWA is generated
   - Built with Svelte and Sapper
@@ -35,14 +36,14 @@ _This section is updated automatically when the status of any site changes._
 
 <!--start: status pages-->
 
-| URL | Status | History | Response Time | Uptime |
-| --- | ------ | ------- | ------------- | ------ |
-| [Google](https://www.google.com) | 🟩 Up | [google.yml](https://github.com/koj-co/upptime/commits/master/history/google.yml) | <img alt="Response time graph" src="./graphs/google.png" height="20"> 88ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle%2Fuptime.json)
-| [Wikipedia](https://en.wikipedia.org) | 🟩 Up | [wikipedia.yml](https://github.com/koj-co/upptime/commits/master/history/wikipedia.yml) | <img alt="Response time graph" src="./graphs/wikipedia.png" height="20"> 139ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fwikipedia%2Fuptime.json)
-| [Internet Archive](https://archive.org) | 🟩 Up | [internet-archive.yml](https://github.com/koj-co/upptime/commits/master/history/internet-archive.yml) | <img alt="Response time graph" src="./graphs/internet-archive.png" height="20"> 577ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Finternet-archive%2Fuptime.json)
-| [Hacker News](https://news.ycombinator.com) | 🟩 Up | [hacker-news.yml](https://github.com/koj-co/upptime/commits/master/history/hacker-news.yml) | <img alt="Response time graph" src="./graphs/hacker-news.png" height="20"> 367ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fhacker-news%2Fuptime.json)
-| [Broken Site](https://thissitedoesnotexist.com) | 🟥 Down | [broken-site.yml](https://github.com/koj-co/upptime/commits/master/history/broken-site.yml) | <img alt="Response time graph" src="./graphs/broken-site.png" height="20"> 0ms | ![Uptime 0.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fbroken-site%2Fuptime.json)
-| Secret Site | 🟩 Up | [secret-site.yml](https://github.com/koj-co/upptime/commits/master/history/secret-site.yml) | <img alt="Response time graph" src="./graphs/secret-site.png" height="20"> 42ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fsecret-site%2Fuptime.json)
+| URL                                             | Status  | History                                                                                               | Response Time                                                                         | Uptime                                                                                                                                                            |
+| ----------------------------------------------- | ------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Google](https://www.google.com)                | 🟩 Up   | [google.yml](https://github.com/koj-co/upptime/commits/master/history/google.yml)                     | <img alt="Response time graph" src="./graphs/google.png" height="20"> 88ms            | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle%2Fuptime.json)           |
+| [Wikipedia](https://en.wikipedia.org)           | 🟩 Up   | [wikipedia.yml](https://github.com/koj-co/upptime/commits/master/history/wikipedia.yml)               | <img alt="Response time graph" src="./graphs/wikipedia.png" height="20"> 139ms        | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fwikipedia%2Fuptime.json)        |
+| [Internet Archive](https://archive.org)         | 🟩 Up   | [internet-archive.yml](https://github.com/koj-co/upptime/commits/master/history/internet-archive.yml) | <img alt="Response time graph" src="./graphs/internet-archive.png" height="20"> 577ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Finternet-archive%2Fuptime.json) |
+| [Hacker News](https://news.ycombinator.com)     | 🟩 Up   | [hacker-news.yml](https://github.com/koj-co/upptime/commits/master/history/hacker-news.yml)           | <img alt="Response time graph" src="./graphs/hacker-news.png" height="20"> 367ms      | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fhacker-news%2Fuptime.json)      |
+| [Broken Site](https://thissitedoesnotexist.com) | 🟥 Down | [broken-site.yml](https://github.com/koj-co/upptime/commits/master/history/broken-site.yml)           | <img alt="Response time graph" src="./graphs/broken-site.png" height="20"> 0ms        | ![Uptime 0.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fbroken-site%2Fuptime.json)        |
+| Secret Site                                     | 🟩 Up   | [secret-site.yml](https://github.com/koj-co/upptime/commits/master/history/secret-site.yml)           | <img alt="Response time graph" src="./graphs/secret-site.png" height="20"> 42ms       | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fsecret-site%2Fuptime.json)      |
 
 <!--end: status pages-->
 
@@ -89,6 +90,7 @@ Four times per day, another workflow runs and records the response time of your 
 - [Repository](#repository)
 - [Endpoints](#endpoints)
 - [User agent](#user-agent)
+- [Notifications](#notifications)
 - [Assignees](#assignees)
 - [Branding](#branding)
 - [Intro text](#intro-text)
@@ -171,6 +173,22 @@ Requests made to the GitHub API must include a valid `User-Agent` header (see [U
 ```yaml
 user-agent: your-github-username
 ```
+
+#### Notifications
+
+You can add services to send downtime notifications to. Currently, only Slack notifications are supported.
+
+##### Slack
+
+Use `slack` as the `type` and provide a Slack channel ID as `channel` in the configuration.
+
+```yaml
+notifications:
+  - type: slack
+    channel: C016QTU9S9Y
+```
+
+A Slack App has to be registered and installed prior to usage, with the scope `chat:write` (see [chat.postMessage](https://api.slack.com/methods/chat.postMessage) docs), and the environment variable `SLACK_APP_ACCESS_TOKEN` should be set with the access token of the Slack app.
 
 #### Assignees
 
