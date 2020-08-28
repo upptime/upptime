@@ -2,6 +2,7 @@ import { Octokit } from "@octokit/rest";
 import slugify from "@sindresorhus/slugify";
 import { readFile } from "fs-extra";
 import { safeLoad } from "js-yaml";
+import axios from "axios";
 import { Curl, CurlFeature } from "node-libcurl";
 import { join } from "path";
 import { generateSummary } from "./summary";
@@ -176,7 +177,19 @@ export const update = async () => {
               for await (const notification of config.notifications || []) {
                 if (notification.type === "slack") {
                   const token = process.env.SLACK_APP_ACCESS_TOKEN;
-                  // if (token)
+                  if (token)
+                    await axios.post(
+                      "https://slack.com/api/chat.postMessage",
+                      {
+                        channel: notification.channel,
+                        text: `🟥 ${site.name} (${site.url}) is **down**: ${newIssue.data.html_url}`,
+                      },
+                      {
+                        headers: {
+                          Authorization: `Bearer ${process.env.SLACK_BOT_ACCESS_TOKEN}`,
+                        },
+                      }
+                    );
                 }
               }
               console.log("Sent notifications");
@@ -206,6 +219,25 @@ export const update = async () => {
               state: "closed",
             });
             console.log("Closed issue");
+            for await (const notification of config.notifications || []) {
+              if (notification.type === "slack") {
+                const token = process.env.SLACK_APP_ACCESS_TOKEN;
+                if (token)
+                  await axios.post(
+                    "https://slack.com/api/chat.postMessage",
+                    {
+                      channel: notification.channel,
+                      text: `🟩 ${site.name} (${site.url}) is back up.`,
+                    },
+                    {
+                      headers: {
+                        Authorization: `Bearer ${process.env.SLACK_BOT_ACCESS_TOKEN}`,
+                      },
+                    }
+                  );
+              }
+            }
+            console.log("Sent notifications");
           } else {
             console.log("Could not find a relevant issue", issues.data);
           }
