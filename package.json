@@ -42,6 +42,7 @@
   "dependencies": {
     "@octokit/rest": "^18.0.3",
     "@sindresorhus/slugify": "^1.1.0",
+    "axios": "^0.20.0",
     "chart.js": "^2.9.3",
     "chartjs-node-canvas": "^3.0.6",
     "fs-extra": "^9.0.1",
