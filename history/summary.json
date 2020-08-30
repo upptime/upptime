@@ -13,7 +13,7 @@
     "slug": "wikipedia",
     "status": "up",
     "uptime": "100.00",
-    "time": 135
+    "time": 145
   },
   {
     "name": "Internet Archive",
@@ -21,15 +21,15 @@
     "slug": "internet-archive",
     "status": "up",
     "uptime": "100.00",
-    "time": 569
+    "time": 565
   },
   {
     "name": "Hacker News",
     "url": "https://news.ycombinator.com",
     "slug": "hacker-news",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00",
-    "time": 351
+    "time": 352
   },
   {
     "name": "Broken Site",
