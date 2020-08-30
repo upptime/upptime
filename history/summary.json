@@ -27,9 +27,9 @@
     "name": "Hacker News",
     "url": "https://news.ycombinator.com",
     "slug": "hacker-news",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00",
-    "time": 363
+    "time": 359
   },
   {
     "name": "Broken Site",
