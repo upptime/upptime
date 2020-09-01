@@ -1,7 +1,7 @@
 name: Response Time CI
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 23 * * *"
   repository_dispatch:
     types: [response_time]
 jobs:
