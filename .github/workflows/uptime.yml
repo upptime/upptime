@@ -2,6 +2,7 @@ name: Uptime CI
 on:
   schedule:
     - cron: "*/5 * * * *"
+  workflow_dispatch:
 jobs:
   release:
     name: Check status
