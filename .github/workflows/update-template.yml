@@ -1,0 +1,30 @@
+name: Update Template CI
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+  repository_dispatch:
+    types: [update_template]
+  workflow_dispatch:
+jobs:
+  release:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GH_PAT }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.1
+        with:
+          node-version: 14
+      - name: Update template
+        run: npx update-template https://github.com/koj-co/upptime
+      - name: Commit new data
+        uses: stefanzweifel/git-auto-commit-action@v4.5.1
+        with:
+          commit_message: ":arrow_up: Update Upptime to latest"
+          commit_user_name: Koj Bot
+          commit_user_email: bot@koj.co
+          commit_author: Koj Bot <bot@koj.co>
