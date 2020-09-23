@@ -4,6 +4,7 @@ on:
     - cron: "0 0 * * *"
   repository_dispatch:
     types: [summary]
+  workflow_dispatch:
 jobs:
   release:
     name: Generate README
