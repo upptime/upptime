@@ -4,6 +4,7 @@ on:
     - cron: "0 23 * * *"
   repository_dispatch:
     types: [response_time]
+  workflow_dispatch:
 jobs:
   release:
     name: Check status
