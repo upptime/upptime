@@ -5,7 +5,7 @@
     "slug": "google",
     "status": "up",
     "uptime": "100.00",
-    "time": 76
+    "time": 77
   },
   {
     "name": "Wikipedia",
@@ -13,7 +13,7 @@
     "slug": "wikipedia",
     "status": "up",
     "uptime": "100.00",
-    "time": 171
+    "time": 172
   },
   {
     "name": "Internet Archive",
@@ -21,7 +21,7 @@
     "slug": "internet-archive",
     "status": "up",
     "uptime": "100.00",
-    "time": 493
+    "time": 498
   },
   {
     "name": "Hacker News",
