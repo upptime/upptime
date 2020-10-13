@@ -21,6 +21,7 @@ jobs:
           node-version: 14
       - name: Update graphs
         run: npx @upptime/graphs
+        env:
           GH_PAT: ${{ secrets.GH_PAT }}
           SECRET_SITE: ${{ secrets.SECRET_SITE }}
       - name: Commit new data
