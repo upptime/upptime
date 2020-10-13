@@ -18,6 +18,7 @@ jobs:
           command: "site"
         env:
           NODE_ENV: "production"
+          GH_PAT: ${{ secrets.GH_PAT }}
       - uses: maxheld83/ghpages@v0.2.1
         name: GitHub Pages Deploy
         env:
