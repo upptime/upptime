@@ -19,10 +19,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
-      - name: Install dependencies
-        run: npm ci
-      - name: Run script
-        run: npm run graphs
+      - name: Update graphs
+        run: npx @upptime/graphs
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           SECRET_SITE: ${{ secrets.SECRET_SITE }}

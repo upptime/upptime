@@ -10,14 +10,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
+      - name: Update response time
+        uses: upptime/uptime-monitor@master
         with:
-          node-version: 14
-      - name: Install dependencies
-        run: npm ci
-      - name: Run script
-        run: npm run update
+          command: "update"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           SECRET_SITE: ${{ secrets.SECRET_SITE }}
