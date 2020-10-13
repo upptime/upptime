@@ -1,0 +1,35 @@
+name: Setup CI
+on:
+  push:
+    paths:
+      - ".upptimerc.yml"
+  repository_dispatch:
+    types: [setup]
+  workflow_dispatch:
+jobs:
+  release:
+    name: Setup Upptime
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Update response time
+        uses: upptime/uptime-monitor@master
+        with:
+          command: "response-time"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          SECRET_SITE: ${{ secrets.SECRET_SITE }}
+          SLACK_APP_ACCESS_TOKEN: ${{ secrets.SLACK_APP_ACCESS_TOKEN }}
+      - name: Update response time
+        uses: upptime/uptime-monitor@master
+        with:
+          command: "readme"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          SECRET_SITE: ${{ secrets.SECRET_SITE }}
+      - name: Generate graphs
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: Graphs CI
+          token: ${{ secrets.GH_PAT }}
