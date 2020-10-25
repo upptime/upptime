@@ -78,6 +78,14 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
         </tr>
       </table>
     </td>
+    <td>
+      <table>
+        <tr>
+          <td><a href="https://github.com/coinsambacom"><img src="https://avatars3.githubusercontent.com/u/69856662?v=4" height="50px" alt=""/></a></td>
+          <td><a href="https://status.coinsamba.com/"><strong>Coinsamba</strong><br><code>https://status.coinsamba.com/</code></a></td>
+        </tr>
+      </table>
+    </td>
   </tr>
 </table>
 
