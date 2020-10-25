@@ -49,6 +49,14 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
     <td>
       <table>
         <tr>
+          <td><a href="https://github.com/ShulertApp"><img src="https://avatars3.githubusercontent.com/u/64801699?v=4" height="50px" alt=""/></a></td>
+          <td><a href="https://status.shulert.com"><strong>Shulert</strong><br><code>status.shulert.com</code></a></td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
           <td><a href="https://github.com/koj-co"><img src="https://avatars3.githubusercontent.com/u/65495851?v=4" height="50px" alt=""/></a></td>
           <td><a href="https://status.koj.co"><strong>Koj</strong><br><code>status.koj.co</code></a></td>
         </tr>
