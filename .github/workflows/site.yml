@@ -20,14 +20,17 @@ jobs:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2.3.3
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GH_PAT }}
       - name: Generate site
         uses: upptime/uptime-monitor@master
         with:
           command: "site"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
-      - uses: maxheld83/ghpages@v0.2.1
+      - uses: maxheld83/ghpages@v0.3.0
         name: GitHub Pages Deploy
         env:
           BUILD_DIR: "site/status-page/__sapper__/export/"
