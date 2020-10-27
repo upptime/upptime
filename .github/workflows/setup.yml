@@ -62,5 +62,5 @@ jobs:
       - uses: maxheld83/ghpages@v0.3.0
         name: GitHub Pages Deploy
         env:
-          BUILD_DIR: "site/__sapper__/export/"
+          BUILD_DIR: "site/status-page/__sapper__/export/"
           GH_PAT: ${{ secrets.GH_PAT }}
