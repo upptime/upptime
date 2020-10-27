@@ -234,6 +234,15 @@ notifications:
 
 A Slack App has to be registered and installed prior to usage, with the scope `chat:write` (see [chat.postMessage](https://api.slack.com/methods/chat.postMessage) docs), and the environment variable `SLACK_APP_ACCESS_TOKEN` should be set with the Slack Bot User OAuth Access Token. You can use GitHub Secrets to add it.
 
+##### Discord
+
+Use `discord` as the `type` and create an environment variable `DISCORD_WEBHOOK_URL` with the Discord webhook URL.
+
+```yaml
+notifications:
+  - type: discord
+```
+
 #### Assignees
 
 You can add members of your team to be assigned to every downtime issue:

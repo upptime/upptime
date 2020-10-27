@@ -28,6 +28,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
           SECRET_SITE: ${{ secrets.SECRET_SITE }}
           SLACK_APP_ACCESS_TOKEN: ${{ secrets.SLACK_APP_ACCESS_TOKEN }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
       - name: Update response time
         uses: upptime/uptime-monitor@master
         with:
