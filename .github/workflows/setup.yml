@@ -40,3 +40,14 @@ jobs:
         with:
           workflow: Graphs CI
           token: ${{ secrets.GH_PAT }}
+      - name: Generate site
+        uses: upptime/uptime-monitor@master
+        with:
+          command: "site"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+      - uses: maxheld83/ghpages@v0.2.1
+        name: GitHub Pages Deploy
+        env:
+          BUILD_DIR: "site/status-page/__sapper__/export/"
+          GH_PAT: ${{ secrets.GH_PAT }}
