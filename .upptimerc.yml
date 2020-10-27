@@ -1,6 +1,8 @@
 owner: koj-co
 repo: upptime
 user-agent: KojBot
+
+# Add your sites here
 sites:
   - name: Google
     url: https://www.google.com
@@ -14,13 +16,20 @@ sites:
     url: https://thissitedoesnotexist.com
   - name: Secret Site
     url: $SECRET_SITE
+
+# Add downtime notifications
+# https://upptime.js.org/docs/notifications
 notifications:
   - type: slack
     channel: C016QTU9S9Y
 assignees:
   - AnandChowdhary
+
+# Configure your status website
+# http://localhost:3000/docs/configuration#status-website
 status-website:
-  cname: upptime.js.org
+  cname: upptime.js.org # Custom domain
+  baseUrl: /status-website # Base directory
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Upptime
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
