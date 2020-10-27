@@ -29,16 +29,25 @@ jobs:
           command: "response-time"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
-          SECRET_SITE: ${{ secrets.SECRET_SITE }}
           SLACK_APP_ACCESS_TOKEN: ${{ secrets.SLACK_APP_ACCESS_TOKEN }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          CUSTOM_WEBHOOK: ${{ secrets.CUSTOM_WEBHOOK }}
+          SECRET_SITE: ${{ secrets.SECRET_SITE }}
+          SECRET_SITE_1: ${{ secrets.SECRET_SITE_1 }}
+          SECRET_SITE_2: ${{ secrets.SECRET_SITE_2 }}
+          SECRET_SITE_3: ${{ secrets.SECRET_SITE_3 }}
+          SECRET_SITE_4: ${{ secrets.SECRET_SITE_4 }}
+          SECRET_SITE_5: ${{ secrets.SECRET_SITE_5 }}
+          SECRET_SITE_6: ${{ secrets.SECRET_SITE_6 }}
+          SECRET_SITE_7: ${{ secrets.SECRET_SITE_7 }}
+          SECRET_SITE_8: ${{ secrets.SECRET_SITE_8 }}
+          SECRET_SITE_9: ${{ secrets.SECRET_SITE_9 }}
       - name: Update response time
         uses: upptime/uptime-monitor@master
         with:
           command: "readme"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
-          SECRET_SITE: ${{ secrets.SECRET_SITE }}
       - name: Generate graphs
         uses: benc-uk/workflow-dispatch@v1
         with:

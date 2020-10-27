@@ -22,9 +22,6 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT }}
-        with:
-          ref: ${{ github.head_ref }}
-          token: ${{ secrets.GH_PAT }}
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.1
         with:
