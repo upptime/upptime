@@ -29,7 +29,7 @@ assignees:
 # http://localhost:3000/docs/configuration#status-website
 status-website:
   # cname: upptime.js.org
-  baseUrl: /status-website # Base directory for GitHub Pages (remove if have a custom domain)
+  baseUrl: /status/ # Base directory for GitHub Pages (remove if have a custom domain)
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Upptime
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
