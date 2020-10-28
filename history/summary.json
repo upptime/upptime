@@ -19,9 +19,9 @@
     "name": "Internet Archive",
     "url": "https://archive.org",
     "slug": "internet-archive",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00",
-    "time": 457
+    "time": 456
   },
   {
     "name": "Hacker News",
