@@ -30,6 +30,8 @@ jobs:
         run: npx @upptime/graphs
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+      - name: Compress graph PNGs
+        run: npx imagemin-cli graphs/* --out-dir=graphs
       - name: Commit new data
         uses: stefanzweifel/git-auto-commit-action@v4.7.2
         with:
