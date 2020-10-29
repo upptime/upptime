@@ -1,7 +1,9 @@
 # [![Upptime](https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/logo.svg)](https://upptime.js.org)
 
 <!--start: description-->
+
 Upptime (https://upptime.js.org) is the open-source uptime monitor and status page, powered entirely by GitHub Actions and Issues.
+
 <!--end: description-->
 
 [![Uptime CI](https://github.com/koj-co/upptime/workflows/Uptime%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=workflow%3A%22Uptime+CI%22)
@@ -13,17 +15,20 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
 ## [📈 Live Status](https://demo.upptime.js.org): <!--live status--> **🟨 Partial outage**
 
 <!--start: status pages-->
-| URL | Status | History | Response Time | Uptime |
-| --- | ------ | ------- | ------------- | ------ |
-| [Google](https://www.google.com) | 🟩 Up | [google.yml](https://github.com/koj-co/upptime/commits/master/history/google.yml) | <img alt="Response time graph" src="./graphs/google.png" height="20"> 85ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle%2Fuptime.json)
-| [Wikipedia](https://en.wikipedia.org) | 🟩 Up | [wikipedia.yml](https://github.com/koj-co/upptime/commits/master/history/wikipedia.yml) | <img alt="Response time graph" src="./graphs/wikipedia.png" height="20"> 172ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fwikipedia%2Fuptime.json)
-| [Internet Archive](https://archive.org) | 🟩 Up | [internet-archive.yml](https://github.com/koj-co/upptime/commits/master/history/internet-archive.yml) | <img alt="Response time graph" src="./graphs/internet-archive.png" height="20"> 457ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Finternet-archive%2Fuptime.json)
-| [Hacker News](https://news.ycombinator.com) | 🟩 Up | [hacker-news.yml](https://github.com/koj-co/upptime/commits/master/history/hacker-news.yml) | <img alt="Response time graph" src="./graphs/hacker-news.png" height="20"> 323ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fhacker-news%2Fuptime.json)
-| [Broken Site](https://thissitedoesnotexist.com) | 🟥 Down | [broken-site.yml](https://github.com/koj-co/upptime/commits/master/history/broken-site.yml) | <img alt="Response time graph" src="./graphs/broken-site.png" height="20"> 0ms | ![Uptime 0.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fbroken-site%2Fuptime.json)
-| Secret Site | 🟩 Up | [secret-site.yml](https://github.com/koj-co/upptime/commits/master/history/secret-site.yml) | <img alt="Response time graph" src="./graphs/secret-site.png" height="20"> 52ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fsecret-site%2Fuptime.json)
+
+| URL                                             | Status  | History                                                                                               | Response Time                                                                         | Uptime                                                                                                                                                            |
+| ----------------------------------------------- | ------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Google](https://www.google.com)                | 🟩 Up   | [google.yml](https://github.com/koj-co/upptime/commits/master/history/google.yml)                     | <img alt="Response time graph" src="./graphs/google.png" height="20"> 85ms            | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fgoogle%2Fuptime.json)           |
+| [Wikipedia](https://en.wikipedia.org)           | 🟩 Up   | [wikipedia.yml](https://github.com/koj-co/upptime/commits/master/history/wikipedia.yml)               | <img alt="Response time graph" src="./graphs/wikipedia.png" height="20"> 172ms        | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fwikipedia%2Fuptime.json)        |
+| [Internet Archive](https://archive.org)         | 🟩 Up   | [internet-archive.yml](https://github.com/koj-co/upptime/commits/master/history/internet-archive.yml) | <img alt="Response time graph" src="./graphs/internet-archive.png" height="20"> 457ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Finternet-archive%2Fuptime.json) |
+| [Hacker News](https://news.ycombinator.com)     | 🟩 Up   | [hacker-news.yml](https://github.com/koj-co/upptime/commits/master/history/hacker-news.yml)           | <img alt="Response time graph" src="./graphs/hacker-news.png" height="20"> 323ms      | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fhacker-news%2Fuptime.json)      |
+| [Broken Site](https://thissitedoesnotexist.com) | 🟥 Down | [broken-site.yml](https://github.com/koj-co/upptime/commits/master/history/broken-site.yml)           | <img alt="Response time graph" src="./graphs/broken-site.png" height="20"> 0ms        | ![Uptime 0.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fbroken-site%2Fuptime.json)        |
+| Secret Site                                     | 🟩 Up   | [secret-site.yml](https://github.com/koj-co/upptime/commits/master/history/secret-site.yml)           | <img alt="Response time graph" src="./graphs/secret-site.png" height="20"> 52ms       | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkoj-co%2Fupptime%2Fmaster%2Fapi%2Fsecret-site%2Fuptime.json)      |
+
 <!--end: status pages-->
 
 <!--start: docs-->
+
 ## ⭐ How it works
 
 - GitHub Actions is used as an uptime monitor
@@ -46,14 +51,13 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
 
 ## 💝 Who's using Upptime
 
-<!-- prettier-ignore -->
 <table>
   <tr>
     <td>
       <table>
         <tr>
-          <td><a href="https://github.com/ShulertApp"><img src="https://avatars3.githubusercontent.com/u/64801699?v=4" height="50px" alt=""/></a></td>
-          <td><a href="https://status.shulert.com"><strong>Shulert</strong><br><code>status.shulert.com</code></a></td>
+          <td><a href="https://github.com/wakatime"><img src="https://avatars3.githubusercontent.com/u/4814844?v=4" height="50px" alt=""/></a></td>
+          <td><a href="https://status.wakatime.com"><strong>Wakatime</strong><br><code>status.wakatime.com</code></a></td>
         </tr>
       </table>
     </td>
@@ -65,14 +69,26 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
         </tr>
       </table>
     </td>
+  </tr>
+  <tr>
     <td>
       <table>
         <tr>
-          <td><a href="https://github.com/wakatime"><img src="https://avatars3.githubusercontent.com/u/4814844?v=4" height="50px" alt=""/></a></td>
-          <td><a href="https://status.wakatime.com"><strong>Wakatime</strong><br><code>status.wakatime.com</code></a></td>
+          <td><a href="https://github.com/OswaldLabsOpenSource"><img src="https://avatars3.githubusercontent.com/u/21421587?v=4" height="50px" alt=""/></a></td>
+          <td><a href="https://status.oswaldlabs.com"><strong>Oswald Labs</strong><br><code>status.oswaldlabs.com</code></a></td>
         </tr>
       </table>
     </td>
+    <td>
+      <table>
+        <tr>
+          <td><a href="https://github.com/ShulertApp"><img src="https://avatars3.githubusercontent.com/u/64801699?v=4" height="50px" alt=""/></a></td>
+          <td><a href="https://status.shulert.com"><strong>Shulert</strong><br><code>status.shulert.com</code></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
     <td>
       <table>
         <tr>
@@ -85,7 +101,7 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
       <table>
         <tr>
           <td><a href="https://github.com/coinsambacom"><img src="https://avatars3.githubusercontent.com/u/69856662?v=4" height="50px" alt=""/></a></td>
-          <td><a href="https://status.coinsamba.com/"><strong>Coinsamba</strong><br><code>https://status.coinsamba.com/</code></a></td>
+          <td><a href="https://status.coinsamba.com"><strong>Coinsamba</strong><br><code>status.coinsamba.com</code></a></td>
         </tr>
       </table>
     </td>
