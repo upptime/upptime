@@ -1,7 +1,7 @@
 - url: https://thissitedoesnotexist.com
-- status: up
+- status: down
 - code: 0
 - responseTime: 0
-- lastUpdated: 2020-10-29T23:10:20.730Z
+- lastUpdated: 2020-10-30T13:26:53.251Z
 - startTime: 2020-08-10T07:54:45.230Z
 - generator: Upptime <https://github.com/upptime/upptime>
