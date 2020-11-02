@@ -36,6 +36,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4.7.2
         with:
           commit_message: ":bento: Update graphs [skip ci]"
-          commit_user_name: Koj Bot
-          commit_user_email: bot@koj.co
-          commit_author: Koj Bot <bot@koj.co>
+          commit_user_name: Upptime Bot
+          commit_user_email: upptime@koj.co
+          commit_author: Upptime Bot <upptime@koj.co>
