@@ -22,20 +22,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT }}
-      - name: Setup Node.js
-        uses: actions/setup-node@v2.1.2
+      - name: Generate graphs
+        uses: upptime/uptime-monitor@master
         with:
-          node-version: 14
-      - name: Update graphs
-        run: npx @upptime/graphs
+          command: "graphs"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
-      - name: Compress graph PNGs
-        run: npx imagemin-cli graphs/* --out-dir=graphs
-      - name: Commit new data
-        uses: stefanzweifel/git-auto-commit-action@v4.7.2
-        with:
-          commit_message: ":bento: Update graphs [skip ci]"
-          commit_user_name: Upptime Bot
-          commit_user_email: upptime@koj.co
-          commit_author: Upptime Bot <upptime@koj.co>
