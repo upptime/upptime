@@ -32,6 +32,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4.5.1
         with:
           commit_message: ":arrow_up: Update @upptime to latest"
-          commit_user_name: Koj Bot
-          commit_user_email: bot@koj.co
-          commit_author: Koj Bot <bot@koj.co>
+          commit_user_name: Upptime Bot
+          commit_user_email: upptime@koj.co
+          commit_author: Upptime Bot <bot@koj.co>
