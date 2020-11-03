@@ -3,33 +3,33 @@
     "name": "Google",
     "url": "https://www.google.com",
     "slug": "google",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00",
-    "time": 85
+    "time": 84
   },
   {
     "name": "Wikipedia",
     "url": "https://en.wikipedia.org",
     "slug": "wikipedia",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00",
-    "time": 164
+    "time": 162
   },
   {
     "name": "Internet Archive",
     "url": "https://archive.org",
     "slug": "internet-archive",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00",
-    "time": 544
+    "time": 537
   },
   {
     "name": "Hacker News",
     "url": "https://news.ycombinator.com",
     "slug": "hacker-news",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00",
-    "time": 321
+    "time": 319
   },
   {
     "name": "Broken Site",
@@ -43,8 +43,8 @@
     "name": "Secret Site",
     "url": "$SECRET_SITE",
     "slug": "secret-site",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00",
-    "time": 52
+    "time": 51
   }
 ]
