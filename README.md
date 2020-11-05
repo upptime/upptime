@@ -51,7 +51,24 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
 
 ## 💝 Who's using Upptime
 
-<!-- start: readme-repos-list --><!-- end: readme-repos-list -->
+<!-- start: readme-repos-list -->
+<!-- This list is auto-generated using koj-co/readme-repos-list -->
+<!-- Do not edit this list manually, your changes will be overwritten -->
+[![upptime/.github](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
+[![koj-co/status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F65495851%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.koj.co)
+[![OswaldLabsOpenSource/status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F21421587%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.oswaldlabs.com)
+[![Cleverclip/status](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F60980904%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://cleverclip.github.io/status/)
+[![chowdhary-org/status](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F68894094%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://chowdhary-org.github.io/status/)
+[![bagiduid/uptime](https://images.weserv.nl/?url=avatars2.githubusercontent.com%2Fu%2F72654797%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.bagidu.id)
+[![AnandChowdhary/status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F2841780%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://anandchowdhary.github.io/status/)
+[![stethoscope-js/status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F71249357%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://stethoscope-js.github.io/status/)
+[![upptime/status-page](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
+[![upptime/graphs](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
+[![eartharoid/upptime](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F20905071%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.eartharoid.me)
+[![upptime/upptime.js.org](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
+[![upptime/uptime-monitor](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
+[![upptime/upptime](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
+<!-- end: readme-repos-list -->
 
 ## 👩‍💻 [Documentation](https://upptime.js.org)
 
