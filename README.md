@@ -49,23 +49,7 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
 
 ## 💝 Who's using Upptime
 
-<!--
-How to add your Upptime link:
-- Add a link to your status page with your icon to the bottom of the list
-- Use the format [![{NAME}](https://images.weserv.nl/?url=avatars3.githubusercontent.com/u/{ID}&h=50&w=50&fit=cover&mask=circle&maxage=7d)]({URL})
-- Replace {NAME} with your site name, {ID} with your GitHub ID, and {URL} with the link to your status page
-- Find your {ID} by opening your GitHub profile picture image and your ID is after "/u/" and before "?"
--->
-[![Wakatime](https://images.weserv.nl/?url=avatars3.githubusercontent.com/u/4814844&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.wakatime.com)
-[![Koj](https://images.weserv.nl/?url=avatars3.githubusercontent.com/u/65495851&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.koj.co)
-[![OswaldLabsOpenSource](https://images.weserv.nl/?url=avatars3.githubusercontent.com/u/21421587&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.oswaldlabs.com)
-[![ShulertApp](https://images.weserv.nl/?url=avatars3.githubusercontent.com/u/64801699&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.shulert.com)
-[![Stethoscope](https://images.weserv.nl/?url=avatars3.githubusercontent.com/u/71249357&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://stethoscope.js.org/status/)
-[![Coinsamba](https://images.weserv.nl/?url=avatars3.githubusercontent.com/u/69856662&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.coinsamba.com)
-[![Cleverclip](https://images.weserv.nl/?url=avatars3.githubusercontent.com/u/60980904&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://cleverclip.github.io/status/)
-[![Chowdhary.org](https://images.weserv.nl/?url=avatars3.githubusercontent.com/u/68894094&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://chowdhary-org.github.io/status/)
-
-[You too? Open a PR!](https://github.com/koj-co/upptime/edit/master/README.md)
+<!-- start: readme-repos-list --><!-- end: readme-repos-list -->
 
 ## 👩‍💻 [Documentation](https://upptime.js.org)
 
