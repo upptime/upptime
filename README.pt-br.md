@@ -6,30 +6,6 @@ Upptime (https://upptime.js.org) é o monitor de uptime de código aberto e a p�
 
 <!--end: description--->
 
-[![Uptime CI](https://github.com/koj-co/upptime/workflows/Uptime%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=fluxo de trabalho%3A%22 Tempo de funcionamento + CI%22)
-[![Tempo de resposta CI](https://github.com/koj-co/upptime/workflows/Response%20Time%20CI/badge.svg)](https://github.com/koj-co/upptime/ ações? consulta=fluxo de trabalho%3A%22Response + Tempo + CI%22)
-[![Gráficos CI](https://github.com/koj-co/upptime/workflows/Graphs%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=fluxo de trabalho%3A%22 Gráficos + CI%22)
-[![IC de site estático](https://github.com/koj-co/upptime/workflows/Static%20Site%20CI/badge.svg)](https://github.com/koj-co/upptime/ ações? consulta=fluxo de trabalho%3A%22Static + Site + CI%22)
-[![CI de resumo](https://github.com/koj-co/upptime/workflows/Summary%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=fluxo de trabalho%3A%22 Resumo + CI%22)
-
-## [📈 Live Status](https://demo.upptime.js.org): <!-- live status --> ** 🟨 Interrupção parcial **
-
-<!--start: status pages--->
-
-<!-- Este resumo é gerado pelo Upptime (https://github.com/upptime/upptime) -->
-<!-- Não edite isso manualmente, suas alterações serão substituídas -->
-
-| URL                                               | Status  | História                                                                                               | Tempo de resposta                                                                                 | Uptime                                                                                                                                                                                                                      |
-| ------------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Google](https://www.google.com)                  | 🟩 Up   | [google.yml](https://github.com/upptime/upptime/commits/master/history/google.yml)                     | <img alt="Gráfico de tempo de resposta" src="./ graphs / google.png" height="20"> 87ms            | [![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fgoogle%2Fuptime.json)](https://demo.upptime.js.org/history/google)                      |
-| [Wikipedia](https://en.wikipedia.org)             | 🟩 Up   | [wikipedia.yml](https://github.com/upptime/upptime/commits/master/history/wikipedia.yml)               | <img alt="Gráfico de tempo de resposta" src="./ graphs / wikipedia.png" height="20"> 157ms        | [![Uptime 100,00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fwikipedia%2Fuptime.json)](https://demo.upptime.js.org/history/wikipedia)                |
-| [Arquivo da Internet](https://archive.org)        | 🟩 Up   | [internet-archive.yml](https://github.com/upptime/upptime/commits/master/history/internet-archive.yml) | <img alt="Gráfico de tempo de resposta" src="./ graphs / internet-archive.png" height="20"> 543ms | [![Uptime 100,00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Finternet-archive%2Fuptime.json) ](https://demo.upptime.js.org/history/internet-archive) |
-| [Hacker News](https://news.ycombinator.com)       | 🟩 Up   | [hacker-news.yml](https://github.com/upptime/upptime/commits/master/history/hacker-news.yml)           | <img alt="Gráfico de tempo de resposta" src="./ graphs / hacker-news.png" height="20"> 319ms      | [![Uptime 100,00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fhacker-news%2Fuptime.json) ](https://demo.upptime.js.org/history/hacker-news)           |
-| [Site quebrado](https://thissitedoesnotexist.com) | 🟥 Down | [broken-site.yml](https://github.com/upptime/upptime/commits/master/history/broken-site.yml)           | <img alt="Gráfico de tempo de resposta" src="./ graphs / broken-site.png" height="20"> 0ms        | [![Uptime 0.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fbroken-site%2Fuptime.json) ](https://demo.upptime.js.org/history/broken-site)             |
-| Site secreto                                      | 🟩 Up   | [secret-site.yml](https://github.com/upptime/upptime/commits/master/history/secret-site.yml)           | <img alt="Gráfico de tempo de resposta" src="./ graphs / secret-site.png" height="20"> 51ms       |
-
-<!--end: status pages--->
-
 <!--start: docs--->
 
 *This README is also available in [🇬🇧 English](./README.md)*
@@ -53,26 +29,6 @@ Upptime (https://upptime.js.org) é o monitor de uptime de código aberto e a p�
   - Busca dados deste repositório usando a API GitHub
 
 [![Captura de tela do site de status](https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/screenshot-status.png)](https://upptime.js.org)
-
-## 💝 Quem está usando o Upptime
-
-<!-- start: readme-repos-list --->
-
-<!-- Esta lista é gerada automaticamente usando koj-co / readme-repos-list -->
-<!-- Não edite esta lista manualmente, suas alterações serão substituídas -->
-[![upptime / .github](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https: //upptime.js.org)
-[![koj-co / status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F65495851%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https : //status.koj.co)
-[![baealex / upptime](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F35596687%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https: / /status.blex.me)
-[![Melangebox / status](https://images.weserv.nl/?url=avatars2.githubusercontent.com%2Fu%2F74049849%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https: / /status.melangebox.com)
-[![OswaldLabsOpenSource / status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F21421587%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https: / /status.oswaldlabs.com)
-[![Cleverclip / status](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F60980904%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https: / /cleverclip.github.io/status/)
-[![bagiduid / uptime](https://images.weserv.nl/?url=avatars2.githubusercontent.com%2Fu%2F72654797%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https: / /status.bagidu.id)
-[![chowdhary-org / status](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F68894094%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https : //chowdhary-org.github.io/status/)
-[![AnandChowdhary / status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F2841780%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https: / /anandchowdhary.github.io/status/)
-[![stethoscope-js / status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F71249357%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https : //stethoscope-js.github.io/status/)
-[![eartharoid / upptime](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F20905071%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https: / /status.eartharoid.me)
-
-<!-- end: readme-repos-list --->
 
 ## 👩‍💻 [Documentação](https://upptime.js.org)
 
