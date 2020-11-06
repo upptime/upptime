@@ -31,6 +31,8 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
 
 <!--start: docs-->
 
+*This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br.md)*
+
 ## ⭐ How it works
 
 - GitHub Actions is used as an uptime monitor
