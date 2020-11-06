@@ -18,7 +18,7 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
 
 | URL                                             | Status  | History                                                                                                | Response Time                                                                         | Uptime                                                                                                                                                             |
 | ----------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Google](https://www.google.com)                | 🟩 Up   | [google.yml](https://github.com/upptime/upptime/commits/master/history/google.yml)                     | <img alt="Response time graph" src="./graphs/google.png" height="20"> 86ms            | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fgoogle%2Fuptime.json)           |
+| [Google](https://www.google.com)                | 🟩 Up   | [google.yml](https://github.com/upptime/upptime/commits/master/history/google.yml)                     | <img alt="Response time graph" src="./graphs/google.png" height="20"> 87ms            | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fgoogle%2Fuptime.json)           |
 | [Wikipedia](https://en.wikipedia.org)           | 🟩 Up   | [wikipedia.yml](https://github.com/upptime/upptime/commits/master/history/wikipedia.yml)               | <img alt="Response time graph" src="./graphs/wikipedia.png" height="20"> 158ms        | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fwikipedia%2Fuptime.json)        |
 | [Internet Archive](https://archive.org)         | 🟩 Up   | [internet-archive.yml](https://github.com/upptime/upptime/commits/master/history/internet-archive.yml) | <img alt="Response time graph" src="./graphs/internet-archive.png" height="20"> 537ms | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Finternet-archive%2Fuptime.json) |
 | [Hacker News](https://news.ycombinator.com)     | 🟩 Up   | [hacker-news.yml](https://github.com/upptime/upptime/commits/master/history/hacker-news.yml)           | <img alt="Response time graph" src="./graphs/hacker-news.png" height="20"> 318ms      | ![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fhacker-news%2Fuptime.json)      |
@@ -54,6 +54,7 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
 <!-- start: readme-repos-list -->
 <!-- This list is auto-generated using koj-co/readme-repos-list -->
 <!-- Do not edit this list manually, your changes will be overwritten -->
+
 [![upptime/.github](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
 [![koj-co/status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F65495851%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.koj.co)
 [![OswaldLabsOpenSource/status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F21421587%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.oswaldlabs.com)
@@ -68,6 +69,7 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
 [![upptime/upptime.js.org](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
 [![upptime/uptime-monitor](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
 [![upptime/upptime](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
+
 <!-- end: readme-repos-list -->
 
 ## 👩‍💻 [Documentation](https://upptime.js.org)
