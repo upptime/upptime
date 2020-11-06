@@ -1,23 +1,23 @@
 # [![Upptime](https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/logo.svg)](https://upptime.js.org)
 
-<!--start: description-->
+<!--start: description--->
 
 Upptime (https://upptime.js.org) é o monitor de uptime de código aberto e a página de status, totalmente baseado em GitHub Actions and Issues.
 
-<!--end: description-->
+<!--end: description--->
 
-[![Uptime CI](https://github.com/koj-co/upptime/workflows/Uptime%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=fluxo de trabalho% 3A% 22 Tempo de funcionamento + CI% 22)
-[![Tempo de resposta CI](https://github.com/koj-co/upptime/workflows/Response%20Time%20CI/badge.svg)](https://github.com/koj-co/upptime/ ações? consulta=fluxo de trabalho% 3A% 22Response + Tempo + CI% 22)
-[![Gráficos CI](https://github.com/koj-co/upptime/workflows/Graphs%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=fluxo de trabalho% 3A% 22 Gráficos + CI% 22)
-[![IC de site estático](https://github.com/koj-co/upptime/workflows/Static%20Site%20CI/badge.svg)](https://github.com/koj-co/upptime/ ações? consulta=fluxo de trabalho% 3A% 22Static + Site + CI% 22)
-[![CI de resumo](https://github.com/koj-co/upptime/workflows/Summary%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=fluxo de trabalho% 3A% 22 Resumo + CI% 22)
+[![Uptime CI](https://github.com/koj-co/upptime/workflows/Uptime%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=fluxo de trabalho%3A%22 Tempo de funcionamento + CI%22)
+[![Tempo de resposta CI](https://github.com/koj-co/upptime/workflows/Response%20Time%20CI/badge.svg)](https://github.com/koj-co/upptime/ ações? consulta=fluxo de trabalho%3A%22Response + Tempo + CI%22)
+[![Gráficos CI](https://github.com/koj-co/upptime/workflows/Graphs%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=fluxo de trabalho%3A%22 Gráficos + CI%22)
+[![IC de site estático](https://github.com/koj-co/upptime/workflows/Static%20Site%20CI/badge.svg)](https://github.com/koj-co/upptime/ ações? consulta=fluxo de trabalho%3A%22Static + Site + CI%22)
+[![CI de resumo](https://github.com/koj-co/upptime/workflows/Summary%20CI/badge.svg)](https://github.com/koj-co/upptime/actions?query=fluxo de trabalho%3A%22 Resumo + CI%22)
 
-## [📈 Live Status](https://demo.upptime.js.org): <!- live status -> ** 🟨 Interrupção parcial **
+## [📈 Live Status](https://demo.upptime.js.org): <!-- live status --> ** 🟨 Interrupção parcial **
 
-<!--start: status pages-->
+<!--start: status pages--->
 
-<!- Este resumo é gerado pelo Upptime (https://github.com/upptime/upptime) ->
-<!- Não edite isso manualmente, suas alterações serão substituídas ->
+<!-- Este resumo é gerado pelo Upptime (https://github.com/upptime/upptime) -->
+<!-- Não edite isso manualmente, suas alterações serão substituídas -->
 
 | URL                                               | Status  | História                                                                                               | Tempo de resposta                                                                                 | Uptime                                                                                                                                                                                                                      |
 | ------------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -28,9 +28,9 @@ Upptime (https://upptime.js.org) é o monitor de uptime de código aberto e a p�
 | [Site quebrado](https://thissitedoesnotexist.com) | 🟥 Down | [broken-site.yml](https://github.com/upptime/upptime/commits/master/history/broken-site.yml)           | <img alt="Gráfico de tempo de resposta" src="./ graphs / broken-site.png" height="20"> 0ms        | [![Uptime 0.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fbroken-site%2Fuptime.json) ](https://demo.upptime.js.org/history/broken-site)             |
 | Site secreto                                      | 🟩 Up   | [secret-site.yml](https://github.com/upptime/upptime/commits/master/history/secret-site.yml)           | <img alt="Gráfico de tempo de resposta" src="./ graphs / secret-site.png" height="20"> 51ms       |
 
-<!--end: status pages-->
+<!--end: status pages--->
 
-<!--start: docs-->
+<!--start: docs--->
 
 *This README is also available in [🇬🇧 English](./README.md)*
 
@@ -56,10 +56,10 @@ Upptime (https://upptime.js.org) é o monitor de uptime de código aberto e a p�
 
 ## 💝 Quem está usando o Upptime
 
-<!-- start: readme-repos-list -->
+<!-- start: readme-repos-list --->
 
-<!- Esta lista é gerada automaticamente usando koj-co / readme-repos-list ->
-<!- Não edite esta lista manualmente, suas alterações serão substituídas ->
+<!-- Esta lista é gerada automaticamente usando koj-co / readme-repos-list -->
+<!-- Não edite esta lista manualmente, suas alterações serão substituídas -->
 [![upptime / .github](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https: //upptime.js.org)
 [![koj-co / status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F65495851%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https : //status.koj.co)
 [![baealex / upptime](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F35596687%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https: / /status.blex.me)
@@ -72,7 +72,7 @@ Upptime (https://upptime.js.org) é o monitor de uptime de código aberto e a p�
 [![stethoscope-js / status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F71249357%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https : //stethoscope-js.github.io/status/)
 [![eartharoid / upptime](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F20905071%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https: / /status.eartharoid.me)
 
-<!-- end: readme-repos-list -->
+<!-- end: readme-repos-list --->
 
 ## 👩‍💻 [Documentação](https://upptime.js.org)
 
@@ -116,14 +116,14 @@ Quatro vezes por dia, outro fluxo de trabalho é executado e registra o tempo de
     </td>
   </tr>
 </table>
-<!--end: docs-->
+<!--end: docs--->
 
 ## 📄 Licença
 
 - Código: [MIT](./ LICENSE) © [Koj](https://koj.co)
 - Dados no diretório `. / History`: [Open Database License](https://opendatacommons.org/licenses/odbl/1-0/)
 
-<!- start: logo ->
+<!-- start: logo -->
 
 <p align="center">
   <a href="https://koj.co">
@@ -133,4 +133,4 @@ Quatro vezes por dia, outro fluxo de trabalho é executado e registra o tempo de
 <p align="center">
   <sub> Um projeto de código aberto de <a href="https://koj.co"> Koj </a>. <br> <a href="https://koj.co"> Mobília sua casa com estilo, por apenas CHF175 / mês → </a> </sub>
 </p>
-<!- end: logo ->
+<!-- end: logo -->
