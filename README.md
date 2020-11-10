@@ -25,7 +25,7 @@ Upptime (https://upptime.js.org) is the open-source uptime monitor and status pa
 | [Internet Archive](https://archive.org)         | 🟩 Up   | [internet-archive.yml](https://github.com/upptime/upptime/commits/master/history/internet-archive.yml) | <img alt="Response time graph" src="./graphs/internet-archive.png" height="20"> 544ms | [![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Finternet-archive%2Fuptime.json)](https://demo.upptime.js.org/history/internet-archive) |
 | [Hacker News](https://news.ycombinator.com)     | 🟩 Up   | [hacker-news.yml](https://github.com/upptime/upptime/commits/master/history/hacker-news.yml)           | <img alt="Response time graph" src="./graphs/hacker-news.png" height="20"> 324ms      | [![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fhacker-news%2Fuptime.json)](https://demo.upptime.js.org/history/hacker-news)           |
 | [Broken Site](https://thissitedoesnotexist.com) | 🟥 Down | [broken-site.yml](https://github.com/upptime/upptime/commits/master/history/broken-site.yml)           | <img alt="Response time graph" src="./graphs/broken-site.png" height="20"> 0ms        | [![Uptime 0.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fbroken-site%2Fuptime.json)](https://demo.upptime.js.org/history/broken-site)             |
-| Secret Site                                     | 🟩 Up   | [secret-site.yml](https://github.com/upptime/upptime/commits/master/history/secret-site.yml)           | <img alt="Response time graph" src="./graphs/secret-site.png" height="20"> 50ms       | [![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fsecret-site%2Fuptime.json)](https://demo.upptime.js.org/history/secret-site)           |
+| Secret Site                                     | 🟥 Down | [secret-site.yml](https://github.com/upptime/upptime/commits/master/history/secret-site.yml)           | <img alt="Response time graph" src="./graphs/secret-site.png" height="20"> 50ms       | [![Uptime 100.00%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fsecret-site%2Fuptime.json)](https://demo.upptime.js.org/history/secret-site)           |
 
 <!--end: status pages-->
 
@@ -58,6 +58,7 @@ _This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br
 <!-- start: readme-repos-list -->
 <!-- This list is auto-generated using koj-co/readme-repos-list -->
 <!-- Do not edit this list manually, your changes will be overwritten -->
+
 [![upptime/.github](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
 [![coinsambacom/upptime](https://images.weserv.nl/?url=avatars2.githubusercontent.com%2Fu%2F69856662%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.coinsamba.com)
 [![koj-co/status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F65495851%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.koj.co)
@@ -116,6 +117,7 @@ _This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br
 [![humanscape/service-status](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F38031863%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.humanscape.io)
 [![mue/status](https://images.weserv.nl/?url=avatars2.githubusercontent.com%2Fu%2F58658585%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.muetab.com)
 [![wakatime/statuspage](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F4814844%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.wakatime.com)
+
 <!-- end: readme-repos-list -->
 
 ## 👩‍💻 [Documentation](https://upptime.js.org)
