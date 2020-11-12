@@ -8,8 +8,8 @@ sites:
     url: https://www.google.com
   - name: Wikipedia
     url: https://en.wikipedia.org
-  - name: Internet Archive
-    url: https://archive.org
+  - name: IP address
+    url: http://18.156.176.223:3000
   - name: Hacker News
     url: https://news.ycombinator.com
   - name: Broken Site
