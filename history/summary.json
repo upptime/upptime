@@ -16,12 +16,12 @@
     "time": 151
   },
   {
-    "name": "Internet Archive",
-    "url": "https://archive.org",
-    "slug": "internet-archive",
+    "name": "IP address",
+    "url": "http://18.156.176.223:3000",
+    "slug": "ip-address",
     "status": "up",
     "uptime": "100.00",
-    "time": 545
+    "time": 367
   },
   {
     "name": "Hacker News",
@@ -29,7 +29,7 @@
     "slug": "hacker-news",
     "status": "up",
     "uptime": "100.00",
-    "time": 328
+    "time": 333
   },
   {
     "name": "Broken Site",
