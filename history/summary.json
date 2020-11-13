@@ -13,7 +13,7 @@
     "slug": "wikipedia",
     "status": "up",
     "uptime": "100.00",
-    "time": 151
+    "time": 149
   },
   {
     "name": "IP address",
@@ -21,7 +21,7 @@
     "slug": "ip-address",
     "status": "up",
     "uptime": "100.00",
-    "time": 367
+    "time": 370
   },
   {
     "name": "Hacker News",
@@ -45,6 +45,6 @@
     "slug": "secret-site",
     "status": "up",
     "uptime": "100.00",
-    "time": 49
+    "time": 50
   }
 ]
