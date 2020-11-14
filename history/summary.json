@@ -13,15 +13,7 @@
     "slug": "wikipedia",
     "status": "up",
     "uptime": "100.00",
-    "time": 150
-  },
-  {
-    "name": "IP address",
-    "url": "http://18.156.176.223:3000",
-    "slug": "ip-address",
-    "status": "up",
-    "uptime": "100.00",
-    "time": 409
+    "time": 149
   },
   {
     "name": "Hacker News",
@@ -29,7 +21,7 @@
     "slug": "hacker-news",
     "status": "up",
     "uptime": "100.00",
-    "time": 336
+    "time": 341
   },
   {
     "name": "Broken Site",
