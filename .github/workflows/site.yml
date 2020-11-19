@@ -9,9 +9,6 @@ name: Static Site CI
 on:
   schedule:
     - cron: "0 1 * * *"
-  push:
-    branches:
-      - master
   workflow_dispatch:
 jobs:
   release:
