@@ -57,6 +57,7 @@ _This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br
 <!-- start: readme-repos-list -->
 <!-- This list is auto-generated using koj-co/readme-repos-list -->
 <!-- Do not edit this list manually, your changes will be overwritten -->
+
 [![upptime/.github](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F72692977%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.js.org)
 [![dlunch/upptime](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F1371509%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://upptime.dlunch.net/)
 [![fjoker/upptime](https://images.weserv.nl/?url=avatars2.githubusercontent.com%2Fu%2F6489660%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://demo.upptime.js.org)
@@ -123,6 +124,7 @@ _This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br
 [![humanscape/service-status](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F38031863%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.humanscape.io)
 [![mue/status](https://images.weserv.nl/?url=avatars2.githubusercontent.com%2Fu%2F58658585%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.muetab.com)
 [![wakatime/statuspage](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F4814844%3Fv%3D4&h=50&w=50&fit=cover&mask=circle&maxage=7d)](https://status.wakatime.com)
+
 <!-- end: readme-repos-list -->
 
 ## 👩‍💻 [Documentation](https://upptime.js.org)
