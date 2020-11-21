@@ -5,7 +5,7 @@
     "slug": "google",
     "status": "up",
     "uptime": "100.00",
-    "time": 88
+    "time": 87
   },
   {
     "name": "Wikipedia",
@@ -28,7 +28,7 @@
     "url": "https://thissitedoesnotexist.com",
     "slug": "broken-site",
     "status": "down",
-    "uptime": "99.28",
+    "uptime": "98.31",
     "time": 0
   },
   {
