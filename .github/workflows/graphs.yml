@@ -2,8 +2,8 @@
 # ===============================
 #
 # Your changes will be overwritten when the template updates (weekly)
-# Instead, propose changes to the template: https://github.com/upptime/upptime
-# Or, change your configuration in .upptimerc.yml
+# Instead, change your .upptimerc.yml configuration: https://upptime.js.org/docs
+# Or propose changes to this template: https://github.com/upptime/upptime
 
 name: Graphs CI
 on:
