@@ -1,29 +1,29 @@
 # Change these first
-owner: upptime # Your GitHub username
+owner: pilasguru # Your GitHub username
 repo: upptime # Your Github repository name
 
 # Add your sites here
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Broken Site
-    url: https://thissitedoesnotexist.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Blog
+    url: https://pilas.guru
+  - name: Deployandome
+    url: https://deployando.me
+  - name: Pi.lastr.us
+    url: https://pi.lastr.us
+  - name: Pil.as
+    url: http://pil.as
+  - name: Agujero Del Mate
+    url: http://www.agujerodelmate.org
 
 status-website:
   # Add your custom domain below, or remove the next line if you don't have a domain
-  cname: demo.upptime.js.org
+  # cname: demo.upptime.js.org
   # Uncomment the following line if you don't have a custom domain and add your repo name
-  # baseUrl: /upptime
+  baseUrl: /upptime
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [Github repository](https://github.com/koj-co/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/koj-co/upptime)
+  introTitle: "**Upptime** is a personal websites monitor"
+  introMessage: There are nothing interesting to other here. This site is powered by [Upptime](https://github.com/koj-co/upptime).
   navbar:
     - title: Status
       href: /
