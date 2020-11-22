@@ -20,7 +20,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT }}
-      - name: Update response time
+      - name: Check endpoint status
         uses: upptime/uptime-monitor@master
         with:
           command: "update"

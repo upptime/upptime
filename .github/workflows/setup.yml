@@ -42,7 +42,7 @@ jobs:
           SECRET_SITE_7: ${{ secrets.SECRET_SITE_7 }}
           SECRET_SITE_8: ${{ secrets.SECRET_SITE_8 }}
           SECRET_SITE_9: ${{ secrets.SECRET_SITE_9 }}
-      - name: Update response time
+      - name: Update summary in README
         uses: upptime/uptime-monitor@master
         with:
           command: "readme"

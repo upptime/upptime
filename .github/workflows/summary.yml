@@ -22,7 +22,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT }}
-      - name: Update response time
+      - name: Update summary in README
         uses: upptime/uptime-monitor@master
         with:
           command: "readme"
@@ -34,5 +34,5 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           query: "topic:upptime"
           size: 30
-          max:  1000
-          one-per-owner:  true
+          max: 1000
+          one-per-owner: true
