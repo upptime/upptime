@@ -22,7 +22,7 @@ jobs:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT }}
       - name: Generate site
-        uses: upptime/uptime-monitor@master
+        uses: upptime/uptime-monitor@v1.16.1
         with:
           command: "site"
         env:
