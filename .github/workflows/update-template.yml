@@ -34,4 +34,4 @@ jobs:
           commit_message: ":arrow_up: Update @upptime to latest"
           commit_user_name: Upptime Bot
           commit_user_email: upptime@koj.co
-          commit_author: Upptime Bot <bot@koj.co>
+          commit_author: Upptime Bot <upptime@koj.co>
