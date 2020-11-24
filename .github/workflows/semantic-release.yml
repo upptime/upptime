@@ -5,7 +5,7 @@
 # Instead, change your .upptimerc.yml configuration: https://upptime.js.org/docs
 # Or propose changes to this template: https://github.com/upptime/upptime
 
-name: Release CI
+name: Semantic Release CI
 on:
   schedule:
     - cron: "0 4 * * *"
