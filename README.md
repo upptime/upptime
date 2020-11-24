@@ -24,7 +24,7 @@
 | [Wikipedia](https://en.wikipedia.org)           | 🟩 Up   | [wikipedia.yml](https://github.com/upptime/upptime/commits/master/history/wikipedia.yml)     | <img alt="Response time graph" src="./graphs/wikipedia.png" height="20"> 127ms   | [![Uptime 100.00%%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fwikipedia%2Fuptime.json)](https://demo.upptime.js.org/history/wikipedia)    |
 | [Hacker News](https://news.ycombinator.com)     | 🟩 Up   | [hacker-news.yml](https://github.com/upptime/upptime/commits/master/history/hacker-news.yml) | <img alt="Response time graph" src="./graphs/hacker-news.png" height="20"> 346ms | [![Uptime 99.82%%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fhacker-news%2Fuptime.json)](https://demo.upptime.js.org/history/hacker-news) |
 | [Broken Site](https://thissitedoesnotexist.com) | 🟥 Down | [broken-site.yml](https://github.com/upptime/upptime/commits/master/history/broken-site.yml) | <img alt="Response time graph" src="./graphs/broken-site.png" height="20"> 0ms   | [![Uptime 0.00%%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fbroken-site%2Fuptime.json)](https://demo.upptime.js.org/history/broken-site)  |
-| Secret Site                                     | 🟩 Up   | [secret-site.yml](https://github.com/upptime/upptime/commits/master/history/secret-site.yml) | <img alt="Response time graph" src="./graphs/secret-site.png" height="20"> 49ms  | [![Uptime 99.98%%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fsecret-site%2Fuptime.json)](https://demo.upptime.js.org/history/secret-site) |
+| Secret Site                                     | 🟩 Up   | [secret-site.yml](https://github.com/upptime/upptime/commits/master/history/secret-site.yml) | <img alt="Response time graph" src="./graphs/secret-site.png" height="20"> 49ms  | [![Uptime 99.97%%](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fupptime%2Fupptime%2Fmaster%2Fapi%2Fsecret-site%2Fuptime.json)](https://demo.upptime.js.org/history/secret-site) |
 
 <!--end: status pages-->
 
@@ -57,6 +57,7 @@ _This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br
 <!-- start: readme-repos-list -->
 <!-- This list is auto-generated using koj-co/readme-repos-list -->
 <!-- Do not edit this list manually, your changes will be overwritten -->
+
 [![liamstewart23/uptime](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F15363506%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://demo.upptime.js.org)
 [![avioli/ionata.com.au-uptime](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F524259%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://ionata.com.au)
 [![BenMagill/upptime](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F34661412%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://upptime.github.io/upptime)
@@ -270,6 +271,7 @@ _This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br
 [![mue/status](https://images.weserv.nl/?url=avatars2.githubusercontent.com%2Fu%2F58658585%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.muetab.com)
 [![humanscape/service-status](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F38031863%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.humanscape.io)
 [![wakatime/statuspage](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F4814844%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.wakatime.com)
+
 <!-- end: readme-repos-list -->
 
 ## 👩‍💻 [Documentation](https://upptime.js.org)
