@@ -23,7 +23,7 @@ jobs:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT }}
       - name: Update response time
-        uses: upptime/uptime-monitor@v1.16.1
+        uses: upptime/uptime-monitor@v1.17.2
         with:
           command: "response-time"
         env:
