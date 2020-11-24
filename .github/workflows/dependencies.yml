@@ -21,8 +21,8 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT }}
-      - name: Generate site
-        uses: upptime/uptime-monitor@v1.16.1
+      - name: Update dependencies
+        uses: upptime/uptime-monitor@v1.17.0
         with:
           command: "update-dependencies"
         env:
