@@ -30,7 +30,7 @@ jobs:
       - name: Add .gitignore
         run: echo "node_modules\nrelease.config.js\npackage.json\npackage-lock.json\n.gitignore" > .gitignore
       - name: Initialize npm package
-        run: echo "{\n\  "name\": \"@upptime/upptime\"\n}" > package.json
+        run: echo '{ "name": "@upptime/upptime" }' > package.json
       - name: Install @koj-co/config and semantic-release
         run: npm i @koj/config semantic-release
       - name: Add Semantic Release config
