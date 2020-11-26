@@ -13,14 +13,14 @@
     "slug": "wikipedia",
     "status": "up",
     "uptime": "100.00%",
-    "time": 125
+    "time": 123
   },
   {
     "name": "Hacker News",
     "url": "https://news.ycombinator.com",
     "slug": "hacker-news",
     "status": "up",
-    "uptime": "99.82%",
+    "uptime": "99.83%",
     "time": 347
   },
   {
@@ -36,7 +36,7 @@
     "url": "$SECRET_SITE",
     "slug": "secret-site",
     "status": "up",
-    "uptime": "99.97%",
+    "uptime": "99.98%",
     "time": 48
   }
 ]
