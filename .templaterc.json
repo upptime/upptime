@@ -1,4 +1,0 @@
-{
-  "files": ["site/**/*", ".github/**/*", "*.ts", "tsconfig.json"],
-  "removeFiles": ["README.pt-br.md", "CHANGELOG.md"]
-}
