@@ -22,16 +22,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT }}
-      - name: Setup Node.js
-        uses: actions/setup-node@v1.4.4
-        with:
-          node-version: 14
       - name: Update template
-        run: npx update-template https://github.com/upptime/upptime
-      - name: Commit new data
-        uses: stefanzweifel/git-auto-commit-action@v4.5.1
+        uses: upptime/uptime-monitor@v1.18.0
         with:
-          commit_message: ":arrow_up: Update @upptime to latest"
-          commit_user_name: Upptime Bot
-          commit_user_email: upptime@koj.co
-          commit_author: Upptime Bot <upptime@koj.co>
+          command: "update-template"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
