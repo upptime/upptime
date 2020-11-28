@@ -13,7 +13,7 @@
     "slug": "wikipedia",
     "status": "up",
     "uptime": "100.00%",
-    "time": 122
+    "time": 121
   },
   {
     "name": "Hacker News",
@@ -37,6 +37,6 @@
     "slug": "secret-site",
     "status": "up",
     "uptime": "99.98%",
-    "time": 48
+    "time": 49
   }
 ]
