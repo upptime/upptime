@@ -57,7 +57,6 @@ _This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br
 <!-- start: readme-repos-list -->
 <!-- This list is auto-generated using koj-co/readme-repos-list -->
 <!-- Do not edit this list manually, your changes will be overwritten -->
-
 [![liamstewart23/uptime](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F15363506%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://demo.upptime.js.org)
 [![j0hannr/upptime](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F52762073%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://demo.upptime.js.org)
 [![AttractMore/uptimemonitor](https://images.weserv.nl/?url=avatars2.githubusercontent.com%2Fu%2F986557%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://upptime.github.io/upptime)
@@ -214,8 +213,8 @@ _This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br
 [![brianjhanson/upptime-test](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F1843073%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://upptime.brianhanson.net)
 [![Kleofass/Uptime](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F4000163%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.kleofass.lv)
 [![nestdotland/status](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F65864058%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.nest.land)
-[![fixator10/status](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F11073934%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.fixator10.ru)
 [![sebastianroming/status.webmonkey.io](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F200112%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.webmonkey.io)
+[![fixator10/status](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F11073934%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.fixator10.ru)
 [![chowdhary-org/status](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F68894094%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://chowdhary-org.github.io/status/)
 [![dapodix/status](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F74092339%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://dapodix.github.io/status)
 [![EnsembleTravelGroup/EnsembleTravelUpptime](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F6980232%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.ensembletravel.com)
@@ -337,7 +336,6 @@ _This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br
 [![mue/status](https://images.weserv.nl/?url=avatars2.githubusercontent.com%2Fu%2F58658585%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.muetab.com)
 [![humanscape/service-status](https://images.weserv.nl/?url=avatars0.githubusercontent.com%2Fu%2F38031863%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.humanscape.io)
 [![wakatime/statuspage](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F4814844%3Fv%3D4&h=30&w=30&fit=cover&mask=circle&maxage=7d)](https://status.wakatime.com)
-
 <!-- end: readme-repos-list -->
 
 ## 👩‍💻 [Documentation](https://upptime.js.org)
