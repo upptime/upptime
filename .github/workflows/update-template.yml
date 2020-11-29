@@ -1,5 +1,3 @@
-[object Promise]
-
 name: Update Template CI
 on:
   schedule:
