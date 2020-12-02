@@ -9,11 +9,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.98%",
     "uptimeYear": "99.99%",
-    "time": 8724,
+    "time": 89,
     "timeDay": 65,
-    "timeWeek": 760,
-    "timeMonth": 3597,
-    "timeYear": 8724
+    "timeWeek": 76,
+    "timeMonth": 82,
+    "timeYear": 89
   },
   {
     "name": "Wikipedia",
@@ -25,11 +25,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.98%",
     "uptimeYear": "100.00%",
-    "time": 10973,
+    "time": 112,
     "timeDay": 23,
-    "timeWeek": 771,
-    "timeMonth": 3284,
-    "timeYear": 10973
+    "timeWeek": 77,
+    "timeMonth": 75,
+    "timeYear": 112
   },
   {
     "name": "Hacker News",
@@ -41,11 +41,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.98%",
     "uptimeYear": "99.84%",
-    "time": 35725,
+    "time": 365,
     "timeDay": 388,
-    "timeWeek": 4270,
-    "timeMonth": 17867,
-    "timeYear": 35725
+    "timeWeek": 427,
+    "timeMonth": 406,
+    "timeYear": 365
   },
   {
     "name": "Broken Site",
@@ -57,11 +57,11 @@
     "uptimeWeek": "0.00%",
     "uptimeMonth": "1.40%",
     "uptimeYear": "0.00%",
-    "time": null,
-    "timeDay": null,
-    "timeWeek": null,
-    "timeMonth": null,
-    "timeYear": null
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0
   },
   {
     "name": "Secret Site",
@@ -73,10 +73,10 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.96%",
     "uptimeYear": "99.98%",
-    "time": 4787,
+    "time": 50,
     "timeDay": 19,
-    "timeWeek": 392,
-    "timeMonth": 1837,
-    "timeYear": 4787
+    "timeWeek": 39,
+    "timeMonth": 40,
+    "timeYear": 50
   }
 ]
