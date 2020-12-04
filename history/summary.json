@@ -9,11 +9,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.98%",
     "uptimeYear": "99.99%",
-    "time": 87,
-    "timeDay": 170,
-    "timeWeek": 87,
-    "timeMonth": 84,
-    "timeYear": 87
+    "time": 89,
+    "timeDay": 589,
+    "timeWeek": 140,
+    "timeMonth": 96,
+    "timeYear": 89
   },
   {
     "name": "Wikipedia",
@@ -26,9 +26,9 @@
     "uptimeMonth": "99.98%",
     "uptimeYear": "100.00%",
     "time": 138,
-    "timeDay": 134,
-    "timeWeek": 80,
-    "timeMonth": 78,
+    "timeDay": 21,
+    "timeWeek": 77,
+    "timeMonth": 75,
     "timeYear": 138
   },
   {
@@ -41,11 +41,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.98%",
     "uptimeYear": "99.84%",
-    "time": 364,
-    "timeDay": 389,
-    "timeWeek": 426,
-    "timeMonth": 409,
-    "timeYear": 364
+    "time": 365,
+    "timeDay": 520,
+    "timeWeek": 435,
+    "timeMonth": 414,
+    "timeYear": 365
   },
   {
     "name": "Broken Site",
@@ -74,9 +74,9 @@
     "uptimeMonth": "99.96%",
     "uptimeYear": "99.98%",
     "time": 46,
-    "timeDay": 98,
-    "timeWeek": 47,
-    "timeMonth": 41,
+    "timeDay": 44,
+    "timeWeek": 48,
+    "timeMonth": 40,
     "timeYear": 46
   }
 ]
