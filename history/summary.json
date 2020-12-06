@@ -2,6 +2,7 @@
   {
     "name": "Google",
     "url": "https://www.google.com",
+    "icon": "https://favicons.githubusercontent.com/fallback-icon",
     "slug": "google",
     "status": "up",
     "uptime": "99.99%",
@@ -11,13 +12,14 @@
     "uptimeYear": "99.99%",
     "time": 89,
     "timeDay": 54,
-    "timeWeek": 133,
+    "timeWeek": 131,
     "timeMonth": 90,
     "timeYear": 89
   },
   {
     "name": "Wikipedia",
     "url": "https://en.wikipedia.org",
+    "icon": "https://favicons.githubusercontent.com/fallback-icon",
     "slug": "wikipedia",
     "status": "up",
     "uptime": "100.00%",
@@ -27,13 +29,14 @@
     "uptimeYear": "100.00%",
     "time": 137,
     "timeDay": 103,
-    "timeWeek": 82,
+    "timeWeek": 72,
     "timeMonth": 75,
     "timeYear": 137
   },
   {
     "name": "Hacker News",
     "url": "https://news.ycombinator.com",
+    "icon": "https://favicons.githubusercontent.com/fallback-icon",
     "slug": "hacker-news",
     "status": "up",
     "uptime": "99.84%",
@@ -43,13 +46,14 @@
     "uptimeYear": "99.84%",
     "time": 365,
     "timeDay": 353,
-    "timeWeek": 426,
+    "timeWeek": 425,
     "timeMonth": 415,
     "timeYear": 365
   },
   {
     "name": "Broken Site",
     "url": "https://thissitedoesnotexist.com",
+    "icon": "https://favicons.githubusercontent.com/fallback-icon",
     "slug": "broken-site",
     "status": "down",
     "uptime": "0.00%",
@@ -66,6 +70,7 @@
   {
     "name": "Secret Site",
     "url": "$SECRET_SITE",
+    "icon": "https://favicons.githubusercontent.com/fallback-icon",
     "slug": "secret-site",
     "status": "up",
     "uptime": "99.98%",
