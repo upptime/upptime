@@ -2,10 +2,12 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: ''
-assignees: ''
+labels: 'bug'
+assignees: 'AnandChowdhary'
 
 ---
+
+<!-- If you have a question, you should use Discussions instead: https://github.com/upptime/upptime/discussions -->
 
 **Describe the bug**
 A clear and concise description of what the bug is.
