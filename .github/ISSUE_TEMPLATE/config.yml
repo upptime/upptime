@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Feature requests and ideas
+    url: https://github.com/upptime/upptime/discussions/new?category=ideas
+    about: Suggest an idea for this project
+  - name: Questions
+    url: https://github.com/upptime/upptime/discussions/new?category=q-a
+    about: Please ask and answer questions here
