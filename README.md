@@ -49,6 +49,8 @@ _This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br
   - A simple, beautiful, and accessible PWA is generated
   - Built with Svelte and Sapper
   - Fetches data from this repository using the GitHub API
+  
+_Upptime is not affiliated to or endorsed by GitHub._
 
 [![Screenshot of status website](https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/screenshot-status.png)](https://upptime.js.org)
 
