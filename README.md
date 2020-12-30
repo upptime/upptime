@@ -507,7 +507,7 @@ _Upptime is not affiliated to or endorsed by GitHub._
 [![xFuture603/check_my_websites](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F19530956%3Fv%3D4&h=20&w=20&fit=cover&mask=circle&maxage=7d)](https://xFuture603.github.io/check_my_websites)
 [![racerxdl/teske-status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F578310%3Fv%3D4&h=20&w=20&fit=cover&mask=circle&maxage=7d)](https://status.lucasteske.dev)
 [![dhedegaard/upptime](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F591276%3Fv%3D4&h=20&w=20&fit=cover&mask=circle&maxage=7d)](https://demo.upptime.js.org)
-[![danielsocials/upptime](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F7897760%3Fv%3D4&h=20&w=20&fit=cover&mask=circle&maxage=7d)](https://danielsocials# Your GitHub username.github.io/upptime)
+[![danielsocials/upptime](https://images.weserv.nl/?url=avatars1.githubusercontent.com%2Fu%2F7897760%3Fv%3D4&h=20&w=20&fit=cover&mask=circle&maxage=7d)](https://danielsocials.github.io/upptime)
 [![Be-Square/upptime](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F76710375%3Fv%3D4&h=20&w=20&fit=cover&mask=circle&maxage=7d)](https://Be-Square.github.io/upptime)
 [![thomaspuppe/upptime](https://images.weserv.nl/?url=avatars2.githubusercontent.com%2Fu%2F148697%3Fv%3D4&h=20&w=20&fit=cover&mask=circle&maxage=7d)](https://thomaspuppe.github.io/upptime)
 [![p1ass/status](https://images.weserv.nl/?url=avatars3.githubusercontent.com%2Fu%2F30015728%3Fv%3D4&h=20&w=20&fit=cover&mask=circle&maxage=7d)](https://status.p1ass.com)
