@@ -12,6 +12,9 @@ sites:
     url: https://news.ycombinator.com
   - name: Broken Site
     url: https://thissitedoesnotexist.com
+  - name: Test for HEAD
+    method: HEAD
+    url: https://httpstatus.xyz/200
   - name: Secret Site
     url: $SECRET_SITE
 
