@@ -122,19 +122,17 @@
     "icon": "https://favicons.githubusercontent.com/www.google.com",
     "slug": "test-for-head",
     "status": "up",
-    "uptime": "2.52%",
-    "uptimeDay": "2.52%",
-    "uptimeWeek": "2.52%",
-    "uptimeMonth": "2.52%",
-    "uptimeYear": "2.52%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 15,
     "timeDay": 15,
     "timeWeek": 15,
     "timeMonth": 15,
     "timeYear": 15,
-    "dailyMinutesDown": {
-      "2021-01-01": 5
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Secret Site",
