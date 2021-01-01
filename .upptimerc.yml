@@ -14,7 +14,7 @@ sites:
     url: https://thissitedoesnotexist.com
   - name: Test for HEAD
     method: HEAD
-    url: https://httpstatus.xyz/200
+    url: https://www.google.com
   - name: Secret Site
     url: $SECRET_SITE
 
