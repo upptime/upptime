@@ -31,3 +31,6 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           SECRETS_CONTEXT: ${{ toJson(secrets) }}
+          NOTIFICATION_SLACK: ${{ secrets.NOTIFICATION_SLACK }} 
+          NOTIFICATION_SLACK_WEBHOOK: ${{ secrets.NOTIFICATION_SLACK_WEBHOOK }} 
+          NOTIFICATION_SLACK_WEBHOOK_URL: ${{ secrets.NOTIFICATION_SLACK_WEBHOOK_URL }}
