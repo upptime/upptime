@@ -18,8 +18,7 @@ sites:
   - name: Secret Site
     url: $SECRET_SITE
   - name: TCP ping
-    url: 46.28.246.123
-    port: 80
+    url: 1.1.1.1
 
 status-website:
   # Add your custom domain below, or remove the next line if you don't have a domain
