@@ -29,7 +29,7 @@ jobs:
         with:
           command: "readme"
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.GH_PAT }}
       - name: Run readme-repos-list
         uses: koj-co/readme-repos-list@master
         with:
