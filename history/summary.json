@@ -60,17 +60,19 @@
     "url": "https://thissitedoesnotexist.koj.co",
     "icon": "https://favicons.githubusercontent.com/thissitedoesnotexist.koj.co",
     "slug": "test-broken-site",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "98.97%",
+    "uptimeDay": "98.97%",
+    "uptimeWeek": "98.97%",
+    "uptimeMonth": "98.97%",
+    "uptimeYear": "98.97%",
     "time": 543,
     "timeDay": 543,
     "timeWeek": 543,
     "timeMonth": 543,
     "timeYear": 543,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2021-04-20": 0
+    }
   }
 ]
