@@ -11,8 +11,8 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 86,
-    "timeDay": 101,
-    "timeWeek": 85,
+    "timeDay": 72,
+    "timeWeek": 86,
     "timeMonth": 88,
     "timeYear": 86,
     "dailyMinutesDown": {}
@@ -29,9 +29,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 134,
-    "timeDay": 269,
-    "timeWeek": 214,
-    "timeMonth": 177,
+    "timeDay": 214,
+    "timeWeek": 207,
+    "timeMonth": 181,
     "timeYear": 134,
     "dailyMinutesDown": {}
   },
@@ -47,9 +47,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.95%",
     "time": 384,
-    "timeDay": 408,
-    "timeWeek": 395,
-    "timeMonth": 391,
+    "timeDay": 381,
+    "timeWeek": 397,
+    "timeMonth": 385,
     "timeYear": 384,
     "dailyMinutesDown": {
       "2021-03-15": 199
@@ -61,18 +61,19 @@
     "icon": "https://favicons.githubusercontent.com/thissitedoesnotexist.koj.co",
     "slug": "test-broken-site",
     "status": "down",
-    "uptime": "1.06%",
-    "uptimeDay": "1.06%",
-    "uptimeWeek": "1.06%",
-    "uptimeMonth": "1.06%",
-    "uptimeYear": "1.06%",
+    "uptime": "0.41%",
+    "uptimeDay": "0.00%",
+    "uptimeWeek": "0.41%",
+    "uptimeMonth": "0.41%",
+    "uptimeYear": "0.41%",
     "time": 543,
-    "timeDay": 543,
+    "timeDay": 0,
     "timeWeek": 543,
     "timeMonth": 543,
     "timeYear": 543,
     "dailyMinutesDown": {
-      "2021-04-21": 52,
+      "2021-04-22": 53,
+      "2021-04-21": 1440,
       "2021-04-20": 844
     }
   }
