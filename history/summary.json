@@ -22,9 +22,9 @@
     "url": "https://en.wikipedia.org",
     "icon": "https://favicons.githubusercontent.com/en.wikipedia.org",
     "slug": "wikipedia",
-    "status": "up",
+    "status": "down",
     "uptime": "99.99%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.99%",
@@ -34,6 +34,7 @@
     "timeMonth": 282,
     "timeYear": 201,
     "dailyMinutesDown": {
+      "2021-11-29": 0,
       "2021-07-16": 36
     }
   },
@@ -43,18 +44,18 @@
     "icon": "https://favicons.githubusercontent.com/news.ycombinator.com",
     "slug": "hacker-news",
     "status": "up",
-    "uptime": "99.96%",
-    "uptimeDay": "99.57%",
-    "uptimeWeek": "99.94%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.95%",
+    "uptime": "99.87%",
+    "uptimeDay": "54.27%",
+    "uptimeWeek": "93.47%",
+    "uptimeMonth": "98.50%",
+    "uptimeYear": "99.83%",
     "time": 416,
     "timeDay": 6141,
     "timeWeek": 2277,
     "timeMonth": 894,
     "timeYear": 433,
     "dailyMinutesDown": {
-      "2021-11-29": 6,
+      "2021-11-29": 658,
       "2021-04-28": 38,
       "2021-03-15": 199
     }
@@ -76,7 +77,7 @@
     "timeMonth": 0,
     "timeYear": 543,
     "dailyMinutesDown": {
-      "2021-11-29": 479,
+      "2021-11-29": 1132,
       "2021-11-28": 1440,
       "2021-11-27": 1440,
       "2021-11-26": 1440,
