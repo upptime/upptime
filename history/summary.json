@@ -14,7 +14,7 @@
     "timeDay": 112,
     "timeWeek": 194,
     "timeMonth": 111,
-    "timeYear": 103,
+    "timeYear": 104,
     "dailyMinutesDown": {}
   },
   {
@@ -22,9 +22,9 @@
     "url": "https://en.wikipedia.org",
     "icon": "https://favicons.githubusercontent.com/en.wikipedia.org",
     "slug": "wikipedia",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.99%",
@@ -32,8 +32,9 @@
     "timeDay": 135,
     "timeWeek": 198,
     "timeMonth": 200,
-    "timeYear": 230,
+    "timeYear": 231,
     "dailyMinutesDown": {
+      "2022-02-25": 0,
       "2021-07-16": 36
     }
   },
@@ -43,18 +44,18 @@
     "icon": "https://favicons.githubusercontent.com/news.ycombinator.com",
     "slug": "hacker-news",
     "status": "up",
-    "uptime": "84.41%",
+    "uptime": "84.32%",
     "uptimeDay": "0.00%",
     "uptimeWeek": "0.00%",
     "uptimeMonth": "0.00%",
-    "uptimeYear": "75.92%",
+    "uptimeYear": "75.76%",
     "time": 416,
     "timeDay": 180,
     "timeWeek": 291,
     "timeMonth": 340,
     "timeYear": 415,
     "dailyMinutesDown": {
-      "2022-02-25": 58,
+      "2022-02-25": 943,
       "2022-02-24": 1440,
       "2022-02-23": 1440,
       "2022-02-22": 1440,
@@ -164,7 +165,7 @@
     "timeMonth": 0,
     "timeYear": 543,
     "dailyMinutesDown": {
-      "2022-02-25": 58,
+      "2022-02-25": 943,
       "2022-02-24": 1440,
       "2022-02-23": 1440,
       "2022-02-22": 1440,
