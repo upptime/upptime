@@ -11,9 +11,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 99,
-    "timeDay": 51,
-    "timeWeek": 73,
-    "timeMonth": 75,
+    "timeDay": 73,
+    "timeWeek": 70,
+    "timeMonth": 74,
     "timeYear": 105,
     "dailyMinutesDown": {}
   },
@@ -29,10 +29,10 @@
     "uptimeMonth": "99.96%",
     "uptimeYear": "99.99%",
     "time": 213,
-    "timeDay": 173,
-    "timeWeek": 170,
-    "timeMonth": 231,
-    "timeYear": 238,
+    "timeDay": 186,
+    "timeWeek": 178,
+    "timeMonth": 228,
+    "timeYear": 239,
     "dailyMinutesDown": {
       "2022-03-29": 16,
       "2021-07-16": 36
@@ -44,18 +44,19 @@
     "icon": "https://favicons.githubusercontent.com/news.ycombinator.com",
     "slug": "hacker-news",
     "status": "up",
-    "uptime": "76.17%",
+    "uptime": "76.04%",
     "uptimeDay": "0.00%",
     "uptimeWeek": "0.00%",
     "uptimeMonth": "0.00%",
-    "uptimeYear": "59.24%",
+    "uptimeYear": "58.97%",
     "time": 404,
-    "timeDay": 357,
-    "timeWeek": 335,
-    "timeMonth": 312,
+    "timeDay": 358,
+    "timeWeek": 350,
+    "timeMonth": 319,
     "timeYear": 403,
     "dailyMinutesDown": {
-      "2022-04-27": 85,
+      "2022-04-28": 113,
+      "2022-04-27": 1440,
       "2022-04-26": 1440,
       "2022-04-25": 1440,
       "2022-04-24": 1440,
@@ -204,8 +205,7 @@
       "2021-12-02": 1440,
       "2021-12-01": 1440,
       "2021-11-30": 1440,
-      "2021-11-29": 967,
-      "2021-04-28": 38
+      "2021-11-29": 967
     }
   },
   {
@@ -225,7 +225,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2022-04-27": 85,
+      "2022-04-28": 113,
+      "2022-04-27": 1440,
       "2022-04-26": 1440,
       "2022-04-25": 1440,
       "2022-04-24": 1440,
@@ -588,8 +589,7 @@
       "2021-05-02": 1440,
       "2021-05-01": 1440,
       "2021-04-30": 1440,
-      "2021-04-29": 1440,
-      "2021-04-28": 1440
+      "2021-04-29": 1440
     }
   }
 ]
