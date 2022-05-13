@@ -39,14 +39,14 @@ Upptime is used by [**1,000+**](https://github.com/topics/upptime) people and te
   - Every 5 minutes, a workflow visits your website to make sure it's up
   - Response time is recorded every 6 hours and committed to git
   - Graphs of response time are generated every day
-- GitHub Issues are used for incident reports
+- GitHub Issues is used for incident reports
   - An issue is opened if an endpoint is down
   - People from your team are assigned to the issue
   - Incidents reports are posted as issue comments
   - Issues are locked so non-members cannot comment on them
   - Issues are closed automatically when your site comes back up
   - Slack notifications are sent on updates
-- GitHub Pages are used for the status website
+- GitHub Pages is used for the status website
   - A simple, beautiful, and accessible PWA is generated
   - Built with Svelte and Sapper
   - Fetches data from this repository using the GitHub API
