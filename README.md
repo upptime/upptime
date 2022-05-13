@@ -33,8 +33,6 @@ Upptime is used by [**1,000+**](https://github.com/topics/upptime) people and te
 
 <!--start: docs-->
 
-_This README is also available in [🇧🇷 Brazilian Portuguese](./README.pt-br.md)_
-
 ## ⭐ How it works
 
 - GitHub Actions is used as an uptime monitor
