@@ -30,11 +30,3 @@ jobs:
           command: "readme"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
-      - name: Run readme-repos-list
-        uses: anandchowdhary/readme-repos-list@master
-        with:
-          token: ${{ secrets.GH_PAT }}
-          query: "topic:upptime"
-          size: 20
-          max: 1000
-          one-per-owner: true
