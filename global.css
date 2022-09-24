@@ -201,10 +201,3 @@ article .graph {
   opacity: var(--graph-opacity);
   filter: var(--graph-filter);
 }
-
-@media (max-width: 500px) {
-  .graph {
-    -webkit-mask-image: linear-gradient(to left, black, transparent);
-    mask-image: linear-gradient(to left, black, transparent);
-  }
-}
