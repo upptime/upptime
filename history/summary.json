@@ -2,7 +2,7 @@
   {
     "name": "Google",
     "url": "https://www.google.com",
-    "icon": "https://favicons.githubusercontent.com/www.google.com",
+    "icon": "https://icons.duckduckgo.com/ip3/www.google.com.ico",
     "slug": "google",
     "status": "up",
     "uptime": "100.00%",
@@ -11,16 +11,16 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 103,
-    "timeDay": 84,
-    "timeWeek": 127,
-    "timeMonth": 118,
+    "timeDay": 54,
+    "timeWeek": 126,
+    "timeMonth": 117,
     "timeYear": 96,
     "dailyMinutesDown": {}
   },
   {
     "name": "Wikipedia",
     "url": "https://en.wikipedia.org",
-    "icon": "https://favicons.githubusercontent.com/en.wikipedia.org",
+    "icon": "https://icons.duckduckgo.com/ip3/en.wikipedia.org.ico",
     "slug": "wikipedia",
     "status": "up",
     "uptime": "99.99%",
@@ -29,9 +29,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.99%",
     "time": 232,
-    "timeDay": 150,
-    "timeWeek": 118,
-    "timeMonth": 156,
+    "timeDay": 182,
+    "timeWeek": 120,
+    "timeMonth": 160,
     "timeYear": 217,
     "dailyMinutesDown": {
       "2022-06-12": 21,
@@ -41,7 +41,7 @@
   {
     "name": "Hacker News",
     "url": "https://news.ycombinator.com",
-    "icon": "https://favicons.githubusercontent.com/news.ycombinator.com",
+    "icon": "https://icons.duckduckgo.com/ip3/news.ycombinator.com.ico",
     "slug": "hacker-news",
     "status": "up",
     "uptime": "99.93%",
@@ -50,9 +50,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.90%",
     "time": 366,
-    "timeDay": 245,
-    "timeWeek": 232,
-    "timeMonth": 234,
+    "timeDay": 422,
+    "timeWeek": 228,
+    "timeMonth": 245,
     "timeYear": 362,
     "dailyMinutesDown": {
       "2022-07-08": 538
@@ -61,7 +61,7 @@
   {
     "name": "Test Broken Site",
     "url": "https://thissitedoesnotexist.koj.co",
-    "icon": "https://favicons.githubusercontent.com/thissitedoesnotexist.koj.co",
+    "icon": "https://icons.duckduckgo.com/ip3/thissitedoesnotexist.koj.co.ico",
     "slug": "test-broken-site",
     "status": "down",
     "uptime": "0.00%",
@@ -75,7 +75,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2022-10-02": 116,
+      "2022-10-03": 99,
+      "2022-10-02": 1440,
       "2022-10-01": 1440,
       "2022-09-30": 1440,
       "2022-09-29": 1440,
@@ -438,8 +439,7 @@
       "2021-10-07": 1440,
       "2021-10-06": 1440,
       "2021-10-05": 1440,
-      "2021-10-04": 1440,
-      "2021-10-03": 1440
+      "2021-10-04": 1440
     }
   }
 ]
