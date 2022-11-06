@@ -71,7 +71,7 @@ _Upptime is not affiliated to or endorsed by GitHub._
 
 #### Issues as incidents
 
-When the GitHub Actions workflow detects that one of your URLs is down, it automatically opens a GitHub issue ([example issue #15](https://github.com/koj-co/upptime/issues/15)). You can add incident reports to this issue by adding comments. When your site comes back up, the issue will be closed automatically as well.
+When the GitHub Actions workflow detects that one of your URLs is down, it automatically opens a GitHub issue ([example issue #67](https://github.com/upptime/upptime/issues/67)). You can add incident reports to this issue by adding comments. When your site comes back up, the issue will be closed automatically as well.
 
 <table>
   <tr>
