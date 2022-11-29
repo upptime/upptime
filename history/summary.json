@@ -11,9 +11,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 103,
-    "timeDay": 82,
-    "timeWeek": 136,
-    "timeMonth": 107,
+    "timeDay": 62,
+    "timeWeek": 132,
+    "timeMonth": 97,
     "timeYear": 96,
     "dailyMinutesDown": {}
   },
@@ -29,9 +29,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.99%",
     "time": 221,
-    "timeDay": 98,
-    "timeWeek": 171,
-    "timeMonth": 211,
+    "timeDay": 225,
+    "timeWeek": 188,
+    "timeMonth": 214,
     "timeYear": 208,
     "dailyMinutesDown": {
       "2022-06-12": 21,
@@ -44,18 +44,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.ycombinator.com.ico",
     "slug": "hacker-news",
     "status": "up",
-    "uptime": "98.97%",
+    "uptime": "98.85%",
     "uptimeDay": "0.00%",
     "uptimeWeek": "0.00%",
-    "uptimeMonth": "73.22%",
-    "uptimeYear": "97.67%",
+    "uptimeMonth": "69.92%",
+    "uptimeYear": "97.39%",
     "time": 356,
-    "timeDay": 108,
-    "timeWeek": 272,
-    "timeMonth": 287,
+    "timeDay": 463,
+    "timeWeek": 310,
+    "timeMonth": 298,
     "timeYear": 350,
     "dailyMinutesDown": {
-      "2022-11-28": 72,
+      "2022-11-29": 76,
+      "2022-11-28": 1440,
       "2022-11-27": 1440,
       "2022-11-26": 1440,
       "2022-11-25": 1440,
@@ -85,7 +86,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2022-11-28": 72,
+      "2022-11-29": 76,
+      "2022-11-28": 1440,
       "2022-11-27": 1440,
       "2022-11-26": 1440,
       "2022-11-25": 1440,
@@ -448,8 +450,7 @@
       "2021-12-03": 1440,
       "2021-12-02": 1440,
       "2021-12-01": 1440,
-      "2021-11-30": 1440,
-      "2021-11-29": 1440
+      "2021-11-30": 1440
     }
   }
 ]
