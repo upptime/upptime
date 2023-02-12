@@ -11,9 +11,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 96,
-    "timeDay": 72,
-    "timeWeek": 114,
-    "timeMonth": 91,
+    "timeDay": 57,
+    "timeWeek": 108,
+    "timeMonth": 90,
     "timeYear": 97,
     "dailyMinutesDown": {}
   },
@@ -24,17 +24,16 @@
     "slug": "wikipedia",
     "status": "up",
     "uptime": "99.99%",
-    "uptimeDay": "99.56%",
-    "uptimeWeek": "99.94%",
-    "uptimeMonth": "99.99%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
     "uptimeYear": "99.99%",
-    "time": 213,
-    "timeDay": 141,
-    "timeWeek": 191,
+    "time": 212,
+    "timeDay": 135,
+    "timeWeek": 199,
     "timeMonth": 170,
     "timeYear": 202,
     "dailyMinutesDown": {
-      "2023-02-11": 6,
       "2022-06-12": 21,
       "2022-03-29": 16
     }
@@ -51,10 +50,10 @@
     "uptimeMonth": "99.96%",
     "uptimeYear": "94.78%",
     "time": 350,
-    "timeDay": 304,
-    "timeWeek": 321,
-    "timeMonth": 292,
-    "timeYear": 300,
+    "timeDay": 419,
+    "timeWeek": 340,
+    "timeMonth": 298,
+    "timeYear": 301,
     "dailyMinutesDown": {
       "2023-02-07": 16,
       "2022-12-08": 840,
@@ -97,7 +96,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2023-02-11": 527,
+      "2023-02-12": 75,
+      "2023-02-11": 1440,
       "2023-02-10": 1440,
       "2023-02-09": 1440,
       "2023-02-08": 1440,
@@ -460,8 +460,7 @@
       "2022-02-16": 1440,
       "2022-02-15": 1440,
       "2022-02-14": 1440,
-      "2022-02-13": 1440,
-      "2022-02-12": 1440
+      "2022-02-13": 1440
     }
   }
 ]
