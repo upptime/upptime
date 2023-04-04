@@ -13,7 +13,7 @@ status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   #cname: uptime.cosgrid.com
-   baseUrl: /upptime
+  baseUrl: /upptime
   logoUrl: https://media.licdn.com/dms/image/C510BAQHqNdK6VsHGvA/company-logo_200_200/0/1571128615896?e=1688601600&v=beta&t=1yzeRaAA_VfRXUuMjMMlkyUVOF6f-dfMWM9ntDf_djc
   name: COSGrid
   #introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
