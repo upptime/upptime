@@ -21,45 +21,44 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2.3.3
         with:
           ref: ${{ github.head_ref }}
-          token: ${{ secrets.GH_PAT || github.token }}
+          token: ${{ secrets.GH_PAT }}
       - name: Update template
         uses: upptime/uptime-monitor@v1.29.0
         with:
           command: "update-template"
         env:
-          GH_PAT: ${{ secrets.GH_PAT || github.token }}
+          GH_PAT: ${{ secrets.GH_PAT }}
       - name: Update response time
         uses: upptime/uptime-monitor@v1.29.0
         with:
           command: "response-time"
         env:
-          GH_PAT: ${{ secrets.GH_PAT || github.token }}
+          GH_PAT: ${{ secrets.GH_PAT }}
           SECRETS_CONTEXT: ${{ toJson(secrets) }}
       - name: Update summary in README
         uses: upptime/uptime-monitor@v1.29.0
         with:
           command: "readme"
         env:
-          GH_PAT: ${{ secrets.GH_PAT || github.token }}
+          GH_PAT: ${{ secrets.GH_PAT }}
       - name: Generate graphs
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: Graphs CI
-          token: ${{ secrets.GH_PAT || github.token }}
+          token: ${{ secrets.GH_PAT }}
       - name: Generate site
         uses: upptime/uptime-monitor@v1.29.0
         with:
           command: "site"
         env:
-          GH_PAT: ${{ secrets.GH_PAT || github.token }}
+          GH_PAT: ${{ secrets.GH_PAT }}
       - uses: peaceiris/actions-gh-pages@v3.7.3
         name: GitHub Pages Deploy
         with:
-          github_token: ${{ secrets.GH_PAT || github.token }}
+          github_token: ${{ secrets.GH_PAT }}
           publish_dir: "site/status-page/__sapper__/export/"
-          force_orphan: "false"
           user_name: "Upptime Bot"
           user_email: "73812536+upptime-bot@users.noreply.github.com"
