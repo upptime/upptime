@@ -7,6 +7,8 @@ sites:
     url: https://akjs.io
   - name: xrm.rocks
     url: https://xmr.rocks
+  - name: pmnr.xrm.rocks
+    url: https://pmnr.xmr.rocks
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
