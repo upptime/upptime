@@ -17,7 +17,7 @@ on:
 jobs:
   release:
     name: Build and deploy site
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout
