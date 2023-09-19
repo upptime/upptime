@@ -1,0 +1,60 @@
+activeIncidents: 活動事故
+allSystemsOperational: 所有系統正常運作
+incidentReport: "事故 #$NUMBER 報告 →"
+activeIncidentSummary: 於 $DATE 開啟，已有 $POSTS 帖子
+incidentTitle: 事故 $NUMBER 詳情
+incidentDetails: 事故詳情
+incidentFixed: 已修復
+incidentOngoing: 進行中
+incidentOpenedAt: 開始於
+incidentClosedAt: 關閉於
+incidentViewOnGitHub: 在 GitHub 上查看並訂閱
+incidentCommentSummary: 於 $DATE 由 $AUTHOR 張貼
+incidentBack: ← 返回所有事故
+pastIncidents: 過去事故
+pastIncidentsResolved: 解決於 $MINUTES 分鐘，共有 $POSTS 帖子
+liveStatus: 實時狀態
+overallUptime: "整體運行時間：$UPTIME"
+overallUptimeTitle: 整體運行時間
+averageResponseTime: "平均響應時間：$TIMEms"
+averageResponseTimeTitle: 平均響應時間
+sevenDayResponseTime: 七天響應時間
+responseTimeMs: 響應時間（毫秒）
+up: 正常
+down: 故障
+degraded: 降級
+ms: 毫秒
+loading: 載入中
+navGitHub: GitHub
+footer: 本頁是[開源]($REPO)的，由[Upptime](https://upptime.js.org) 驅動
+rateLimitExceededTitle: 超出速率限制
+rateLimitExceededIntro: 您已超出每小時的請求數，因此必須等待才能再次訪問此網站。或者，您可以添加GitHub個人訪問令牌以繼續使用此網站。
+rateLimitExceededWhatDoesErrorMean: 這個錯誤是什麼意思？
+rateLimitExceededErrorMeaning: 本網站使用GitHub API來訪問有關我們網站狀態的實時數據。默認情況下，GitHub允許每個IP地址每小時60次請求，您已經用完了。
+rateLimitExceededErrorHowCanFix: 我該如何解決這個問題？
+rateLimitExceededErrorFix: 您可以等待一個小時，您的IP地址的限制將恢復。或者，您可以添加GitHub個人訪問令牌，每小時額外提供5,000次請求。
+rateLimitExceededGeneratePAT: 學習如何生成個人訪問令牌
+rateLimitExceededHasSet: 您已設置了個人訪問令牌。
+rateLimitExceededRemoveToken: 刪除令牌
+rateLimitExceededGitHubPAT: GitHub個人訪問令牌
+rateLimitExceededCopyPastePAT: 複製並粘貼您的令牌
+rateLimitExceededSaveToken: 保存令牌
+errorTitle: 發生錯誤
+errorIntro: 在嘗試獲取最新狀態詳情時發生錯誤。
+errorText: 您可以在幾個時刻後再試一次。
+errorHome: 前往首頁
+pastScheduledMaintenance: 過去的計劃維護
+scheduledMaintenance: 計劃維護
+scheduledMaintenanceSummaryStarted: 開始於 $DATE，持續 $DURATION 分鐘
+scheduledMaintenanceSummaryStarts: 開始於 $DATE，持續 $DURATION 分鐘
+startedAt: 開始於
+startsAt: 開始於
+duration: 持續時間
+durationMin: $DURATION 分鐘
+incidentCompleted: 完成
+incidentScheduled: 計劃中
+duration24H: 24小時
+duration7D: 7天
+duration30D: 30天
+duration1Y: 1年
+durationAll: 所有
