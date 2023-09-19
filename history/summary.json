@@ -36,21 +36,21 @@
     "dailyMinutesDown": {}
   },
   {
-    "name": "德明財經科技大學 宿舍網站",
+    "name": "德明財經科技大學 宿舍網站 dormitory",
     "url": "https://takming.sao-x.com",
     "icon": "https://icons.duckduckgo.com/ip3/takming.sao-x.com.ico",
-    "slug": "",
+    "slug": "dormitory",
     "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 238,
-    "timeDay": 238,
-    "timeWeek": 238,
-    "timeMonth": 238,
-    "timeYear": 238,
+    "time": 162,
+    "timeDay": 162,
+    "timeWeek": 162,
+    "timeMonth": 162,
+    "timeYear": 162,
     "dailyMinutesDown": {}
   }
 ]
