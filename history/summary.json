@@ -4,19 +4,19 @@
     "url": "https://netinfo.takming.edu.tw/tip",
     "icon": "https://icons.duckduckgo.com/ip3/netinfo.takming.edu.tw.ico",
     "slug": "tip",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 1144,
-    "timeDay": 1103,
-    "timeWeek": 1186,
-    "timeMonth": 1144,
-    "timeYear": 1144,
+    "status": "up",
+    "uptime": "99.96%",
+    "uptimeDay": "99.66%",
+    "uptimeWeek": "99.95%",
+    "uptimeMonth": "99.96%",
+    "uptimeYear": "99.96%",
+    "time": 1160,
+    "timeDay": 1265,
+    "timeWeek": 1206,
+    "timeMonth": 1160,
+    "timeYear": 1160,
     "dailyMinutesDown": {
-      "2023-09-28": 0
+      "2023-09-28": 5
     }
   },
   {
