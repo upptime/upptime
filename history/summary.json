@@ -22,18 +22,20 @@
     "url": "https://tip.sao-x.com",
     "icon": "https://icons.duckduckgo.com/ip3/tip.sao-x.com.ico",
     "slug": "tipx",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 2054,
-    "timeDay": 1672,
-    "timeWeek": 1656,
-    "timeMonth": 2054,
-    "timeYear": 2054,
-    "dailyMinutesDown": {}
+    "time": 1957,
+    "timeDay": 949,
+    "timeWeek": 1477,
+    "timeMonth": 1957,
+    "timeYear": 1957,
+    "dailyMinutesDown": {
+      "2023-10-03": 0
+    }
   },
   {
     "name": "德明財經科技大學 宿舍網站 dormitory",
