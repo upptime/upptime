@@ -23,18 +23,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/tip.sao-x.com.ico",
     "slug": "tipx",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "99.97%",
+    "uptimeDay": "99.60%",
+    "uptimeWeek": "99.94%",
+    "uptimeMonth": "99.97%",
+    "uptimeYear": "99.97%",
     "time": 1957,
     "timeDay": 949,
     "timeWeek": 1477,
     "timeMonth": 1957,
     "timeYear": 1957,
     "dailyMinutesDown": {
-      "2023-10-03": 0
+      "2023-10-03": 6
     }
   },
   {
