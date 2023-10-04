@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1180,
-    "timeDay": 932,
-    "timeWeek": 1228,
-    "timeMonth": 1180,
-    "timeYear": 1180,
+    "time": 1172,
+    "timeDay": 967,
+    "timeWeek": 1222,
+    "timeMonth": 1172,
+    "timeYear": 1172,
     "dailyMinutesDown": {}
   },
   {
@@ -22,20 +22,18 @@
     "url": "https://tip.sao-x.com",
     "icon": "https://icons.duckduckgo.com/ip3/tip.sao-x.com.ico",
     "slug": "tipx",
-    "status": "down",
-    "uptime": "99.97%",
-    "uptimeDay": "99.60%",
-    "uptimeWeek": "99.94%",
-    "uptimeMonth": "99.97%",
-    "uptimeYear": "99.97%",
-    "time": 1957,
-    "timeDay": 949,
-    "timeWeek": 1477,
-    "timeMonth": 1957,
-    "timeYear": 1957,
-    "dailyMinutesDown": {
-      "2023-10-03": 6
-    }
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 1901,
+    "timeDay": 986,
+    "timeWeek": 1307,
+    "timeMonth": 1901,
+    "timeYear": 1901,
+    "dailyMinutesDown": {}
   },
   {
     "name": "德明財經科技大學 宿舍網站 dormitory",
@@ -48,11 +46,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 178,
-    "timeDay": 384,
-    "timeWeek": 179,
-    "timeMonth": 178,
-    "timeYear": 178,
+    "time": 182,
+    "timeDay": 256,
+    "timeWeek": 199,
+    "timeMonth": 182,
+    "timeYear": 182,
     "dailyMinutesDown": {}
   }
 ]
