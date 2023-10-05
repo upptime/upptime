@@ -4,18 +4,20 @@
     "url": "https://netinfo.takming.edu.tw/tip",
     "icon": "https://icons.duckduckgo.com/ip3/netinfo.takming.edu.tw.ico",
     "slug": "tip",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 1190,
     "timeDay": 1640,
-    "timeWeek": 1289,
+    "timeWeek": 1269,
     "timeMonth": 1190,
     "timeYear": 1190,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2023-10-05": 0
+    }
   },
   {
     "name": "德明財經科技大學 TIPX",
