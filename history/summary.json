@@ -4,20 +4,18 @@
     "url": "https://netinfo.takming.edu.tw/tip",
     "icon": "https://icons.duckduckgo.com/ip3/netinfo.takming.edu.tw.ico",
     "slug": "tip",
-    "status": "down",
-    "uptime": "99.98%",
-    "uptimeDay": "99.64%",
-    "uptimeWeek": "99.95%",
-    "uptimeMonth": "99.98%",
-    "uptimeYear": "99.98%",
-    "time": 1190,
-    "timeDay": 1640,
-    "timeWeek": 1269,
-    "timeMonth": 1190,
-    "timeYear": 1190,
-    "dailyMinutesDown": {
-      "2023-10-05": 5
-    }
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 1196,
+    "timeDay": 1273,
+    "timeWeek": 1279,
+    "timeMonth": 1196,
+    "timeYear": 1196,
+    "dailyMinutesDown": {}
   },
   {
     "name": "德明財經科技大學 TIPX",
@@ -30,11 +28,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1838,
-    "timeDay": 514,
-    "timeWeek": 1173,
-    "timeMonth": 1838,
-    "timeYear": 1838,
+    "time": 1828,
+    "timeDay": 1597,
+    "timeWeek": 1162,
+    "timeMonth": 1828,
+    "timeYear": 1828,
     "dailyMinutesDown": {}
   },
   {
@@ -48,11 +46,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 177,
-    "timeDay": 89,
-    "timeWeek": 178,
-    "timeMonth": 177,
-    "timeYear": 177,
+    "time": 171,
+    "timeDay": 62,
+    "timeWeek": 158,
+    "timeMonth": 171,
+    "timeYear": 171,
     "dailyMinutesDown": {}
   }
 ]
