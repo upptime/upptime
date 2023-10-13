@@ -19,9 +19,6 @@ sites:
     url: https://kihost.kiro.my.id/
 
 status-website:
-  links:
-    - rel: stylesheet
-      href: https://raw.githubusercontent.com/upptime/status-page/9b4cd08f4243c86487a18ad7f4eac813e92c4607/static/themes/dark.css
 
   baseUrl: /upptime
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
