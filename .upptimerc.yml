@@ -19,7 +19,9 @@ sites:
     url: https://kihost.kiro.my.id/
 
 status-website:
-  theme: dark
+  links:
+    - rel: stylesheet
+      href: https://raw.githubusercontent.com/upptime/status-page/9b4cd08f4243c86487a18ad7f4eac813e92c4607/static/themes/dark.css
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: demo.upptime.js.org
