@@ -1,7 +1,7 @@
 url: https://netinfo.takming.edu.tw/tip
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2023-10-23T10:09:45.872Z
+status: up
+code: 200
+responseTime: 5431
+lastUpdated: 2023-10-23T10:26:45.276Z
 startTime: 2023-09-19T13:13:38.069Z
 generator: Upptime <https://github.com/upptime/upptime>
