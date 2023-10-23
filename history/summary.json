@@ -11,9 +11,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.99%",
     "time": 107,
-    "timeDay": 100,
-    "timeWeek": 93,
-    "timeMonth": 151,
+    "timeDay": 59,
+    "timeWeek": 90,
+    "timeMonth": 142,
     "timeYear": 108,
     "dailyMinutesDown": {
       "2023-07-15": 65,
@@ -27,18 +27,16 @@
     "slug": "wikipedia",
     "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "99.52%",
-    "uptimeWeek": "99.93%",
-    "uptimeMonth": "99.98%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 243,
-    "timeDay": 3759,
-    "timeWeek": 1399,
-    "timeMonth": 540,
+    "timeDay": 3776,
+    "timeWeek": 1379,
+    "timeMonth": 541,
     "timeYear": 259,
-    "dailyMinutesDown": {
-      "2023-10-22": 7
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Hacker News",
@@ -52,9 +50,9 @@
     "uptimeMonth": "99.95%",
     "uptimeYear": "94.85%",
     "time": 304,
-    "timeDay": 103,
-    "timeWeek": 302,
-    "timeMonth": 328,
+    "timeDay": 403,
+    "timeWeek": 289,
+    "timeMonth": 331,
     "timeYear": 313,
     "dailyMinutesDown": {
       "2023-10-12": 22,
@@ -102,7 +100,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2023-10-22": 1348,
+      "2023-10-23": 56,
+      "2023-10-22": 1440,
       "2023-10-21": 1440,
       "2023-10-20": 1440,
       "2023-10-19": 1440,
@@ -465,8 +464,7 @@
       "2022-10-27": 1440,
       "2022-10-26": 1440,
       "2022-10-25": 1440,
-      "2022-10-24": 1440,
-      "2022-10-23": 1440
+      "2022-10-24": 1440
     }
   }
 ]
