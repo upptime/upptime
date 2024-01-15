@@ -11,7 +11,7 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.99%",
     "time": 106,
-    "timeDay": 82,
+    "timeDay": 81,
     "timeWeek": 79,
     "timeMonth": 76,
     "timeYear": 108,
@@ -32,10 +32,10 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 245,
-    "timeDay": 183,
-    "timeWeek": 212,
-    "timeMonth": 217,
-    "timeYear": 259,
+    "timeDay": 125,
+    "timeWeek": 194,
+    "timeMonth": 213,
+    "timeYear": 258,
     "dailyMinutesDown": {}
   },
   {
@@ -50,10 +50,10 @@
     "uptimeMonth": "99.79%",
     "uptimeYear": "99.91%",
     "time": 413,
-    "timeDay": 81,
-    "timeWeek": 1736,
-    "timeMonth": 878,
-    "timeYear": 447,
+    "timeDay": 108,
+    "timeWeek": 1636,
+    "timeMonth": 816,
+    "timeYear": 446,
     "dailyMinutesDown": {
       "2024-01-10": 90,
       "2023-12-12": 169,
@@ -82,7 +82,7 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2024-01-15": 62,
+      "2024-01-15": 614,
       "2024-01-14": 1440,
       "2024-01-13": 1440,
       "2024-01-12": 1440,
@@ -447,6 +447,26 @@
       "2023-01-18": 1440,
       "2023-01-17": 1440,
       "2023-01-16": 1440
+    }
+  },
+  {
+    "name": "IPv6 test",
+    "url": "forwardemail.net",
+    "icon": "https://icons.duckduckgo.com/ip3/null.ico",
+    "slug": "i-pv6-test",
+    "status": "down",
+    "uptime": "0.00%",
+    "uptimeDay": "0.00%",
+    "uptimeWeek": "0.00%",
+    "uptimeMonth": "0.00%",
+    "uptimeYear": "0.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2024-01-15": 0
     }
   }
 ]
