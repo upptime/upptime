@@ -82,7 +82,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2024-01-16": 1384,
+      "2024-01-17": 60,
+      "2024-01-16": 1440,
       "2024-01-15": 1440,
       "2024-01-14": 1440,
       "2024-01-13": 1440,
@@ -445,8 +446,7 @@
       "2023-01-21": 1440,
       "2023-01-20": 1440,
       "2023-01-19": 1440,
-      "2023-01-18": 1440,
-      "2023-01-17": 1440
+      "2023-01-18": 1440
     }
   },
   {
@@ -455,18 +455,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/null.ico",
     "slug": "i-pv6-test",
     "status": "down",
-    "uptime": "0.81%",
-    "uptimeDay": "1.09%",
-    "uptimeWeek": "0.81%",
-    "uptimeMonth": "0.81%",
-    "uptimeYear": "0.81%",
+    "uptime": "0.77%",
+    "uptimeDay": "0.18%",
+    "uptimeWeek": "0.77%",
+    "uptimeMonth": "0.77%",
+    "uptimeYear": "0.77%",
     "time": 6,
     "timeDay": 6,
     "timeWeek": 6,
     "timeMonth": 6,
     "timeYear": 6,
     "dailyMinutesDown": {
-      "2024-01-16": 1381,
+      "2024-01-17": 60,
+      "2024-01-16": 1437,
       "2024-01-15": 811
     }
   }
