@@ -57,10 +57,7 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
       - name: Generate graphs
-        uses: benc-uk/workflow-dispatch@v1
-        with:
-          workflow: Graphs CI
-          token: ${{ secrets.GH_PAT || github.token }}
+        uses: ./.github/workflows/graphs.yml
       - name: Generate site
         uses: upptime/uptime-monitor@v1.37.0
         with:
