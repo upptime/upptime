@@ -21,6 +21,10 @@ on:
   repository_dispatch:
     types: [static_site]
   workflow_dispatch:
+
+permissions:
+  id-token: write
+
 jobs:
   release:
     name: Build and deploy site

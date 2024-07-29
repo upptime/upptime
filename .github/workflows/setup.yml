@@ -22,6 +22,10 @@ on:
   repository_dispatch:
     types: [setup]
   workflow_dispatch:
+
+permissions:
+  id-token: write
+
 jobs:
   release:
     name: Setup Upptime
