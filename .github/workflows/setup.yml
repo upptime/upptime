@@ -25,6 +25,7 @@ on:
 
 permissions:
   id-token: write
+  pages: write
 
 jobs:
   release:
