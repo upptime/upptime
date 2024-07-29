@@ -25,7 +25,6 @@ jobs:
   release:
     name: Build and deploy site
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,11 +37,19 @@ jobs:
           command: "site"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
-      - uses: peaceiris/actions-gh-pages@v4
-        name: GitHub Pages Deploy
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GH_PAT || github.token }}
-          publish_dir: "site/status-page/__sapper__/export/"
-          force_orphan: "false"
-          user_name: "Upptime Bot"
-          user_email: "73812536+upptime-bot@users.noreply.github.com"
+          path: site/status-page/__sapper__/export/         
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: [release]
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4      
