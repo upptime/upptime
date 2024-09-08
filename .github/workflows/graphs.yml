@@ -23,7 +23,7 @@ on:
   workflow_dispatch:
 jobs:
   release:
-    name: Generate graphs
+    name: Generate graphs 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
