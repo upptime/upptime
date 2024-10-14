@@ -31,6 +31,11 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT || github.token }}
+      # This is necessary because GitHub Actions does not support IPv6 yet
+      # And if a user has `ipv6: true` set in their yaml config, it wouldn't work otherwise
+      # <https://github.com/actions/runner-images/issues/668#issuecomment-1872487355>
+      - name: Setup WARP
+        uses: fscarmen/warp-on-actions@v2
       - name: Update response time
         uses: upptime/uptime-monitor@v1.38.0
         with:
