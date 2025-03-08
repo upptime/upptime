@@ -5,6 +5,8 @@ repo: status # The name of this repository
 sites:
   - name: Site
     url: https://ideias.casa/
+  - name: Site BR
+    url: https://www.casaideias.com.br/
   - name: Workflow
     url: https://work.ideias.casa/healthz/readiness
     icon: https://work.ideias.casa/favicon.ico
