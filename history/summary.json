@@ -36,21 +36,21 @@
     "dailyMinutesDown": {}
   },
   {
-    "name": "Meta",
+    "name": "Metabase",
     "url": "https://meta.ideias.casa/",
     "icon": "https://icons.duckduckgo.com/ip3/meta.ideias.casa.ico",
-    "slug": "meta",
+    "slug": "metabase",
     "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 978,
-    "timeDay": 978,
-    "timeWeek": 978,
-    "timeMonth": 978,
-    "timeYear": 978,
+    "time": 1075,
+    "timeDay": 1075,
+    "timeWeek": 1075,
+    "timeMonth": 1075,
+    "timeYear": 1075,
     "dailyMinutesDown": {}
   }
 ]
