@@ -1,3 +1,56 @@
 [
- 
+  {
+    "name": "Workflow",
+    "url": "https://work.ideias.casa/healthz/readiness",
+    "icon": "https://icons.duckduckgo.com/ip3/work.ideias.casa.ico",
+    "slug": "workflow",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 714,
+    "timeDay": 714,
+    "timeWeek": 714,
+    "timeMonth": 714,
+    "timeYear": 714,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "Noco",
+    "url": "https://dados.ideias.casa/dashboard/",
+    "icon": "https://icons.duckduckgo.com/ip3/dados.ideias.casa.ico",
+    "slug": "noco",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 684,
+    "timeDay": 684,
+    "timeWeek": 684,
+    "timeMonth": 684,
+    "timeYear": 684,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "Meta",
+    "url": "https://meta.ideias.casa/",
+    "icon": "https://icons.duckduckgo.com/ip3/meta.ideias.casa.ico",
+    "slug": "meta",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 978,
+    "timeDay": 978,
+    "timeWeek": 978,
+    "timeMonth": 978,
+    "timeYear": 978,
+    "dailyMinutesDown": {}
+  }
 ]
