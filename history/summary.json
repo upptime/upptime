@@ -1,5 +1,23 @@
 [
   {
+    "name": "Site",
+    "url": "https://ideias.casa/",
+    "icon": "https://icons.duckduckgo.com/ip3/ideias.casa.ico",
+    "slug": "site",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 248,
+    "timeDay": 248,
+    "timeWeek": 248,
+    "timeMonth": 248,
+    "timeYear": 248,
+    "dailyMinutesDown": {}
+  },
+  {
     "name": "Workflow",
     "url": "https://work.ideias.casa/healthz/readiness",
     "icon": "https://work.ideias.casa/favicon.ico",
