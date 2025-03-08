@@ -2,7 +2,7 @@
   {
     "name": "Workflow",
     "url": "https://work.ideias.casa/healthz/readiness",
-    "icon": "https://icons.duckduckgo.com/ip3/work.ideias.casa.ico",
+    "icon": "https://work.ideias.casa/favicon.ico",
     "slug": "workflow",
     "status": "up",
     "uptime": "100.00%",
@@ -18,21 +18,21 @@
     "dailyMinutesDown": {}
   },
   {
-    "name": "Noco",
+    "name": "Dados (Noco)",
     "url": "https://dados.ideias.casa/dashboard/",
     "icon": "https://icons.duckduckgo.com/ip3/dados.ideias.casa.ico",
-    "slug": "noco",
+    "slug": "dados-noco",
     "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 684,
-    "timeDay": 684,
-    "timeWeek": 684,
-    "timeMonth": 684,
-    "timeYear": 684,
+    "time": 808,
+    "timeDay": 808,
+    "timeWeek": 808,
+    "timeMonth": 808,
+    "timeYear": 808,
     "dailyMinutesDown": {}
   },
   {
