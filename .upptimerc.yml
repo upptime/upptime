@@ -5,10 +5,13 @@ repo: status # The name of this repository
 sites:
   - name: Workflow
     url: https://work.ideias.casa/healthz/readiness
+    method: GET
   - name: Noco
     url: https://dados.ideias.casa/dashboard/
+    method: GET
   - name: Meta
     url: https://meta.ideias.casa/
+    method: GET
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
