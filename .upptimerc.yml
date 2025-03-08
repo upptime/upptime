@@ -10,7 +10,7 @@ sites:
   - name: Dados (Noco)
     url: https://dados.ideias.casa/dashboard/
     method: GET
-  - name: Meta
+  - name: Metabase
     url: https://meta.ideias.casa/
     method: GET
 
