@@ -18,6 +18,24 @@
     "dailyMinutesDown": {}
   },
   {
+    "name": "Site BR",
+    "url": "https://www.casaideias.com.br/",
+    "icon": "https://icons.duckduckgo.com/ip3/www.casaideias.com.br.ico",
+    "slug": "site-br",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 5221,
+    "timeDay": 5221,
+    "timeWeek": 5221,
+    "timeMonth": 5221,
+    "timeYear": 5221,
+    "dailyMinutesDown": {}
+  },
+  {
     "name": "Workflow",
     "url": "https://work.ideias.casa/healthz/readiness",
     "icon": "https://work.ideias.casa/favicon.ico",
