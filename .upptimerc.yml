@@ -1,5 +1,5 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
+owner: i4mkuka # Your GitHub organization or username, where this repository lives
 repo: upptime # The name of this repository
 
 sites:
@@ -9,8 +9,8 @@ sites:
     url: https://en.wikipedia.org
   - name: Hacker News
     url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: Test Site
+    url: https://accurate-cypress-lumber.glitch.me/
   - name: IPv6 test
     url: forwardemail.net
     port: 80
