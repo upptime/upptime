@@ -22,7 +22,7 @@
     "url": "https://www.casaideias.com.br/",
     "icon": "https://icons.duckduckgo.com/ip3/www.casaideias.com.br.ico",
     "slug": "site-br",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -30,7 +30,7 @@
     "uptimeYear": "100.00%",
     "time": 3557,
     "timeDay": 2196,
-    "timeWeek": 3265,
+    "timeWeek": 3380,
     "timeMonth": 3557,
     "timeYear": 3557,
     "dailyMinutesDown": {}
