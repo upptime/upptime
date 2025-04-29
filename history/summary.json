@@ -11,9 +11,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.98%",
     "time": 108,
-    "timeDay": 110,
-    "timeWeek": 131,
-    "timeMonth": 114,
+    "timeDay": 116,
+    "timeWeek": 103,
+    "timeMonth": 108,
     "timeYear": 111,
     "dailyMinutesDown": {
       "2024-11-26": 27,
@@ -32,10 +32,10 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 217,
-    "timeDay": 181,
-    "timeWeek": 233,
-    "timeMonth": 174,
+    "time": 216,
+    "timeDay": 108,
+    "timeWeek": 223,
+    "timeMonth": 171,
     "timeYear": 227,
     "dailyMinutesDown": {}
   },
@@ -45,15 +45,15 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.ycombinator.com.ico",
     "slug": "hacker-news",
     "status": "up",
-    "uptime": "98.86%",
+    "uptime": "98.87%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 346,
-    "timeDay": 349,
-    "timeWeek": 345,
-    "timeMonth": 366,
+    "time": 314,
+    "timeDay": 281,
+    "timeWeek": 334,
+    "timeMonth": 365,
     "timeYear": 314,
     "dailyMinutesDown": {
       "2024-10-22": 16
@@ -76,7 +76,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2025-04-28": 84,
+      "2025-04-29": 83,
+      "2025-04-28": 1440,
       "2025-04-27": 1440,
       "2025-04-26": 1440,
       "2025-04-25": 1440,
@@ -439,8 +440,7 @@
       "2024-05-03": 1440,
       "2024-05-02": 1440,
       "2024-05-01": 1440,
-      "2024-04-30": 1440,
-      "2024-04-29": 1440
+      "2024-04-30": 1440
     }
   },
   {
@@ -460,7 +460,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2025-04-28": 84,
+      "2025-04-29": 83,
+      "2025-04-28": 1440,
       "2025-04-27": 1440,
       "2025-04-26": 1440,
       "2025-04-25": 1440,
@@ -823,8 +824,7 @@
       "2024-05-03": 1440,
       "2024-05-02": 1440,
       "2024-05-01": 1440,
-      "2024-04-30": 1440,
-      "2024-04-29": 1440
+      "2024-04-30": 1440
     }
   }
 ]
