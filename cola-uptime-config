@@ -1,0 +1,3 @@
+sites:
+  - name: Cola Healthcheck
+    url: https://cola.service.cabinetoffice.gov.uk/healthcheck
