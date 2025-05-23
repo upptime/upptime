@@ -40,17 +40,17 @@
     "url": "https://meta.ideias.casa/",
     "icon": "https://icons.duckduckgo.com/ip3/meta.ideias.casa.ico",
     "slug": "metabase",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1126,
-    "timeDay": 948,
-    "timeWeek": 1031,
-    "timeMonth": 1111,
-    "timeYear": 1126,
+    "time": 1136,
+    "timeDay": 1275,
+    "timeWeek": 1131,
+    "timeMonth": 1137,
+    "timeYear": 1136,
     "dailyMinutesDown": {}
   }
 ]
