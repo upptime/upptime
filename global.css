@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5;
+  padding-bottom: 2.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5em 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+a {
+  color: inherit;
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+article {
+  padding: 1rem 1.25rem;
+  position: relative;
+  border-radius: 0.2rem;
+  border: 1px solid;
+}
+article.link a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+article + article {
+  margin-top: 0.5rem;
+}
+article + h3 {
+  margin-top: 1rem;
+}
+h3 {
+  opacity: 0.75;
+}
+h4 {
+  font-weight: bold;
+}
+article.down {
+  border-left: 0.2rem solid;
+}
+article.degraded {
+  border-left: 0.2rem solid;
+}
+article.up {
+  border-left: 0.2rem solid;
+}
+
+.f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section + h2 {
+  margin-top: 2rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.33rem 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 70%;
+  vertical-align: middle;
+  margin-top: -0.2rem;
+  margin-left: 0.5rem;
+}
+
+dl {
+  margin-bottom: 1.5rem;
+}
+dl dt {
+  font-weight: bold;
+}
+dl dd {
+  margin: 0 0 1rem 0;
+}
+
+nav {
+  border-bottom: 1px solid;
+}
+
+[aria-current] {
+  border-bottom: 2px solid;
+}
+
+a.error-button {
+  border: 0.1rem solid;
+}
+
+/* Theming */
+
+.submit-button {
+  background: #01a3a4;
+  color: #fff;
+  border-color: transparent;
+}
+
+body {
+  background: var(--body-background-color);
+  color: var(--body-text-color);
+}
+
+code {
+  color: var(--code-color);
+  background: var(--code-background-color);
+}
+
+article {
+  background: var(--card-background-color);
+  border-color: var(--card-border-color);
+}
+
+article.down {
+  border-left-color: var(--down-border-left-color) !important;
+  color: var(--down-color-color);
+}
+article.down-active {
+  background: var(--down-background-color);
+  border-color: var(--down-border-left-color);
+}
+article.degraded {
+  border-left-color: var(--degraded-border-left-color) !important;
+  color: var(--degraded-color-color);
+}
+article.up {
+  border-left-color: var(--up-border-left-color) !important;
+  color: var(--up-color-color);
+}
+
+.tag {
+  color: var(--tag-color);
+}
+.tag.closed,
+.tag.up {
+  background: var(--tag-up-background-color) !important;
+}
+.tag.open,
+.tag.down {
+  background: var(--tag-down-background-color) !important;
+}
+.tag.degraded {
+  background: var(--tag-degraded-background-color) !important;
+}
+
+.changed + section .data {
+  background: var(--change-background-color);
+}
+
+nav {
+  border-bottom-color: var(--nav-border-bottom-color);
+  background: var(--nav-background-color);
+}
+
+[aria-current] {
+  border-bottom-color: var(--nav-current-border-bottom-color);
+}
+
+a.error-button {
+  border-color: var(--error-button-border-color);
+  background: var(--error-button-background-color);
+  color: var(--error-button-color);
+}
+
+.submit-button {
+  background: var(--submit-button-background-color);
+  color: var(--submit-button-color);
+  border-color: var(--submit-button-border-color);
+}
+
+article .graph {
+  opacity: var(--graph-opacity);
+  filter: var(--graph-filter);
+}
