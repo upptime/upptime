@@ -1,7 +1,7 @@
 url: https://dados.ideias.casa/dashboard/
-status: up
-code: 200
-responseTime: 628
-lastUpdated: 2025-06-15T23:37:19.680Z
+status: down
+code: 502
+responseTime: 1170
+lastUpdated: 2025-06-16T04:59:04.137Z
 startTime: 2025-03-08T21:12:59.011Z
 generator: Upptime <https://github.com/upptime/upptime>
