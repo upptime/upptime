@@ -1,7 +1,7 @@
 url: https://meta.ideias.casa/
-status: up
-code: 200
-responseTime: 1501
-lastUpdated: 2025-06-20T23:10:45.547Z
+status: down
+code: 502
+responseTime: 732
+lastUpdated: 2025-06-21T02:06:21.380Z
 startTime: 2025-03-08T21:44:57.948Z
 generator: Upptime <https://github.com/upptime/upptime>
