@@ -52,5 +52,23 @@
     "timeMonth": 1214,
     "timeYear": 1144,
     "dailyMinutesDown": {}
+  },
+  {
+    "name": "Chatwoot",
+    "url": "https://chat.ideias.casa/",
+    "icon": "https://icons.duckduckgo.com/ip3/chat.ideias.casa.ico",
+    "slug": "chatwoot",
+    "status": "down",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 960,
+    "timeDay": 960,
+    "timeWeek": 960,
+    "timeMonth": 960,
+    "timeYear": 960,
+    "dailyMinutesDown": {}
   }
 ]
