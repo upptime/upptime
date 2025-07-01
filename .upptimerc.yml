@@ -13,6 +13,9 @@ sites:
   - name: Metabase
     url: https://meta.ideias.casa/
     method: GET
+  - name: Chatwoot
+    url: https://chat.ideias.casa/
+    method: GET
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
