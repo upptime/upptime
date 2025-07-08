@@ -14,7 +14,7 @@ sites:
     url: https://meta.ideias.casa/
     method: GET
   - name: Chatwoot
-    url: https://chat.ideias.casa/
+    url: https://chat.ideias.casa/android-icon-192x192.png
     method: GET
     icon: https://chat.ideias.casa/android-icon-192x192.png
 
