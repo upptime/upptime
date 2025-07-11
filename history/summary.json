@@ -11,9 +11,9 @@
     "uptimeMonth": "99.94%",
     "uptimeYear": "99.98%",
     "time": 111,
-    "timeDay": 77,
-    "timeWeek": 91,
-    "timeMonth": 112,
+    "timeDay": 143,
+    "timeWeek": 98,
+    "timeMonth": 113,
     "timeYear": 111,
     "dailyMinutesDown": {
       "2025-06-28": 28,
@@ -32,11 +32,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 212,
-    "timeDay": 90,
-    "timeWeek": 119,
-    "timeMonth": 177,
-    "timeYear": 216,
+    "time": 211,
+    "timeDay": 163,
+    "timeWeek": 118,
+    "timeMonth": 180,
+    "timeYear": 214,
     "dailyMinutesDown": {}
   },
   {
@@ -46,17 +46,16 @@
     "slug": "hacker-news",
     "status": "up",
     "uptime": "98.91%",
-    "uptimeDay": "99.57%",
-    "uptimeWeek": "99.94%",
-    "uptimeMonth": "99.99%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
     "uptimeYear": "99.98%",
     "time": 314,
-    "timeDay": 425,
-    "timeWeek": 363,
-    "timeMonth": 386,
-    "timeYear": 330,
+    "timeDay": 378,
+    "timeWeek": 353,
+    "timeMonth": 380,
+    "timeYear": 329,
     "dailyMinutesDown": {
-      "2025-07-10": 6,
       "2025-05-27": 18,
       "2025-05-11": 80,
       "2025-05-10": 3,
@@ -80,7 +79,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2025-07-10": 1190,
+      "2025-07-11": 100,
+      "2025-07-10": 1440,
       "2025-07-09": 1440,
       "2025-07-08": 1440,
       "2025-07-07": 1440,
@@ -443,8 +443,7 @@
       "2024-07-15": 1440,
       "2024-07-14": 1440,
       "2024-07-13": 1440,
-      "2024-07-12": 1440,
-      "2024-07-11": 1440
+      "2024-07-12": 1440
     }
   },
   {
@@ -464,7 +463,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2025-07-10": 1190,
+      "2025-07-11": 100,
+      "2025-07-10": 1440,
       "2025-07-09": 1440,
       "2025-07-08": 1440,
       "2025-07-07": 1440,
@@ -827,8 +827,7 @@
       "2024-07-15": 1440,
       "2024-07-14": 1440,
       "2024-07-13": 1440,
-      "2024-07-12": 1440,
-      "2024-07-11": 1440
+      "2024-07-12": 1440
     }
   }
 ]
