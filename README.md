@@ -6,7 +6,18 @@
 
 > I find Upptime an incredible clever usage of \[GitHub Actions]. You essentially get a free configurable uptime monitor for whatever you want. – [CSS Tricks](https://css-tricks.com/upptime/)
 
-Upptime is used by [**1,000+**](https://github.com/topics/upptime) people and teams to ensure they know when their endpoints go down.
+<details data-embed="anandchowdhary.com" data-summary="Uptime monitor and status page powered by GitHub Actions">
+  <summary>Upptime is used by <strong>3,000+</strong> people and teams to ensure they know when their endpoints go down.</summary>
+
+I built Upptime because, like many developers, I needed an uptime monitor and status page for my startup Pabio that was affordable, flexible, and completely under my control. At the time, existing services felt expensive, rigid, or closed-source. GitHub Actions had just launched, and I thought: hmm... what if I turned Actions into a self-hosted uptime monitor?
+
+Upptime runs scheduled checks using GitHub Actions (as often as every 5 minutes) to ping your endpoints and verify they're online. Response time data is recorded and committed to git, enabling long-term trend charts and historical insights. When downtime is detected, GitHub Issues are automatically opened and closed. A status page built with Svelte is hosted via GitHub Pages and shows uptime, response times, and incident history - so you get the full-stack uptime monitor and status page.
+
+I built it to be completely free if you're already using GitHub since there's no external server or subscription needed. All configuration lives in a single file, and your data is gone if you delete the repo. Plus, you get a git-native audit trail for all changes and events.
+
+Since launching, Upptime has grown to over 16,000 stars and is actively used by developers and teams to monitor their services. In fact, Upptime is used by [over 3,000+ people and teams](https://github.com/topics/upptime), including Ubuntu-maker Canonical and my preferred developer time tracker Wakatime.
+
+</details>
 
 <!--end: description-->
 
