@@ -7,7 +7,7 @@ sites:
     url: https://work.ideias.casa/healthz/readiness
     icon: https://work.ideias.casa/favicon.ico
     method: GET
-  - name: Dados (Noco)
+  - name: Config (Noco)
     url: https://dados.ideias.casa/dashboard/
     method: GET
   - name: Metabase
