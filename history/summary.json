@@ -18,21 +18,21 @@
     "dailyMinutesDown": {}
   },
   {
-    "name": "Dados (Noco)",
+    "name": "Config (Noco)",
     "url": "https://dados.ideias.casa/dashboard/",
     "icon": "https://icons.duckduckgo.com/ip3/dados.ideias.casa.ico",
-    "slug": "dados-noco",
+    "slug": "config-noco",
     "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 714,
-    "timeDay": 500,
-    "timeWeek": 731,
-    "timeMonth": 702,
-    "timeYear": 714,
+    "time": 646,
+    "timeDay": 646,
+    "timeWeek": 646,
+    "timeMonth": 646,
+    "timeYear": 646,
     "dailyMinutesDown": {}
   },
   {
