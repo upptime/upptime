@@ -11,9 +11,9 @@
     "uptimeMonth": "99.96%",
     "uptimeYear": "99.99%",
     "time": 119,
-    "timeDay": 83,
-    "timeWeek": 100,
-    "timeMonth": 223,
+    "timeDay": 97,
+    "timeWeek": 96,
+    "timeMonth": 224,
     "timeYear": 122,
     "dailyMinutesDown": {
       "2025-10-14": 19,
@@ -33,10 +33,10 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 218,
-    "timeDay": 69,
-    "timeWeek": 250,
-    "timeMonth": 244,
-    "timeYear": 207,
+    "timeDay": 227,
+    "timeWeek": 235,
+    "timeMonth": 224,
+    "timeYear": 206,
     "dailyMinutesDown": {}
   },
   {
@@ -45,16 +45,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.ycombinator.com.ico",
     "slug": "hacker-news",
     "status": "up",
-    "uptime": "98.97%",
+    "uptime": "98.98%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.98%",
-    "time": 324,
-    "timeDay": 511,
+    "time": 323,
+    "timeDay": 110,
     "timeWeek": 276,
-    "timeMonth": 299,
-    "timeYear": 323,
+    "timeMonth": 290,
+    "timeYear": 322,
     "dailyMinutesDown": {
       "2025-05-27": 18,
       "2025-05-11": 80,
@@ -78,7 +78,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2025-11-05": 85,
+      "2025-11-06": 85,
+      "2025-11-05": 1440,
       "2025-11-04": 1440,
       "2025-11-03": 1440,
       "2025-11-02": 1440,
@@ -441,8 +442,7 @@
       "2024-11-10": 1440,
       "2024-11-09": 1440,
       "2024-11-08": 1440,
-      "2024-11-07": 1440,
-      "2024-11-06": 1440
+      "2024-11-07": 1440
     }
   },
   {
@@ -462,7 +462,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2025-11-05": 85,
+      "2025-11-06": 85,
+      "2025-11-05": 1440,
       "2025-11-04": 1440,
       "2025-11-03": 1440,
       "2025-11-02": 1440,
@@ -825,8 +826,7 @@
       "2024-11-10": 1440,
       "2024-11-09": 1440,
       "2024-11-08": 1440,
-      "2024-11-07": 1440,
-      "2024-11-06": 1440
+      "2024-11-07": 1440
     }
   }
 ]
