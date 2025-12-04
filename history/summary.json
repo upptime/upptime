@@ -11,8 +11,8 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.99%",
     "time": 118,
-    "timeDay": 88,
-    "timeWeek": 138,
+    "timeDay": 91,
+    "timeWeek": 141,
     "timeMonth": 106,
     "timeYear": 122,
     "dailyMinutesDown": {
@@ -27,18 +27,16 @@
     "slug": "wikipedia",
     "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "99.11%",
-    "uptimeWeek": "99.87%",
-    "uptimeMonth": "99.97%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 219,
-    "timeDay": 689,
-    "timeWeek": 406,
-    "timeMonth": 286,
-    "timeYear": 201,
-    "dailyMinutesDown": {
-      "2025-12-03": 13
-    }
+    "time": 220,
+    "timeDay": 729,
+    "timeWeek": 479,
+    "timeMonth": 306,
+    "timeYear": 202,
+    "dailyMinutesDown": {}
   },
   {
     "name": "Hacker News",
@@ -52,9 +50,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.98%",
     "time": 322,
-    "timeDay": 437,
-    "timeWeek": 253,
-    "timeMonth": 301,
+    "timeDay": 104,
+    "timeWeek": 208,
+    "timeMonth": 291,
     "timeYear": 320,
     "dailyMinutesDown": {
       "2025-05-27": 18,
@@ -79,7 +77,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2025-12-03": 1068,
+      "2025-12-04": 87,
+      "2025-12-03": 1440,
       "2025-12-02": 1440,
       "2025-12-01": 1440,
       "2025-11-30": 1440,
@@ -442,8 +441,7 @@
       "2024-12-08": 1440,
       "2024-12-07": 1440,
       "2024-12-06": 1440,
-      "2024-12-05": 1440,
-      "2024-12-04": 1440
+      "2024-12-05": 1440
     }
   },
   {
@@ -463,7 +461,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2025-12-03": 1068,
+      "2025-12-04": 87,
+      "2025-12-03": 1440,
       "2025-12-02": 1440,
       "2025-12-01": 1440,
       "2025-11-30": 1440,
@@ -826,8 +825,7 @@
       "2024-12-08": 1440,
       "2024-12-07": 1440,
       "2024-12-06": 1440,
-      "2024-12-05": 1440,
-      "2024-12-04": 1440
+      "2024-12-05": 1440
     }
   }
 ]
