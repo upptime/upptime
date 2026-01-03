@@ -11,10 +11,10 @@
     "uptimeMonth": "99.95%",
     "uptimeYear": "99.99%",
     "time": 121,
-    "timeDay": 80,
-    "timeWeek": 98,
-    "timeMonth": 140,
-    "timeYear": 124,
+    "timeDay": 103,
+    "timeWeek": 102,
+    "timeMonth": 130,
+    "timeYear": 125,
     "dailyMinutesDown": {
       "2025-12-14": 23,
       "2025-10-14": 19,
@@ -33,9 +33,9 @@
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 215,
-    "timeDay": 87,
-    "timeWeek": 151,
-    "timeMonth": 254,
+    "timeDay": 231,
+    "timeWeek": 172,
+    "timeMonth": 242,
     "timeYear": 198,
     "dailyMinutesDown": {}
   },
@@ -45,16 +45,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/news.ycombinator.com.ico",
     "slug": "hacker-news",
     "status": "up",
-    "uptime": "99.00%",
+    "uptime": "99.01%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "99.98%",
-    "time": 318,
-    "timeDay": 121,
-    "timeWeek": 254,
-    "timeMonth": 271,
-    "timeYear": 316,
+    "time": 317,
+    "timeDay": 206,
+    "timeWeek": 267,
+    "timeMonth": 263,
+    "timeYear": 315,
     "dailyMinutesDown": {
       "2025-05-27": 18,
       "2025-05-11": 80,
@@ -78,7 +78,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-01-02": 101,
+      "2026-01-03": 87,
+      "2026-01-02": 1440,
       "2026-01-01": 1440,
       "2025-12-31": 1440,
       "2025-12-30": 1440,
@@ -441,8 +442,7 @@
       "2025-01-07": 1440,
       "2025-01-06": 1440,
       "2025-01-05": 1440,
-      "2025-01-04": 1440,
-      "2025-01-03": 1440
+      "2025-01-04": 1440
     }
   },
   {
@@ -462,7 +462,8 @@
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-01-02": 101,
+      "2026-01-03": 87,
+      "2026-01-02": 1440,
       "2026-01-01": 1440,
       "2025-12-31": 1440,
       "2025-12-30": 1440,
@@ -825,8 +826,7 @@
       "2025-01-07": 1440,
       "2025-01-06": 1440,
       "2025-01-05": 1440,
-      "2025-01-04": 1440,
-      "2025-01-03": 1440
+      "2025-01-04": 1440
     }
   }
 ]
