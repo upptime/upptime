@@ -2,7 +2,7 @@
 
 <!--start: description-->
 
-**Upptime** (https://upptime.js.org) is the open-source uptime monitor and status page, powered entirely by GitHub Actions, Issues, and Pages. It's made with 💚 by [Anand Chowdhary](https://anandchowdhary.com), supported by [Pabio](https://pabio.com).
+**Upptime** (https://upptime.js.org) is the open-source uptime monitor and status page, powered entirely by GitHub Actions, Issues, and Pages, made with 💚 by [Anand Chowdhary](https://anandchowdhary.com).
 
 > I find Upptime an incredible clever usage of \[GitHub Actions]. You essentially get a free configurable uptime monitor for whatever you want. – [CSS Tricks](https://css-tricks.com/upptime/)
 
@@ -113,5 +113,5 @@ Four times per day, another workflow runs and records the response time of your 
 
 ## 📄 License
 
-- Code: [MIT](./LICENSE) © [Anand Chowdhary](https://anandchowdhary.com), supported by [Pabio](https://pabio.com)
+- Code: [MIT](./LICENSE) © [Anand Chowdhary](https://anandchowdhary.com)
 - Data in the `./history` directory: [Open Database License](https://opendatacommons.org/licenses/odbl/1-0/)
