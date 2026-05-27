@@ -6,7 +6,7 @@
 # Your changes will be overwritten when the Upptime template updates (by default, weekly)
 # Instead, change .upptimerc.yml configuration and the workflows will be generated accordingly.
 #
-# 🔼 Upptime @v1.41.7
+# 🔼 Upptime @v1.41.8
 # GitHub-powered open-source uptime monitor and status page by Anand Chowdhary
 
 # * Source: https://github.com/upptime/upptime
@@ -16,6 +16,9 @@
 
 name: Static Site CI
 on:
+  push:
+    paths:
+      - "assets/**"
   schedule:
     - cron: "0 1 * * *"
   repository_dispatch:
@@ -33,7 +36,7 @@ jobs:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_PAT || github.token }}
       - name: Generate site
-        uses: upptime/uptime-monitor@v1.41.7
+        uses: upptime/uptime-monitor@v1.41.8
         with:
           command: "site"
         env:
