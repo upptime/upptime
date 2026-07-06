@@ -25,7 +25,7 @@ status-website:
   # =========================================================================
   # 🚀 ADVANCED PRODUCTION OPTIMIZATION (OPT-IN)
   # =========================================================================
-  # Switch to jsDelivr (Multi-CDN: Cloudflare, Fastly, Bunny) for maximum uptime.
+  # Switch to jsDelivr (Multi-CDN: Cloudflare, Fastly, Bunny, GCore) for maximum uptime.
   # WARNING: jsDelivr caches files for 12 hours. Do NOT enable during development.
   # If you are ready for production, uncomment the lines below.
   # Note: The $OWNER and $REPO variables will be automatically replaced by the CI build.
