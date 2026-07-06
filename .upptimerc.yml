@@ -21,11 +21,32 @@ status-website:
   name: Upptime
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
   introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  
+  # =========================================================================
+  # 🚀 ADVANCED PRODUCTION OPTIMIZATION (OPT-IN)
+  # =========================================================================
+  # Switch to jsDelivr (Multi-CDN: Cloudflare, Fastly, Bunny) for maximum uptime.
+  # WARNING: jsDelivr caches files for 12 hours. Do NOT enable during development.
+  # If you are ready for production, uncomment the lines below.
+  # Note: The $OWNER and $REPO variables will be automatically replaced by the CI build.
+  # -------------------------------------------------------------------------
+  # userContentBaseUrl: https://cdn.jsdelivr.net/gh
+  # 
+  # scripts:
+  #   - src: https://cdn.jsdelivr.net/gh/$OWNER/$REPO@master/cache-interceptor.js
+  #     async: false
+  # =========================================================================
+
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+    
+    # ♻️ Uncomment the button below ONLY if you enabled the Advanced script above.
+    # It acts as a manual purge for the 12-hour CDN cache.
+    # - title: "♻️ Fetch Latest Data"
+    #   href: "#purge-cache"
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
