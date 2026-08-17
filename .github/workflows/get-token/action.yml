@@ -33,3 +33,8 @@ runs:
       with:
         client-id: ${{ inputs.app-client-id }}
         private-key: ${{ inputs.app-private-key }}
+    - name: Checkout with credentials
+      uses: actions/checkout@v6
+      with:
+        ref: ${{ github.head_ref || github.ref_name }}
+        token: ${{ steps.token.outputs.token || secrets.GH_PAT || github.token }}
