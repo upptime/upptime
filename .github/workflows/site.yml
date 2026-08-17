@@ -33,14 +33,14 @@ jobs:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
-      - name: Get token
-        id: token
-        uses: ./.github/workflows/get-token
       - name: Checkout
         uses: actions/checkout@v6
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-          token: ${{ steps.token.outputs.token }}
+          token: ${{ secrets.GH_PAT || github.token }}
+      - name: Get token
+        id: token
+        uses: ./.github/workflows/get-token
       - name: Generate site
         uses: upptime/uptime-monitor@v1.43.14
         with:

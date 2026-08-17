@@ -9,12 +9,6 @@ outputs:
 runs:
   using: "composite"
   steps:
-    # Do an extra checkout on purpose, so subsequent checkouts use the new token.
-    - name: Checkout
-      uses: actions/checkout@v6
-      with:
-        ref: ${{ github.head_ref || github.ref_name }}
-        token: ${{ secrets.GH_PAT || github.token }}
     - name: Get Token
       if: ${{ vars.GH_APP_ID && secrets.GH_APP_PRIVATE_KEY }}
       uses: actions/create-github-app-token@v3
