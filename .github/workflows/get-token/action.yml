@@ -1,18 +1,35 @@
 name: Get token
 description: Retrieve a GitHub token to used, based on the user-configured method.
 
+inputs:
+  app-client-id:
+    description: GitHub App client ID
+    required: false
+
+  app-private-key:
+    description: GitHub App private key
+    required: false
+
+  pat:
+    description: GitHub Personal Access Token
+    required: false
+
+  default:
+    description: Default GitHub Actions token
+    required: true
+
 outputs:
   token:
     description: The GitHub token
-    value: ${{ steps.token.outputs.token || secrets.GH_PAT || github.token }}
+    value: ${{ steps.token.outputs.token || inputs.pat || inputs.default }}
 
 runs:
   using: "composite"
   steps:
     - name: Get Token
-      if: ${{ vars.GH_APP_ID && secrets.GH_APP_PRIVATE_KEY }}
+      if: ${{ inputs.app-client-id != '' && inputs.app-private-key != '' }}
       uses: actions/create-github-app-token@v3
       id: token
       with:
-        client-id: ${{ vars.GH_APP_ID }}
-        private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+        client-id: ${{ inputs.app-client-id }}
+        private-key: ${{ inputs.app-private-key }}
